@@ -1,0 +1,26 @@
+[1.397s] Invoking command in '/home/akshar/eyrc_hb/hb_task_2_ws/src/hb_task2a': PYTHONPATH=/home/akshar/eyrc_hb/hb_task_2_ws/build/hb_task2a/prefix_override:/home/akshar/eyrc_hb/hb_task_2_ws/install/hb_task2a/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hb_task2a build --build-base /home/akshar/eyrc_hb/hb_task_2_ws/build/hb_task2a/build install --record /home/akshar/eyrc_hb/hb_task_2_ws/build/hb_task2a/install.log --single-version-externally-managed
+[1.665s] running egg_info
+[1.666s] writing ../../build/hb_task2a/hb_task2a.egg-info/PKG-INFO
+[1.666s] writing dependency_links to ../../build/hb_task2a/hb_task2a.egg-info/dependency_links.txt
+[1.667s] writing entry points to ../../build/hb_task2a/hb_task2a.egg-info/entry_points.txt
+[1.667s] writing requirements to ../../build/hb_task2a/hb_task2a.egg-info/requires.txt
+[1.667s] writing top-level names to ../../build/hb_task2a/hb_task2a.egg-info/top_level.txt
+[1.670s] reading manifest file '../../build/hb_task2a/hb_task2a.egg-info/SOURCES.txt'
+[1.670s] writing manifest file '../../build/hb_task2a/hb_task2a.egg-info/SOURCES.txt'
+[1.670s] running build
+[1.671s] running build_py
+[1.671s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.671s]   warnings.warn(
+[1.671s] running install
+[1.672s] running install_lib
+[1.672s] running install_data
+[1.673s] running install_egg_info
+[1.676s] removing '/home/akshar/eyrc_hb/hb_task_2_ws/install/hb_task2a/lib/python3.10/site-packages/hb_task2a-0.0.0-py3.10.egg-info' (and everything under it)
+[1.676s] Copying ../../build/hb_task2a/hb_task2a.egg-info to /home/akshar/eyrc_hb/hb_task_2_ws/install/hb_task2a/lib/python3.10/site-packages/hb_task2a-0.0.0-py3.10.egg-info
+[1.678s] running install_scripts
+[1.703s] Installing controller script to /home/akshar/eyrc_hb/hb_task_2_ws/install/hb_task2a/lib/hb_task2a
+[1.703s] Installing feedback script to /home/akshar/eyrc_hb/hb_task_2_ws/install/hb_task2a/lib/hb_task2a
+[1.703s] Installing hb_task1b.launch.py script to /home/akshar/eyrc_hb/hb_task_2_ws/install/hb_task2a/lib/hb_task2a
+[1.703s] Installing service_node script to /home/akshar/eyrc_hb/hb_task_2_ws/install/hb_task2a/lib/hb_task2a
+[1.704s] writing list of installed files to '/home/akshar/eyrc_hb/hb_task_2_ws/build/hb_task2a/install.log'
+[1.803s] Invoked command in '/home/akshar/eyrc_hb/hb_task_2_ws/src/hb_task2a' returned '0': PYTHONPATH=/home/akshar/eyrc_hb/hb_task_2_ws/build/hb_task2a/prefix_override:/home/akshar/eyrc_hb/hb_task_2_ws/install/hb_task2a/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hb_task2a build --build-base /home/akshar/eyrc_hb/hb_task_2_ws/build/hb_task2a/build install --record /home/akshar/eyrc_hb/hb_task_2_ws/build/hb_task2a/install.log --single-version-externally-managed

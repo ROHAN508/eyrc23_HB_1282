@@ -1,0 +1,6 @@
+[console_scripts]
+controller = hb_task_1b.controller:main
+gazebo.launch.py = hb_task_1b.gazebo.launch:main
+hb_task1b.launch.py = hb_task_1b.launch:main
+service_node = hb_task_1b.service_node:main
+

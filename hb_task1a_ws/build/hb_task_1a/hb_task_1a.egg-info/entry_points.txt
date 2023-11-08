@@ -1,0 +1,4 @@
+[console_scripts]
+task_1a_1282 = hb_task_1a.task_1a_1282:main
+test = hb_task_1a.test:main
+
