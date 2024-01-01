@@ -27,6 +27,7 @@ setup(
         'console_scripts': [
             'feedback = hb_task2a.feedback:main',
             'controller = hb_task2a.controller:main',
+            'test = hb_task2a.publish_test:main',
             'service_node = hb_task2a.service_node:main',
             'hb_task1b.launch.py = hb_task2a.launch:main',
          ],

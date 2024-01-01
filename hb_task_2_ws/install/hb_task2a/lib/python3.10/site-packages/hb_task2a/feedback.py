@@ -45,7 +45,7 @@ class ArUcoDetector(Node):
 
     def __init__(self):
         super().__init__('ar_uco_detector')
-        self.sub = self.create_subscription(Image, "/camera/image_raw", self.image_callback, 10)
+        self.sub = self.create_subscription(Image, "/camera1/image_raw_undistorted", self.image_callback, 10)
         self.pub = self.create_publisher(Pose2D, '/detected_aruco', 10)
         self.cvimg = CvBridge()
 

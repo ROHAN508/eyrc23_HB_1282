@@ -12,9 +12,7 @@ hb_task2b/__init__.py
 hb_task2b/bot_2_controller.py
 hb_task2b/bot_3_controller.py
 hb_task2b/bot_controller.py
-hb_task2b/bot_controller90.py
 hb_task2b/feedback2b.py
-hb_task2b/jfdojf.py
 hb_task2b/nextGoalPub.py
 launch/controller.launch.py
 launch/submission.launch.py
