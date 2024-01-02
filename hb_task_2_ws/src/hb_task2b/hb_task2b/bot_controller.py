@@ -59,6 +59,8 @@ theta_threshold=0.15
 i=0 #index variable
 max_speed=20
 max_error=30
+r=1.9
+d=7.0
 
 ################# ADD UTILITY FUNCTIONS HERE #################
 #function to calculate forces of each wheel using p and d controller
@@ -132,10 +134,22 @@ class HBController(Node):
         #	Process it further to find what proportions of that effort should be given to 3 individuals wheels !!
         #	Publish the calculated efforts to actuate robot by applying force vectors on provided topics
         ############################################
-        wheel_vel_1= (-0.33*xvel)+(0.58*yvel)+(0.33*ang_vel)
-        wheel_vel_2= (-0.33*xvel)+(-0.58*yvel)+(0.33*ang_vel)
-        wheel_vel_3= (0.66666*xvel)+(0.33333*ang_vel)
-        return [wheel_vel_1, wheel_vel_2, wheel_vel_3]
+        # w1_vel = (1/r) * ((ang_vel*d) + (-0.5*xvel) + (0.866*yvel))
+        # w2_vel = (1/r) * ((ang_vel*d) + (-0.5*xvel) + (-0.866*yvel))
+        # w3_vel = (1/r) * ((ang_vel*d) + (1*xvel) + (0*yvel))
+        w1_vel= (-0.33*xvel)+(0.58*yvel)+(0.33*ang_vel)
+        w2_vel= (-0.33*xvel)+(-0.58*yvel)+(0.33*ang_vel)
+        w3_vel= (0.66666*xvel)+(0.33333*ang_vel)
+        
+#         w1_vel = (1/r) * ( (w*d) + (-0.5*xvel) + (0.866*yvel) );
+#         w2_vel = (1/r) * ( (w*d) + (-0.5*xvel) + (-0.866*yvel) );
+#         w3_vel = (1/r) * ( (w*d) + (1*xvel) + (0*yvel) );
+#   Serial.println(w1_vel);
+        return [w1_vel, w2_vel, w3_vel]
+        # wheel_vel_1= (-0.33*xvel)+(0.58*yvel)+(0.33*ang_vel)
+        # wheel_vel_2= (-0.33*xvel)+(-0.58*yvel)+(0.33*ang_vel)
+        # wheel_vel_3= (0.66666*xvel)+(0.33333*ang_vel)
+        # return [wheel_vel_1, wheel_vel_2, wheel_vel_3]
 
     def goalCallBack1(self, msg1):
         self.bot_1_x_goal = msg1.x

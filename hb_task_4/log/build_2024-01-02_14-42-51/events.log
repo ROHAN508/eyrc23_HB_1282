@@ -1,0 +1,109 @@
+[0.000000] (-) TimerEvent: {}
+[0.000664] (hb_task4) JobQueued: {'identifier': 'hb_task4', 'dependencies': OrderedDict()}
+[0.000696] (my_custom_msgs) JobQueued: {'identifier': 'my_custom_msgs', 'dependencies': OrderedDict()}
+[0.000725] (hb_task4) JobStarted: {'identifier': 'hb_task4'}
+[0.054543] (my_custom_msgs) JobStarted: {'identifier': 'my_custom_msgs'}
+[0.099731] (-) TimerEvent: {}
+[0.200012] (-) TimerEvent: {}
+[0.300409] (-) TimerEvent: {}
+[0.317919] (my_custom_msgs) JobProgress: {'identifier': 'my_custom_msgs', 'progress': 'cmake'}
+[0.318186] (my_custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/akshar/eyrc_hb/hb_task_4/src/my_custom_msgs', '-DCMAKE_INSTALL_PREFIX=/home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs'], 'cwd': '/home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'akshar'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/akshar'), ('OLDPWD', '/home/akshar/eyrc_hb/hb_task_4/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2304'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=d53a4fdbf2c495cd7c097d596593d154'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'akshar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'akshar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/akshar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/akshar/.local/bin'), ('SESSION_MANAGER', 'local/akshar-IdeaPad-Gaming-3-15ACH6:@/tmp/.ICE-unix/2304,unix/akshar-IdeaPad-Gaming-3-15ACH6:/tmp/.ICE-unix/2304'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/94de4ab7_66c5_42ca_827c_0ce062f76681'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.105'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=d53a4fdbf2c495cd7c097d596593d154'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[0.400539] (-) TimerEvent: {}
+[0.500900] (-) TimerEvent: {}
+[0.524591] (my_custom_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.601036] (-) TimerEvent: {}
+[0.628195] (hb_task4) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/hb_task4', 'build', '--build-base', '/home/akshar/eyrc_hb/hb_task_4/build/hb_task4/build', 'install', '--record', '/home/akshar/eyrc_hb/hb_task_4/build/hb_task4/install.log', '--single-version-externally-managed'], 'cwd': '/home/akshar/eyrc_hb/hb_task_4/src/hb_task4', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_IN:en', 'USER': 'akshar', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/akshar', 'OLDPWD': '/home/akshar/eyrc_hb/hb_task_4/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2304', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=d53a4fdbf2c495cd7c097d596593d154', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'akshar', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'akshar', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/akshar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/akshar/.local/bin', 'SESSION_MANAGER': 'local/akshar-IdeaPad-Gaming-3-15ACH6:@/tmp/.ICE-unix/2304,unix/akshar-IdeaPad-Gaming-3-15ACH6:/tmp/.ICE-unix/2304', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/94de4ab7_66c5_42ca_827c_0ce062f76681', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.105', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/akshar/eyrc_hb/hb_task_4/build/hb_task4', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=d53a4fdbf2c495cd7c097d596593d154', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/akshar/eyrc_hb/hb_task_4/build/hb_task4/prefix_override:/home/akshar/eyrc_hb/hb_task_4/install/hb_task4/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[0.665338] (my_custom_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.679152] (my_custom_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.701156] (-) TimerEvent: {}
+[0.762453] (my_custom_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.767541] (my_custom_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.768227] (my_custom_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.768921] (my_custom_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.772224] (my_custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.801274] (-) TimerEvent: {}
+[0.825373] (hb_task4) StdoutLine: {'line': b'running egg_info\n'}
+[0.825996] (hb_task4) StdoutLine: {'line': b'writing ../../build/hb_task4/hb_task4.egg-info/PKG-INFO\n'}
+[0.826452] (hb_task4) StdoutLine: {'line': b'writing dependency_links to ../../build/hb_task4/hb_task4.egg-info/dependency_links.txt\n'}
+[0.826622] (hb_task4) StdoutLine: {'line': b'writing entry points to ../../build/hb_task4/hb_task4.egg-info/entry_points.txt\n'}
+[0.826736] (hb_task4) StdoutLine: {'line': b'writing requirements to ../../build/hb_task4/hb_task4.egg-info/requires.txt\n'}
+[0.826851] (hb_task4) StdoutLine: {'line': b'writing top-level names to ../../build/hb_task4/hb_task4.egg-info/top_level.txt\n'}
+[0.828312] (hb_task4) StdoutLine: {'line': b"reading manifest file '../../build/hb_task4/hb_task4.egg-info/SOURCES.txt'\n"}
+[0.829136] (hb_task4) StdoutLine: {'line': b"writing manifest file '../../build/hb_task4/hb_task4.egg-info/SOURCES.txt'\n"}
+[0.829251] (hb_task4) StdoutLine: {'line': b'running build\n'}
+[0.829318] (hb_task4) StdoutLine: {'line': b'running build_py\n'}
+[0.829850] (hb_task4) StdoutLine: {'line': b'copying hb_task4/feedback.py -> /home/akshar/eyrc_hb/hb_task_4/build/hb_task4/build/lib/hb_task4\n'}
+[0.830490] (hb_task4) StdoutLine: {'line': b'running install\n'}
+[0.831091] (hb_task4) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[0.831270] (hb_task4) StderrLine: {'line': b'  warnings.warn(\n'}
+[0.831365] (hb_task4) StdoutLine: {'line': b'running install_lib\n'}
+[0.832013] (hb_task4) StdoutLine: {'line': b'copying /home/akshar/eyrc_hb/hb_task_4/build/hb_task4/build/lib/hb_task4/feedback.py -> /home/akshar/eyrc_hb/hb_task_4/install/hb_task4/lib/python3.10/site-packages/hb_task4\n'}
+[0.832732] (hb_task4) StdoutLine: {'line': b'byte-compiling /home/akshar/eyrc_hb/hb_task_4/install/hb_task4/lib/python3.10/site-packages/hb_task4/feedback.py to feedback.cpython-310.pyc\n'}
+[0.834195] (hb_task4) StdoutLine: {'line': b'running install_data\n'}
+[0.835093] (hb_task4) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.836416] (hb_task4) StdoutLine: {'line': b"removing '/home/akshar/eyrc_hb/hb_task_4/install/hb_task4/lib/python3.10/site-packages/hb_task4-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.836713] (hb_task4) StdoutLine: {'line': b'Copying ../../build/hb_task4/hb_task4.egg-info to /home/akshar/eyrc_hb/hb_task_4/install/hb_task4/lib/python3.10/site-packages/hb_task4-0.0.0-py3.10.egg-info\n'}
+[0.837696] (hb_task4) StdoutLine: {'line': b'running install_scripts\n'}
+[0.855195] (hb_task4) StdoutLine: {'line': b'Installing feedback script to /home/akshar/eyrc_hb/hb_task_4/install/hb_task4/lib/hb_task4\n'}
+[0.855491] (my_custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.855736] (hb_task4) StdoutLine: {'line': b"writing list of installed files to '/home/akshar/eyrc_hb/hb_task_4/build/hb_task4/install.log'\n"}
+[0.861821] (my_custom_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.862097] (my_custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.862514] (my_custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.869600] (my_custom_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.885187] (hb_task4) CommandEnded: {'returncode': 0}
+[0.901390] (-) TimerEvent: {}
+[0.969414] (hb_task4) JobEnded: {'identifier': 'hb_task4', 'rc': 0}
+[1.001519] (-) TimerEvent: {}
+[1.025151] (my_custom_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[1.101655] (-) TimerEvent: {}
+[1.117679] (my_custom_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.121969] (my_custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.129394] (my_custom_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.177500] (my_custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.201734] (-) TimerEvent: {}
+[1.215019] (my_custom_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.253672] (my_custom_msgs) StderrLine: {'line': b"Error parsing '/home/akshar/eyrc_hb/hb_task_4/src/my_custom_msgs/package.xml':\n"}
+[1.284394] (my_custom_msgs) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[1.284592] (my_custom_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 610, in parse_package_string\n'}
+[1.285418] (my_custom_msgs) StderrLine: {'line': b'    root = dom.parseString(data)\n'}
+[1.285512] (my_custom_msgs) StderrLine: {'line': b'  File "/usr/lib/python3.10/xml/dom/minidom.py", line 2000, in parseString\n'}
+[1.286695] (my_custom_msgs) StderrLine: {'line': b'    return expatbuilder.parseString(string)\n'}
+[1.286776] (my_custom_msgs) StderrLine: {'line': b'  File "/usr/lib/python3.10/xml/dom/expatbuilder.py", line 925, in parseString\n'}
+[1.287082] (my_custom_msgs) StderrLine: {'line': b'    return builder.parseString(string)\n'}
+[1.287167] (my_custom_msgs) StderrLine: {'line': b'  File "/usr/lib/python3.10/xml/dom/expatbuilder.py", line 223, in parseString\n'}
+[1.287289] (my_custom_msgs) StderrLine: {'line': b'    parser.Parse(string, True)\n'}
+[1.287444] (my_custom_msgs) StderrLine: {'line': b'xml.parsers.expat.ExpatError: unclosed token: line 2, column 0\n'}
+[1.287512] (my_custom_msgs) StderrLine: {'line': b'\n'}
+[1.287558] (my_custom_msgs) StderrLine: {'line': b'During handling of the above exception, another exception occurred:\n'}
+[1.287615] (my_custom_msgs) StderrLine: {'line': b'\n'}
+[1.287657] (my_custom_msgs) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[1.287697] (my_custom_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>\n'}
+[1.287739] (my_custom_msgs) StderrLine: {'line': b'    main()\n'}
+[1.287779] (my_custom_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main\n'}
+[1.287820] (my_custom_msgs) StderrLine: {'line': b'    raise e\n'}
+[1.287891] (my_custom_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main\n'}
+[1.287979] (my_custom_msgs) StderrLine: {'line': b'    package = parse_package_string(\n'}
+[1.288048] (my_custom_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 612, in parse_package_string\n'}
+[1.288101] (my_custom_msgs) StderrLine: {'line': b"    raise InvalidPackage('The manifest contains invalid XML:\\n%s' % ex, filename)\n"}
+[1.288142] (my_custom_msgs) StderrLine: {'line': b"catkin_pkg.package.InvalidPackage: Error(s) in package '/home/akshar/eyrc_hb/hb_task_4/src/my_custom_msgs/package.xml':\n"}
+[1.288186] (my_custom_msgs) StderrLine: {'line': b'The manifest contains invalid XML:\n'}
+[1.288230] (my_custom_msgs) StderrLine: {'line': b'unclosed token: line 2, column 0\n'}
+[1.301850] (-) TimerEvent: {}
+[1.308266] (my_custom_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):\n'}
+[1.308587] (my_custom_msgs) StderrLine: {'line': b'  execute_process(/usr/bin/python3.10\n'}
+[1.308692] (my_custom_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py\n'}
+[1.308796] (my_custom_msgs) StderrLine: {'line': b'  /home/akshar/eyrc_hb/hb_task_4/src/my_custom_msgs/package.xml\n'}
+[1.308887] (my_custom_msgs) StderrLine: {'line': b'  /home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs/ament_cmake_core/package.cmake)\n'}
+[1.308988] (my_custom_msgs) StderrLine: {'line': b'  returned error code 1\n'}
+[1.309078] (my_custom_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.309156] (my_custom_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)\n'}
+[1.309243] (my_custom_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)\n'}
+[1.309322] (my_custom_msgs) StderrLine: {'line': b'  CMakeLists.txt:21 (ament_lint_auto_find_test_dependencies)\n'}
+[1.309394] (my_custom_msgs) StderrLine: {'line': b'\n'}
+[1.309463] (my_custom_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[1.309537] (my_custom_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.309649] (my_custom_msgs) StdoutLine: {'line': b'See also "/home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[1.316372] (my_custom_msgs) CommandEnded: {'returncode': 1}
+[1.316960] (my_custom_msgs) JobEnded: {'identifier': 'my_custom_msgs', 'rc': 1}
+[1.327024] (-) EventReactorShutdown: {}

@@ -1,0 +1,20 @@
+[0.040s] Invoking command in '/home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs -- -j16 -l16
+[0.077s] Invoked command in '/home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs -- -j16 -l16
+[0.109s] Invoking command in '/home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs
+[0.118s] -- Install configuration: ""
+[0.118s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/ament_index/resource_index/package_run_dependencies/my_custom_msgs
+[0.118s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/ament_index/resource_index/parent_prefix_path/my_custom_msgs
+[0.118s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/environment/ament_prefix_path.sh
+[0.118s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/environment/ament_prefix_path.dsv
+[0.118s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/environment/path.sh
+[0.118s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/environment/path.dsv
+[0.118s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/local_setup.bash
+[0.118s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/local_setup.sh
+[0.118s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/local_setup.zsh
+[0.118s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/local_setup.dsv
+[0.118s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/package.dsv
+[0.118s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/ament_index/resource_index/packages/my_custom_msgs
+[0.119s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/cmake/my_custom_msgsConfig.cmake
+[0.119s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/cmake/my_custom_msgsConfig-version.cmake
+[0.119s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/package.xml
+[0.120s] Invoked command in '/home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs

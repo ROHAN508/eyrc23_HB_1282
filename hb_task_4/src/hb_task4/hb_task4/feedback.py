@@ -24,6 +24,12 @@ class ArUcoDetector(Node):
     def __init__(self):
         super().__init__('ar_uco_detector')
         self.sub = self.create_subscription(Image, "/camera1/image_raw", self.image_callback, 10)
+        self.pen1= self.create_publisher(Pose2D,"\pen1_pose",10)
+        self.pen2= self.create_publisher(Pose2D,"\pen2_pose",10)
+        self.pen3= self.create_publisher(Pose2D,"\pen3_pose",10)
+        self.pen1_pos= Pose2D()
+        self.pen2_pos= Pose2D()
+        self.pen3_pos= Pose2D()
 
         self.cvimg = CvBridge()
         # Camera calibration parameters
@@ -103,6 +109,8 @@ class ArUcoDetector(Node):
                         centroid_y = int(corners1[j][0][:, 1].mean())
                         self.centroids.append([aruco_id1[0], centroid_x, centroid_y])
                         points_in_last_20_frames[str(aruco_id1[0])].append((centroid_x, centroid_y))
+
+                        
                         if len(points_in_last_20_frames[str(aruco_id1[0])]) > 100:
                             points_in_last_20_frames[str(aruco_id1[0])].pop(0)
 
@@ -112,7 +120,7 @@ class ArUcoDetector(Node):
 
                         # Update previous positions
                         prev_positions[str(aruco_id1[0])] = [centroid_x, centroid_y]
-
+                
 
                 self.get_logger().info(f'Centroid Coordinates: {self.centroids}')
 
