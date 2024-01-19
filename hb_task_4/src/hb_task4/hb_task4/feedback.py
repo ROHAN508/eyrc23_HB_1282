@@ -22,11 +22,11 @@ points_in_last_20_frames = {'1': [], '2': [], '3': []}
 class ArUcoDetector(Node):
 
     def __init__(self):
-        super().__init__('ar_uco_detector')
+        super().__init__('feedback_node')
         self.sub = self.create_subscription(Image, "/camera1/image_raw", self.image_callback, 10)
-        self.pen1= self.create_publisher(Pose2D,"\pen1_pose",10)
-        self.pen2= self.create_publisher(Pose2D,"\pen2_pose",10)
-        self.pen3= self.create_publisher(Pose2D,"\pen3_pose",10)
+        self.pen1= self.create_publisher(Pose2D,"/pen1_pose",10)
+        self.pen2= self.create_publisher(Pose2D,"/pen2_pose",10)
+        self.pen3= self.create_publisher(Pose2D,"/pen3_pose",10)
         self.pen1_pos= Pose2D()
         self.pen2_pos= Pose2D()
         self.pen3_pos= Pose2D()
@@ -66,7 +66,8 @@ class ArUcoDetector(Node):
         #     for id, corn in zip(ids, corners):
         #         cv2.polylines(self.undistorted_image, [corn.astype(np.int32)], True, (0, 0, 255), 2, cv2.LINE_AA)
         
- 
+        # cv2.imshow('undis',self.undistorted_image)
+        # cv2.waitKey(1) 
         if cor(corner_ids[i])!=[]:
             if len(arena_corlist)!=4:
                 arena_corlist.append([corner_ids[i],cor(corner_ids[i])])
@@ -85,7 +86,7 @@ class ArUcoDetector(Node):
                 pts1 = np.float32(frame)
 
                 # Define the width and height of the rectangular region after transformation
-                width, height = 500, 500  
+                width, height = 1000, 1000  
 
                 pts2 = np.float32([[0, 0], [width, 0], [width, height], [0, height]])
 
@@ -101,28 +102,48 @@ class ArUcoDetector(Node):
                     for id, corn in zip(ids1, corners1):
                         cv2.polylines(self.transformed_image, [corn.astype(np.int32)], True, (0, 0, 255), 2, cv2.LINE_AA) 
                 
-                    
-                self.centroids = []
-                for j, aruco_id1 in enumerate(ids1):
-                    if aruco_id1[0] in [1, 2, 3]:
-                        centroid_x = int(corners1[j][0][:, 0].mean())
-                        centroid_y = int(corners1[j][0][:, 1].mean())
-                        self.centroids.append([aruco_id1[0], centroid_x, centroid_y])
-                        points_in_last_20_frames[str(aruco_id1[0])].append((centroid_x, centroid_y))
+                if ids1 is not None:    
+                    self.centroids = []
+                    for j, aruco_id1 in enumerate(ids1):
+                        if aruco_id1[0] in [1, 2, 3]:
+                            centroid_x = int(corners1[j][0][:, 0].mean())
+                            centroid_y = int(corners1[j][0][:, 1].mean())
+                            yaw= self.get_aruco_yaw(aruco_id1[0],corners1,ids1)
+                            self.centroids.append([aruco_id1[0], centroid_x, centroid_y,yaw])
+                            points_in_last_20_frames[str(aruco_id1[0])].append((centroid_x, centroid_y))
+                            
+                            if aruco_id1[0]==1:
+                                self.pen1_pos.x=float(centroid_x)
+                                self.pen1_pos.y=float(centroid_y)
+                                self.pen1_pos.theta=float(yaw)
+                                self.get_logger().info(f'{self.pen1_pos}')
+                                self.pen1.publish(self.pen1_pos)
 
-                        
-                        if len(points_in_last_20_frames[str(aruco_id1[0])]) > 100:
-                            points_in_last_20_frames[str(aruco_id1[0])].pop(0)
 
-                        # Draw trajectory
-                        for point in points_in_last_20_frames[str(aruco_id1[0])]:
-                            cv2.circle(self.transformed_image, point, 2, (0, 255, 0), -1)
+                            if aruco_id1[0]==2:
+                                self.pen2_pos.x=float(centroid_x)
+                                self.pen2_pos.y=float(centroid_y)
+                                self.pen2_pos.theta=float(yaw)
+                                self.pen2.publish(self.pen2_pos)
 
-                        # Update previous positions
-                        prev_positions[str(aruco_id1[0])] = [centroid_x, centroid_y]
+                            if aruco_id1[0]==3:
+                                self.pen3_pos.x=float(centroid_x)
+                                self.pen3_pos.y=float(centroid_y)
+                                self.pen3_pos.theta=float(yaw)
+                                self.pen3.publish(self.pen3_pos)
+
+                            if len(points_in_last_20_frames[str(aruco_id1[0])]) > 1000:
+                                points_in_last_20_frames[str(aruco_id1[0])].pop(0)
+
+                            # Draw trajectory
+                            for point in points_in_last_20_frames[str(aruco_id1[0])]:
+                                cv2.circle(self.transformed_image, point, 2, (0, 255, 0), -1)
+
+                            # Update previous positions
+                            prev_positions[str(aruco_id1[0])] = [centroid_x, centroid_y]
+
                 
-
-                self.get_logger().info(f'Centroid Coordinates: {self.centroids}')
+                # self.get_logger().info(f'Centroid Coordinates: {self.centroids}')
 
                 cv2.imshow('Transformed Image', self.transformed_image)
                 cv2.waitKey(1)   
@@ -159,12 +180,6 @@ class ArUcoDetector(Node):
             
                 
             
-                    
-        
-      
-
-
-
 
 # Helper function to get corner coordinates of an ArUco marker
 def cor(desired_id):

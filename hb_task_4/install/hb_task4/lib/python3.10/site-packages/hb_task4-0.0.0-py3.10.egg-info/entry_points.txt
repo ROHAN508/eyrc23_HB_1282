@@ -1,4 +1,5 @@
 [console_scripts]
 feedback = hb_task4.feedback:main
+subs = hb_task4.subs:main
 test = hb_task4.publish_test:main
 

@@ -1,0 +1,23 @@
+running egg_info
+writing ../../build/hb_task4/hb_task4.egg-info/PKG-INFO
+writing dependency_links to ../../build/hb_task4/hb_task4.egg-info/dependency_links.txt
+writing entry points to ../../build/hb_task4/hb_task4.egg-info/entry_points.txt
+writing requirements to ../../build/hb_task4/hb_task4.egg-info/requires.txt
+writing top-level names to ../../build/hb_task4/hb_task4.egg-info/top_level.txt
+reading manifest file '../../build/hb_task4/hb_task4.egg-info/SOURCES.txt'
+writing manifest file '../../build/hb_task4/hb_task4.egg-info/SOURCES.txt'
+running build
+running build_py
+copying hb_task4/feedback.py -> /home/akshar/eyrc_hb/hb_task_4/build/hb_task4/build/lib/hb_task4
+running install
+running install_lib
+copying /home/akshar/eyrc_hb/hb_task_4/build/hb_task4/build/lib/hb_task4/feedback.py -> /home/akshar/eyrc_hb/hb_task_4/install/hb_task4/lib/python3.10/site-packages/hb_task4
+byte-compiling /home/akshar/eyrc_hb/hb_task_4/install/hb_task4/lib/python3.10/site-packages/hb_task4/feedback.py to feedback.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/akshar/eyrc_hb/hb_task_4/install/hb_task4/lib/python3.10/site-packages/hb_task4-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/hb_task4/hb_task4.egg-info to /home/akshar/eyrc_hb/hb_task_4/install/hb_task4/lib/python3.10/site-packages/hb_task4-0.0.0-py3.10.egg-info
+running install_scripts
+Installing feedback script to /home/akshar/eyrc_hb/hb_task_4/install/hb_task4/lib/hb_task4
+Installing test script to /home/akshar/eyrc_hb/hb_task_4/install/hb_task4/lib/hb_task4
+writing list of installed files to '/home/akshar/eyrc_hb/hb_task_4/build/hb_task4/install.log'

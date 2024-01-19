@@ -1,0 +1,25 @@
+[0.643s] Invoking command in '/home/akshar/eyrc_hb/hb_task_4/src/hb_task4': PYTHONPATH=/home/akshar/eyrc_hb/hb_task_4/build/hb_task4/prefix_override:/home/akshar/eyrc_hb/hb_task_4/install/hb_task4/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hb_task4 build --build-base /home/akshar/eyrc_hb/hb_task_4/build/hb_task4/build install --record /home/akshar/eyrc_hb/hb_task_4/build/hb_task4/install.log --single-version-externally-managed
+[0.829s] running egg_info
+[0.830s] writing ../../build/hb_task4/hb_task4.egg-info/PKG-INFO
+[0.830s] writing dependency_links to ../../build/hb_task4/hb_task4.egg-info/dependency_links.txt
+[0.830s] writing entry points to ../../build/hb_task4/hb_task4.egg-info/entry_points.txt
+[0.831s] writing requirements to ../../build/hb_task4/hb_task4.egg-info/requires.txt
+[0.831s] writing top-level names to ../../build/hb_task4/hb_task4.egg-info/top_level.txt
+[0.832s] reading manifest file '../../build/hb_task4/hb_task4.egg-info/SOURCES.txt'
+[0.833s] writing manifest file '../../build/hb_task4/hb_task4.egg-info/SOURCES.txt'
+[0.833s] running build
+[0.833s] running build_py
+[0.834s] running install
+[0.834s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.834s]   warnings.warn(
+[0.835s] running install_lib
+[0.835s] running install_data
+[0.836s] running install_egg_info
+[0.837s] removing '/home/akshar/eyrc_hb/hb_task_4/install/hb_task4/lib/python3.10/site-packages/hb_task4-0.0.0-py3.10.egg-info' (and everything under it)
+[0.838s] Copying ../../build/hb_task4/hb_task4.egg-info to /home/akshar/eyrc_hb/hb_task_4/install/hb_task4/lib/python3.10/site-packages/hb_task4-0.0.0-py3.10.egg-info
+[0.838s] running install_scripts
+[0.854s] Installing feedback script to /home/akshar/eyrc_hb/hb_task_4/install/hb_task4/lib/hb_task4
+[0.854s] Installing subs script to /home/akshar/eyrc_hb/hb_task_4/install/hb_task4/lib/hb_task4
+[0.854s] Installing test script to /home/akshar/eyrc_hb/hb_task_4/install/hb_task4/lib/hb_task4
+[0.855s] writing list of installed files to '/home/akshar/eyrc_hb/hb_task_4/build/hb_task4/install.log'
+[0.873s] Invoked command in '/home/akshar/eyrc_hb/hb_task_4/src/hb_task4' returned '0': PYTHONPATH=/home/akshar/eyrc_hb/hb_task_4/build/hb_task4/prefix_override:/home/akshar/eyrc_hb/hb_task_4/install/hb_task4/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hb_task4 build --build-base /home/akshar/eyrc_hb/hb_task_4/build/hb_task4/build install --record /home/akshar/eyrc_hb/hb_task_4/build/hb_task4/install.log --single-version-externally-managed

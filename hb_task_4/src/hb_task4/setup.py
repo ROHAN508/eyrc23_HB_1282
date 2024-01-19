@@ -21,7 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
             'feedback = hb_task4.feedback:main',
-            'test = hb_task4.publish_test:main'
+            'test = hb_task4.publish_test:main',
+            'subs = hb_task4.subs:main'
         ],
     },
 )
