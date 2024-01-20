@@ -9,7 +9,7 @@ i=0
 
 # vel_fr_tri=[[20.0,180.0,90.0],[180.0,90.0,28.0],[90.0,0.0,165.0]]
 # vel_fr_square=[[25.0,180.0,90.0],[120.0,115.0,20.0],[175.0,17.0,90.0],[64.0,75.0,168.0]]
-
+r=1.9
 vel_fr_tri=[[180.0,180.0,180.0],[180.0,180.0,180.0],[180.0,180.0,180.0]]
 vel_fr_square=[[180.0,180.0,180.0],[180.0,180.0,180.0],[180.0,180.0,180.0],[180.0,180.0,180.0]]
 
@@ -45,6 +45,28 @@ class Publisher(Node):
         self.twist_3.angular.x = 0.0
         self.twist_3.angular.y = 0.0
         self.twist_3.angular.z = 0.0
+        self.wheel_vel=[]
+
+
+    def inverse_kinematics(self,xvel, yvel, ang_vel):
+        ############ ADD YOUR CODE HERE ############
+
+        # INSTRUCTIONS & HELP : 
+        #	-> Use the target velocity you calculated for the robot in previous task, and
+        #	Process it further to find what proportions of that effort should be given to 3 individuals wheels !!
+        #	Publish the calculated efforts to actuate robot by applying force vectors on provided topics
+        ############################################
+        # wheel_vel_1= (-0.33*xvel)+(0.58*yvel)+(0.33*ang_vel)
+        # wheel_vel_2= (-0.33*xvel)+(-0.58*yvel)+(0.33*ang_vel)
+        # wheel_vel_3= (0.66666*xvel)+(0.33333*ang_vel)
+        # w1_vel = (1/r) * ((ang_vel*dc) + (-0.5*xvel) + (0.866*yvel))
+        # w2_vel = (1/r) * ((ang_vel*dc) + (-0.5*xvel) + (-0.866*yvel))
+        # w3_vel = (1/r) * ((ang_vel*dc) + (1*xvel) + (0*yvel))
+        wheel_vel_1= (1/r)*(-0.33*xvel)+(0.58*yvel)+(0.04762*ang_vel)
+        wheel_vel_2= (1/r)*(-0.33*xvel)+(-0.58*yvel)+(0.04762*ang_vel)
+        wheel_vel_3= (1/r)*(0.66666*xvel)+(0.04762*ang_vel)
+        return [wheel_vel_1, wheel_vel_2, wheel_vel_3]
+    
 
     def timer_callback(self):
         global i
@@ -97,7 +119,7 @@ class Publisher(Node):
         # self.pub_2.publish(self.twist_2)
         # self.pub_3.publish(self.twist_3)
         # i+=1
-        # self.get_logger().info(f'Published Twist: Linear={self.twist_3.linear}')
+        
 
 
 class GuiApp:
@@ -125,8 +147,12 @@ class GuiApp:
         ttk.Button(root, text="Stop", command=self.stop_twist).pack()
 
         self.publisher_node = publisher_node
+        
+
 
     def update_twist(self):
+
+        
         # Update the Twist message with new values
         linear_x = float(self.linear_x_var.get())
         linear_y = float(self.linear_y_var.get())
@@ -135,17 +161,20 @@ class GuiApp:
         self.publisher_node.twist_1.linear.x = linear_x
         self.publisher_node.twist_1.linear.y = linear_y
         self.publisher_node.twist_1.angular.z = angular_z
+        # self.publisher_node.wheel_vel=self.publisher_node.inverse_kinematics(linear_x,linear_y,angular_z)
+        # self.publisher_node.get_logger().info(f'wheel_vels:  {self.publisher_node.wheel_vel}')
 
         # Publish the updated Twist message
         self.publisher_node.pub_1.publish(self.publisher_node.twist_1)
 
     def stop_twist(self):
         # Set all linear and angular components of the Twist message to 0
-        # self.publisher_node.twist_1.linear.x = 90.0
-        self.publisher_node.twist_1.linear.x = 0.0
+        self.publisher_node.twist_1.linear.x = 90.0
+        # self.publisher_node.twist_1.linear.x = 0.0
         self.publisher_node.twist_1.linear.y = 90.0
         self.publisher_node.twist_1.angular.z = 90.0
-
+        # self.publisher_node.wheel_vel=self.publisher_node.inverse_kinematics(0,0,0)
+        # self.publisher_node.get_logger().info(f'wheel_vels:  {self.publisher_node.wheel_vel}')
         # Publish the stopped Twist message
         self.publisher_node.pub_1.publish(self.publisher_node.twist_1)
 

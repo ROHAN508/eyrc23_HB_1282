@@ -82,17 +82,19 @@ void subscription_callback(const void * msgin)
   // Extract linear and angular velocities
   double linear_x = msg->linear.x;
   double linear_y = msg->linear.y;
-  double linear_z = msg->linear.z;
+  double linear_z = msg->angular.z;
 
   
-  int constrainedRPM_right = constrain(abs(linear_x), 0, 60);
+//  int constrainedRPM_right = constrain(abs(linear_x), 0, 60);
 
 
-  int PWMVal = Interpolation::SmoothStep(rpmValues_right, pwmValues_right, 19, constrainedRPM_right);
-  Serial.println(PWMVal);
+//  /int PWMVal = Interpolation::SmoothStep(rpmValues_right, pwmValues_right, 19, constrainedRPM_right);
+//  /Serial.println(PWMVal);
   // Implement your control logic or kinematics here
 //  inverse_kinematics(linear_x, linear_y, linear_z);
-  publish_vel(PWMVal, linear_y, linear_z);
+//  publish_vel(PWMVal, linear_y, linear_z);
+
+  publish_vel(linear_x, linear_y, linear_z);
 }
 
 int normaliseRPM(int desiredRPM) {
