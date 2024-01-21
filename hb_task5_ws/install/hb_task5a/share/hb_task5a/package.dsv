@@ -1,0 +1,6 @@
+source;share/hb_task5a/hook/pythonpath.ps1
+source;share/hb_task5a/hook/pythonpath.dsv
+source;share/hb_task5a/hook/pythonpath.sh
+source;share/hb_task5a/hook/ament_prefix_path.ps1
+source;share/hb_task5a/hook/ament_prefix_path.dsv
+source;share/hb_task5a/hook/ament_prefix_path.sh
