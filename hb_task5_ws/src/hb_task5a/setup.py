@@ -20,6 +20,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'feedback = hb_task5a.feedback:main',
+            'controller = hb_task5a.controller:main',
+            'nextgoal = hb_task5a.nextGoalPub:main'
         ],
     },
 )

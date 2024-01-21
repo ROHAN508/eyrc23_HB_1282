@@ -9,6 +9,8 @@ import numpy as np
 from std_msgs.msg import Bool
 from tf_transformations import euler_from_quaternion
 from geometry_msgs.msg import Twist
+from my_robot_interfaces.msg import Goal             
+
 
 pen_down=False
 distance_threshold=1.5
@@ -30,7 +32,7 @@ class HBControl(Node):
         self.bot_y = 0.0
         self.bot_theta = 0.0
 
-        # self.subscription_bot3 = self.create_subscription(Goal,'hb_bot_3/goal', self.goalCallBack1, 10) 
+        self.subscription_bot3 = self.create_subscription(Goal,'hb_bot_1/goal', self.goalCallBack1, 10) 
         
 
         self.sub_bot_1 = self.create_subscription(Pose2D, "/pen1_pose", self.Callback1, 10)
@@ -47,6 +49,10 @@ class HBControl(Node):
         self.bot_x = msg.x
         self.bot_y = msg.y
         self.bot_theta = msg.theta
+    def goalCallBack1(self, msg1):
+        self.bot_x_goal = msg1.x
+        self.bot_y_goal = msg1.y
+        self.bot_theta_goal = msg1.theta    
 
     def moveforward(self,flag):
         global forward_vel

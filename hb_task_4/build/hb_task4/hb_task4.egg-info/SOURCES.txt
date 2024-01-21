@@ -11,6 +11,7 @@ setup.py
 hb_task4/__init__.py
 hb_task4/_wheel_vel.py
 hb_task4/feedback.py
+hb_task4/propotions.py
 hb_task4/publish_test.py
 hb_task4/subs.py
 hb_task4/my_custom_msgs/__init__.py
