@@ -62,15 +62,16 @@ void error_loop(){
   micro_servo.attach(servo_pin);
 }
 
-int publish_vel(double w1,double w2,double w3){
+int publish_vel(int w1,int w2,int w3,int w4){
   
   servo1.write(w1);
   servo2.write(w2);
   servo3.write(w3);
+  micro_servo.write(w4);
 
-  Serial.println(w1);
-  Serial.println(w2);
-  Serial.println(w3);
+//  Serial.println(w1);
+//  Serial.println(w2);
+//  Serial.println(w3);
   return 0;
   
   }
@@ -80,9 +81,10 @@ void subscription_callback(const void * msgin)
   const geometry_msgs__msg__Twist * msg = (const geometry_msgs__msg__Twist *)msgin;
   
   // Extract linear and angular velocities
-  double linear_x = msg->linear.x;
-  double linear_y = msg->linear.y;
-  double linear_z = msg->angular.z;
+  int linear_x = msg->linear.x;
+  int linear_y = msg->linear.y;
+  int linear_z = msg->linear.z;
+  int angular_z= msg->angular.z;//
 
   
 //  int constrainedRPM_right = constrain(abs(linear_x), 0, 60);
@@ -94,7 +96,7 @@ void subscription_callback(const void * msgin)
 //  inverse_kinematics(linear_x, linear_y, linear_z);
 //  publish_vel(PWMVal, linear_y, linear_z);
 
-  publish_vel(linear_x, linear_y, linear_z);
+  publish_vel(linear_x, linear_y, linear_z,angular_z);
 }
 
 int normaliseRPM(int desiredRPM) {
@@ -102,35 +104,35 @@ int normaliseRPM(int desiredRPM) {
   return pwmValue;
 }
 
-int inverse_kinematics(double xvel, double yvel, double w){
-  // Implement your inverse kinematics here
-//  w1_vel= (1/r)*(-0.33*xvel)+(0.58*yvel)+(0.0476*ang_vel);
-//  w2_vel= (1/r)*(-0.33*xvel)+(-0.58*yvel)+(0.0476*ang_vel);
-//  w3_vel= (1/r)*(0.66666*xvel)+(0.0476*ang_vel);
-  w1_vel = (1/r) * ( (w*d) + (-0.5*xvel) + (0.866*yvel) );
-  w2_vel = (1/r) * ( (w*d) + (-0.5*xvel) + (-0.866*yvel) );
-  w3_vel = (1/r) * ( (w*d) + (1*xvel) + (0*yvel) );
-  Serial.println(w1_vel);
-  Serial.println(w2_vel);
-  Serial.println(w3_vel);
-
-  int pwm1=normaliseRPM(w1_vel);
-  int pwm2=normaliseRPM(w2_vel);
-  int pwm3=normaliseRPM(w3_vel);
-
-  Serial.println(pwm1);
-  Serial.println(pwm2);
-  Serial.println(pwm3);
-
-  servo1.writeMicroseconds(pwm1);
-  servo2.writeMicroseconds(pwm2);
-  servo3.writeMicroseconds(pwm3);
-  
-  
-  
-  
-  return 0;  // Return value as needed
-}
+//int inverse_kinematics(double xvel, double yvel, double w){
+//  // Implement your inverse kinematics here
+////  w1_vel= (1/r)*(-0.33*xvel)+(0.58*yvel)+(0.0476*ang_vel);
+////  w2_vel= (1/r)*(-0.33*xvel)+(-0.58*yvel)+(0.0476*ang_vel);
+////  w3_vel= (1/r)*(0.66666*xvel)+(0.0476*ang_vel);
+//  w1_vel = (1/r) * ( (w*d) + (-0.5*xvel) + (0.866*yvel) );
+//  w2_vel = (1/r) * ( (w*d) + (-0.5*xvel) + (-0.866*yvel) );
+//  w3_vel = (1/r) * ( (w*d) + (1*xvel) + (0*yvel) );
+//  Serial.println(w1_vel);
+//  Serial.println(w2_vel);
+//  Serial.println(w3_vel);
+//
+//  int pwm1=normaliseRPM(w1_vel);
+//  int pwm2=normaliseRPM(w2_vel);
+//  int pwm3=normaliseRPM(w3_vel);
+//
+//  Serial.println(pwm1);
+//  Serial.println(pwm2);
+//  Serial.println(pwm3);
+//
+//  servo1.writeMicroseconds(pwm1);
+//  servo2.writeMicroseconds(pwm2);
+//  servo3.writeMicroseconds(pwm3);
+//  
+//  
+//  
+//  
+//  return 0;  // Return value as needed
+//}
 
 void setup() {
   servo_init();
@@ -163,7 +165,7 @@ void setup() {
 }
 
 void loop() {
-  delay(200);
+  delay(25);
   RCCHECK(rclc_executor_spin_some(&executor, RCL_MS_TO_NS(100)));
   
 }

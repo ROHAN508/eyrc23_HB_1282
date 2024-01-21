@@ -126,7 +126,7 @@ def main(args=None):
        msg_bot_1.x.append(coordinate[0])
        msg_bot_1.y.append(coordinate[1]) 
     
-    msg_bot_1.theta = 0
+    msg_bot_1.theta = 0.0
 
     msg_bot_2.bot_id = 2
     msg_bot_2.x = []
@@ -136,7 +136,7 @@ def main(args=None):
        msg_bot_2.x.append(coordinate[0])
        msg_bot_2.y.append(coordinate[1]) 
     
-    msg_bot_2.theta = 0
+    msg_bot_2.theta = 0.0
 
     msg_bot_3.bot_id = 3
     msg_bot_3.x = []
@@ -146,7 +146,7 @@ def main(args=None):
        msg_bot_3.x.append(coordinate[0])
        msg_bot_3.y.append(coordinate[1]) 
 
-    msg_bot_3.theta = 0
+    msg_bot_3.theta = 0.0
 
     
 

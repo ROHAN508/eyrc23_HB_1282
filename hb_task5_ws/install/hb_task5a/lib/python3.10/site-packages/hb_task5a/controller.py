@@ -13,14 +13,15 @@ from my_robot_interfaces.msg import Goal
 
 
 pen_down=False
-distance_threshold=1.5
+distance_threshold=5
 forward_vel=[25.0,180.0,90.0]
-clockwise=[0.0,0.0,0.0]
-anticlockwise=[180.0,180.0,180.0]
-
+anticlockwise=[70.0,70.0,70.0]
+clockwise=[110.0,110.0,110.0]
+i=0
 class HBControl(Node):
     def __init__(self):
         super().__init__('hb_controller')
+        self.timer = self.create_timer(0.025, self.timer_callback)
         
 
         # Initialise the required variables
@@ -32,14 +33,20 @@ class HBControl(Node):
         self.bot_y = 0.0
         self.bot_theta = 0.0
 
+        
+
         self.subscription_bot3 = self.create_subscription(Goal,'hb_bot_1/goal', self.goalCallBack1, 10) 
         
 
-        self.sub_bot_1 = self.create_subscription(Pose2D, "/pen1_pose", self.Callback1, 10)
+        self.sub_bot_1 = self.create_subscription(Pose2D, "/pen3_pose", self.Callback1, 10)
         self.twist_1 =  Twist()
         self.pen1=Bool()
         self.pen1.data=False
-        
+        self.twist_1.linear.x=90.0
+        self.twist_1.linear.y=90.0
+        self.twist_1.linear.z=90.0
+        self.twist_1.angular.z=90.0
+
         self.pub_1 = self.create_publisher(Twist, '/cmd_vel/bot1', 10)
         self.pen_pub1 = self.create_publisher(Bool, '/pen1_down', 10)
 
@@ -52,7 +59,19 @@ class HBControl(Node):
     def goalCallBack1(self, msg1):
         self.bot_x_goal = msg1.x
         self.bot_y_goal = msg1.y
-        self.bot_theta_goal = msg1.theta    
+        self.bot_theta_goal = msg1.theta
+
+    def errors(self,x_goal,y_goal):
+        h=self.bot_x
+        k=self.bot_y
+        q=self.bot_theta
+        # transformations with respect to the bot frame.
+        x_b= (x_goal-h)*(math.cos(q))+(y_goal-k)*(math.sin(q)) #error in x value
+        y_b= (h-x_goal)*(math.sin(q))-(math.cos(q))*(k-y_goal) #error in y value
+        # q_b= (q-theta_goal)*(-1) #error in theta value
+        angle=math.atan2(y_b,x_b)
+        distance= ((x_b)**2 + (y_b)**2)**(0.5) #distance of bot from goal pose
+        return [x_b,y_b,distance,angle]        
 
     def moveforward(self,flag):
         global forward_vel
@@ -78,6 +97,11 @@ class HBControl(Node):
             self.twist_1.linear.x=90.0
             self.twist_1.linear.y=90.0
             self.twist_1.linear.z=90.0
+    def timer_callback(self): 
+
+        self.pub_1.publish(self.twist_1)
+        self.pen_pub1.publish(self.pen1)
+
 
 
 
@@ -88,7 +112,8 @@ def main(args=None):
     
     # Create an instance of the HBController class
     hb_controller = HBControl()
-   
+    # x_golar=250
+    # y_golar=250
     global i,pen_down
     # Main loop
     while rclpy.ok():
@@ -99,38 +124,46 @@ def main(args=None):
             #########           GOAL POSE             #########
             x_goal= hb_controller.bot_x_goal[i]
             y_goal= hb_controller.bot_y_goal[i]
+            # x_goal= x_golar
+            # y_goal= y_golar
             # theta_goal= hb_controller.bot_theta_goal
             ####################################################
-            phi=math.arctan2((y_goal-hb_controller.bot_y)/(x_goal-hb_controller.bot_x))
-            x_error=x_goal-hb_controller.bot_x
-            y_error=y_goal-hb_controller.bot_y
-            distance=((x_error)**2+(y_error)**2)**0.5
-            if abs(math.pi/2-(phi-hb_controller.bot_theta))>=0.1:
-                if phi-hb_controller.bot_theta<0:
+            hb_controller.get_logger().info(f'present_x:{hb_controller.bot_x} present_y={hb_controller.bot_y}')
+            hb_controller.get_logger().info(f'xgoal:{x_goal} ygoal={y_goal}')
+            
+            x_bot,y_bot,distance,angle_bot=hb_controller.errors(x_goal,y_goal)
+            hb_controller.get_logger().info(f'error:{abs(angle_bot-(math.pi/2))}')
+
+            # hb_controller.twist_1.angular.z=90.0
+            if  abs((angle_bot-(math.pi/2)))>0.1:
+                if angle_bot<=(math.pi/2) and angle_bot>=-(math.pi/2):
                     hb_controller.rotate(0)
                 else : 
                     hb_controller.rotate(1)
-            if abs(math.pi/2-(phi-hb_controller.bot_theta))<0.1:       
+            if abs((angle_bot-(math.pi/2)))<=0.1:       
                 hb_controller.rotate(2)
                 if distance>=distance_threshold:
                     hb_controller.moveforward(True)
                 if distance<distance_threshold:
                     hb_controller.moveforward(False) 
+        
                     hb_controller.pen1.data=True 
+                    
             
-            hb_controller.pub_1.publish(hb_controller.twist_1)
-            hb_controller.pen_pub1.publish(hb_controller.pen1)
+            
 
                 
 
            
             if distance < distance_threshold :
+                hb_controller.twist_1.angular.z=180.0
                 i = i+1
             if i==len(hb_controller.bot_x_goal):
                 hb_controller.twist_1.linear.x=90.0
                 hb_controller.twist_1.linear.y=90.0
                 hb_controller.twist_1.linear.z=90.0
                 hb_controller.pen1.data=False
+                hb_controller.twist_1.angular.z=90.0
                 hb_controller.pub_1.publish(hb_controller.twist_1)
                 hb_controller.pen_pub1.publish(hb_controller.pen1)
 

@@ -14,7 +14,8 @@ a=0
 framed=0
 frame=[]
 prev_positions = {'1': [], '2': [], '3': []}
-
+mid_x=0
+mid_y=0
 # Declare points_in_last_20_frames as a global variable
 points_in_last_20_frames = {'1': [], '2': [], '3': []}
 
@@ -86,7 +87,7 @@ class ArUcoDetector(Node):
                 pts1 = np.float32(frame)
 
                 # Define the width and height of the rectangular region after transformation
-                width, height = 1000, 1000  
+                width, height = 500, 500  
 
                 pts2 = np.float32([[0, 0], [width, 0], [width, height], [0, height]])
 
@@ -108,13 +109,16 @@ class ArUcoDetector(Node):
                         if aruco_id1[0] in [1, 2, 3]:
                             centroid_x = int(corners1[j][0][:, 0].mean())
                             centroid_y = int(corners1[j][0][:, 1].mean())
-                            yaw= self.get_aruco_yaw(aruco_id1[0],corners1,ids1)
+                            
+                            yaw = self.get_yaw(centroid_x,centroid_y, corners1[j][0])
+                            
                             self.centroids.append([aruco_id1[0], centroid_x, centroid_y,yaw])
                             points_in_last_20_frames[str(aruco_id1[0])].append((centroid_x, centroid_y))
+                            self.get_logger().info(f'YAW:  {aruco_id1[0],yaw}')
                             
                             if aruco_id1[0]==1:
                                 self.pen1_pos.x=float(centroid_x)
-                                self.pen1_pos.y=float(centroid_y)
+                                self.pen1_pos.y=(float(centroid_y)-500)*-1
                                 self.pen1_pos.theta=float(yaw)
                                 self.get_logger().info(f'{self.pen1_pos}')
                                 self.pen1.publish(self.pen1_pos)
@@ -128,11 +132,11 @@ class ArUcoDetector(Node):
 
                             if aruco_id1[0]==3:
                                 self.pen3_pos.x=float(centroid_x)
-                                self.pen3_pos.y=float(centroid_y)
+                                self.pen3_pos.y=(float(centroid_y)-500)*-1
                                 self.pen3_pos.theta=float(yaw)
                                 self.pen3.publish(self.pen3_pos)
 
-                            if len(points_in_last_20_frames[str(aruco_id1[0])]) > 1000:
+                            if len(points_in_last_20_frames[str(aruco_id1[0])]) > 500:
                                 points_in_last_20_frames[str(aruco_id1[0])].pop(0)
 
                             # Draw trajectory
@@ -147,32 +151,25 @@ class ArUcoDetector(Node):
 
                 cv2.imshow('Transformed Image', self.transformed_image)
                 cv2.waitKey(1)   
+        else:
+            self.get_logger().info('pls put the arena in frame')
 
 
                 
-    def get_aruco_yaw(self,aruco_id,corners,ids):
-        # aruco_dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_4X4_250)
-
-        # corners, ids, _ = cv2.aruco.detectMarkers(self.undistorted_image,aruco_dict)
-
-        if ids is not None and aruco_id in ids:
-        # Find the index of the specified ArUco marker
-            marker_index = np.where(ids == aruco_id)[0][0]
-
-        # Extract the rotation vector for the specified marker
-            rvecs, _, _ = cv2.aruco.estimatePoseSingleMarkers([corners[marker_index]], 1.0, self.camera_matrix, self.distortion_coefficients)
-
-        # Extract the rotation matrix from the rotation vector
-            rotation_matrix, _ = cv2.Rodrigues(rvecs[0])
-
-        # Extract the yaw angle from the rotation matrix
-            yaw_rad = np.arctan2(rotation_matrix[1, 0], rotation_matrix[0, 0])
-            yaw_deg = np.degrees(yaw_rad)
-
-            return yaw_deg
+    def get_yaw(self,centroid_x,centroid_y,corner_list):
+        
+        global mid_x, mid_y
+        try:
+            mid_x = (corner_list[1][0] + corner_list[2][0]) / 2
+            mid_y = (corner_list[1][1] + corner_list[2][1]) / 2
+        except:
+            pass
+        x = mid_x - centroid_x
+        y = mid_y - centroid_y
+        return math.atan2(-y, x)
 
     # Return None if the specified ArUco marker is not found
-        return None         
+        # return None         
 
         
         
