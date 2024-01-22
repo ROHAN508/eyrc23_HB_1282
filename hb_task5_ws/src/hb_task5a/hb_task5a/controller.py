@@ -14,14 +14,16 @@ from my_robot_interfaces.msg import Goal
 
 pen_down=False
 distance_threshold=5
+angle_threshold=0.1
 forward_vel=[25.0,180.0,90.0]
+# forward_vel=[0.0,170.0,90.0]
 anticlockwise=[70.0,70.0,70.0]
 clockwise=[110.0,110.0,110.0]
 i=0
 class HBControl(Node):
     def __init__(self):
         super().__init__('hb_controller')
-        self.timer = self.create_timer(0.025, self.timer_callback)
+        self.timer = self.create_timer(0.05, self.timer_callback)
         
 
         # Initialise the required variables
@@ -35,10 +37,10 @@ class HBControl(Node):
 
         
 
-        self.subscription_bot3 = self.create_subscription(Goal,'hb_bot_1/goal', self.goalCallBack1, 10) 
+        self.subscription_bot3 = self.create_subscription(Goal,'hb_bot_3/goal', self.goalCallBack1, 10) 
         
 
-        self.sub_bot_1 = self.create_subscription(Pose2D, "/pen3_pose", self.Callback1, 10)
+        self.sub_bot_1 = self.create_subscription(Pose2D, "/pen2_pose", self.Callback1, 10)
         self.twist_1 =  Twist()
         self.pen1=Bool()
         self.pen1.data=False
@@ -134,13 +136,13 @@ def main(args=None):
             x_bot,y_bot,distance,angle_bot=hb_controller.errors(x_goal,y_goal)
             hb_controller.get_logger().info(f'error:{abs(angle_bot-(math.pi/2))}')
 
-            # hb_controller.twist_1.angular.z=90.0
-            if  abs((angle_bot-(math.pi/2)))>0.1:
+            # hb_controller.twist_1.angular.z=0.0
+            if  abs((angle_bot-(math.pi/2)))>angle_threshold:
                 if angle_bot<=(math.pi/2) and angle_bot>=-(math.pi/2):
                     hb_controller.rotate(0)
                 else : 
                     hb_controller.rotate(1)
-            if abs((angle_bot-(math.pi/2)))<=0.1:       
+            if abs((angle_bot-(math.pi/2)))<=angle_threshold:       
                 hb_controller.rotate(2)
                 if distance>=distance_threshold:
                     hb_controller.moveforward(True)
@@ -156,7 +158,7 @@ def main(args=None):
 
            
             if distance < distance_threshold :
-                hb_controller.twist_1.angular.z=180.0
+                hb_controller.twist_1.angular.z=0.0
                 i = i+1
             if i==len(hb_controller.bot_x_goal):
                 hb_controller.twist_1.linear.x=90.0

@@ -158,25 +158,25 @@ class GuiApp:
         linear_y = float(self.linear_y_var.get())
         angular_z = float(self.angular_z_var.get())
 
-        # self.publisher_node.twist_1.linear.x = linear_x
-        # self.publisher_node.twist_1.linear.y = linear_y
-        # self.publisher_node.twist_1.angular.z = angular_z
-        self.publisher_node.wheel_vel=self.publisher_node.inverse_kinematics(linear_x,linear_y,angular_z)
-        self.publisher_node.get_logger().info(f'wheel_vels:  {self.publisher_node.wheel_vel}')
+        self.publisher_node.twist_1.linear.x = linear_x
+        self.publisher_node.twist_1.linear.y = linear_y
+        self.publisher_node.twist_1.linear.z = angular_z
+        # self.publisher_node.wheel_vel=self.publisher_node.inverse_kinematics(linear_x,linear_y,angular_z)
+        # self.publisher_node.get_logger().info(f'wheel_vels:  {self.publisher_node.wheel_vel}')
 
         # Publish the updated Twist message
         self.publisher_node.pub_1.publish(self.publisher_node.twist_1)
 
     def stop_twist(self):
         # Set all linear and angular components of the Twist message to 0
-        # self.publisher_node.twist_1.linear.x = 90.0
-        # # self.publisher_node.twist_1.linear.x = 0.0
-        # self.publisher_node.twist_1.linear.y = 90.0
-        # self.publisher_node.twist_1.angular.z = 90.0
-        self.publisher_node.wheel_vel=self.publisher_node.inverse_kinematics(0,0,0)
-        self.publisher_node.get_logger().info(f'wheel_vels:  {self.publisher_node.wheel_vel}')
+        self.publisher_node.twist_1.linear.x = 90.0
+        # self.publisher_node.twist_1.linear.x = 0.0
+        self.publisher_node.twist_1.linear.y = 90.0
+        self.publisher_node.twist_1.linear.z = 90.0
+        # self.publisher_node.wheel_vel=self.publisher_node.inverse_kinematics(0,0,0)
+        # self.publisher_node.get_logger().info(f'wheel_vels:  {self.publisher_node.wheel_vel}')
         # Publish the stopped Twist message
-        # self.publisher_node.pub_1.publish(self.publisher_node.twist_1)
+        self.publisher_node.pub_1.publish(self.publisher_node.twist_1)
 
 def main(args=None):
     rclpy.init(args=args)

@@ -126,7 +126,7 @@ class ArUcoDetector(Node):
 
                             if aruco_id1[0]==2:
                                 self.pen2_pos.x=float(centroid_x)
-                                self.pen2_pos.y=float(centroid_y)
+                                self.pen2_pos.y=(float(centroid_y)-500)*-1
                                 self.pen2_pos.theta=float(yaw)
                                 self.pen2.publish(self.pen2_pos)
 

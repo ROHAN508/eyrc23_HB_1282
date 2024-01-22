@@ -11,16 +11,16 @@ data = []
 
 def inverse_kinematics(xvel, yvel, ang_vel):
     # Your inverse kinematics calculation here...
-    wheel_vel_1 = (1/r) * ((ang_vel*dc) + (-0.5*xvel) + (0.866*yvel))
-    wheel_vel_2 = (1/r) * ((ang_vel*dc) + (-0.5*xvel) + (-0.866*yvel))
-    wheel_vel_3 = (1/r) * ((ang_vel*dc) + (1*xvel) + (0*yvel))
+    wheel_vel_1= (1/r)*(-0.33*xvel)+(0.58*yvel)+(0.04762*ang_vel)
+    wheel_vel_2= (1/r)*(-0.33*xvel)+(-0.58*yvel)+(0.04762*ang_vel)
+    wheel_vel_3= (1/r)*(0.66666*xvel)+(0.04762*ang_vel)
     return [wheel_vel_1, wheel_vel_2, wheel_vel_3]
 
 # Create an empty DataFrame to store the results
 df = pd.DataFrame(columns=['y', 'wheel_1', 'wheel_2', 'wheel_3', 'ratios'])
 
 # Iterate through y values from 0 to 180 degrees
-for y in range(181):
+for y in range(361):
     # Calculate wheel velocities using the inverse_kinematics function
     wheel_velocities = inverse_kinematics(x, x * math.tan(math.radians(y)), ang_vel)
 

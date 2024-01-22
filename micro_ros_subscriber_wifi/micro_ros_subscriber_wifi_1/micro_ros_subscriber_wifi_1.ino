@@ -34,10 +34,10 @@ double pwmValues_right[19] = {180   ,     165  ,   150    , 135 ,  120,     105,
 #define servo2_pin  25  //left
 #define servo3_pin  27 //rear
 #define servo_pin   19  //pen
-int minRPM = -57.6;      // Minimum RPM supported by the servo
-int maxRPM = 57.6;       // Maximum RPM supported by the servo
-int SERVO_MIN_PWM = 2500; // Minimum PWM value accepted by the servo
-int SERVO_MAX_PWM = 500;// Maximum PWM value accepted by the servo
+//int minRPM = -57.6;   /   // Minimum RPM supported by the servo
+//int maxRPM = 57.6; /      // Maximum RPM supported by the servo
+//int SERVO_MIN_PWM = 2500; // Minimum PWM value accepted by the servo/
+//int SERVO_MAX_PWM = 500;// Maximum PWM value accepted by the servo/
 
 #define LED_PIN 2
 double w1_vel=0;
@@ -99,10 +99,10 @@ void subscription_callback(const void * msgin)
   publish_vel(linear_x, linear_y, linear_z,angular_z);
 }
 
-int normaliseRPM(int desiredRPM) {
-  int pwmValue = map(desiredRPM, minRPM, maxRPM, SERVO_MIN_PWM, SERVO_MAX_PWM);
-  return pwmValue;
-}
+//int normaliseRPM(int desiredRPM) {
+//  int pwmValue = map(desiredRPM, minRPM, maxRPM, SERVO_MIN_PWM, SERVO_MAX_PWM);
+//  return pwmValue;
+//}
 
 //int inverse_kinematics(double xvel, double yvel, double w){
 //  // Implement your inverse kinematics here
@@ -136,8 +136,8 @@ int normaliseRPM(int desiredRPM) {
 
 void setup() {
   servo_init();
-//  set_microros_wifi_transports("motorola edge 20 fusion_2495", "123456789", "192.168.173.45", 8888);
-  set_microros_wifi_transports("NO_INTERNET", "Qwerty@123", "192.168.0.173", 8888);
+  set_microros_wifi_transports("motorola edge 20 fusion_2495", "123456789", "192.168.213.45", 8888);
+//  set_microros_wifi_transports("NO_INTERNET", "Qwerty@123", "192.168.0.173", 8888);/
   Serial.begin(9600);
   pinMode(LED_PIN, OUTPUT);
   digitalWrite(LED_PIN, HIGH);  
@@ -165,7 +165,7 @@ void setup() {
 }
 
 void loop() {
-  delay(25);
+  delay(50);
   RCCHECK(rclc_executor_spin_some(&executor, RCL_MS_TO_NS(100)));
   
 }
