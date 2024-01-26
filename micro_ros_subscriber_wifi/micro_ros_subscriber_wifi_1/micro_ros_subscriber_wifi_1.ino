@@ -86,8 +86,8 @@ void subscription_callback(const void * msgin)
 
 void setup() {
   servo_init();
-  set_microros_wifi_transports("motorola edge 20 fusion_2495", "123456789", "192.168.213.45", 8888);
-//  set_microros_wifi_transports("NO_INTERNET", "Qwerty@123", "192.168.0.173", 8888);/
+//  set_microros_wifi_transports("motorola edge 20 fusion_2495", "123456789", "192.168.213.45", 8888);
+  set_microros_wifi_transports("NO_INTERNET", "Qwerty@123", "192.168.0.173", 8888);
   Serial.begin(9600);
   pinMode(LED_PIN, OUTPUT);
   digitalWrite(LED_PIN, HIGH);  

@@ -30,7 +30,7 @@ class Publisher(Node):
         self.twist_1.linear.z = 90.0
         self.twist_1.angular.x = 0.0
         self.twist_1.angular.y = 0.0
-        self.twist_1.angular.z = 0.0
+        self.twist_1.angular.z = 90.0
 
         self.twist_2.linear.x = 90.0
         self.twist_2.linear.y = 90.0
