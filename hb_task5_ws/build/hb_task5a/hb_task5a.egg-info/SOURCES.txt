@@ -15,6 +15,7 @@ hb_task5a/feedback.py
 hb_task5a/interpolation.py
 hb_task5a/mapping.py
 hb_task5a/nextGoalPub.py
+launch/bot1.launch.py
 resource/hb_task5a
 test/test_copyright.py
 test/test_flake8.py
