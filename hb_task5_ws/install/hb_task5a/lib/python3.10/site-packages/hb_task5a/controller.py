@@ -37,10 +37,10 @@ class HBControl(Node):
 
         
 
-        self.subscription_bot3 = self.create_subscription(Goal,'hb_bot_3/goal', self.goalCallBack1, 10) 
+        self.subscription_bot3 = self.create_subscription(Goal,'hb_bot_1/goal', self.goalCallBack1, 10) 
         
 
-        self.sub_bot_1 = self.create_subscription(Pose2D, "/pen2_pose", self.Callback1, 10)
+        self.sub_bot_1 = self.create_subscription(Pose2D, "/pen1_pose", self.Callback1, 10)
         self.twist_1 =  Twist()
         self.pen1=Bool()
         self.pen1.data=False

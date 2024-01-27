@@ -21,7 +21,7 @@ Servo servo2;
 Servo servo3;
 Servo micro_servo;
 
-int targetRPM=10;
+
 
 
 // Defining pins
@@ -75,7 +75,7 @@ void subscription_callback(const void * msgin)
   int linear_x = msg->linear.x;
   int linear_y = msg->linear.y;
   int linear_z = msg->linear.z;
-  int angular_z= msg->angular.z;//
+  int angular_z= msg->angular.z;
 
   
 
@@ -86,8 +86,8 @@ void subscription_callback(const void * msgin)
 
 void setup() {
   servo_init();
-//  set_microros_wifi_transports("motorola edge 20 fusion_2495", "123456789", "192.168.213.45", 8888);
-  set_microros_wifi_transports("NO_INTERNET", "Qwerty@123", "192.168.0.173", 8888);
+  set_microros_wifi_transports("motorola edge 20 fusion_2495", "123456789", "192.168.34.45", 8888);
+//  set_microros_wifi_transports("NO_INTERNET", "Qwerty@123", "192.168.0.173", 8888);
   Serial.begin(9600);
   pinMode(LED_PIN, OUTPUT);
   digitalWrite(LED_PIN, HIGH);  
@@ -115,7 +115,7 @@ void setup() {
 }
 
 void loop() {
-  delay(50);
+//  delay(50);
   RCCHECK(rclc_executor_spin_some(&executor, RCL_MS_TO_NS(100)));
   
 }

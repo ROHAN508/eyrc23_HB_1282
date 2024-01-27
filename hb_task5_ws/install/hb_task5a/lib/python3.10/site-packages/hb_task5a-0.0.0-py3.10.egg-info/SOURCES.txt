@@ -10,7 +10,10 @@ setup.py
 ../../build/hb_task5a/hb_task5a.egg-info/zip-safe
 hb_task5a/__init__.py
 hb_task5a/controller.py
+hb_task5a/controller_ik.py
 hb_task5a/feedback.py
+hb_task5a/interpolation.py
+hb_task5a/mapping.py
 hb_task5a/nextGoalPub.py
 resource/hb_task5a
 test/test_copyright.py

@@ -1,10 +1,16 @@
 /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/python3.10/site-packages/hb_task5a/controller.py
+/home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/python3.10/site-packages/hb_task5a/controller_ik.py
+/home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/python3.10/site-packages/hb_task5a/interpolation.py
 /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/python3.10/site-packages/hb_task5a/feedback.py
 /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/python3.10/site-packages/hb_task5a/__init__.py
+/home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/python3.10/site-packages/hb_task5a/mapping.py
 /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/python3.10/site-packages/hb_task5a/nextGoalPub.py
 /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/python3.10/site-packages/hb_task5a/__pycache__/controller.cpython-310.pyc
+/home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/python3.10/site-packages/hb_task5a/__pycache__/controller_ik.cpython-310.pyc
+/home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/python3.10/site-packages/hb_task5a/__pycache__/interpolation.cpython-310.pyc
 /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/python3.10/site-packages/hb_task5a/__pycache__/feedback.cpython-310.pyc
 /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/python3.10/site-packages/hb_task5a/__pycache__/__init__.cpython-310.pyc
+/home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/python3.10/site-packages/hb_task5a/__pycache__/mapping.cpython-310.pyc
 /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/python3.10/site-packages/hb_task5a/__pycache__/nextGoalPub.cpython-310.pyc
 /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/share/ament_index/resource_index/packages/hb_task5a
 /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/share/hb_task5a/package.xml
@@ -16,5 +22,8 @@
 /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/python3.10/site-packages/hb_task5a-0.0.0-py3.10.egg-info/requires.txt
 /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/python3.10/site-packages/hb_task5a-0.0.0-py3.10.egg-info/zip-safe
 /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/hb_task5a/controller
+/home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/hb_task5a/controllerik
 /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/hb_task5a/feedback
+/home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/hb_task5a/interp
+/home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/hb_task5a/map
 /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/hb_task5a/nextgoal

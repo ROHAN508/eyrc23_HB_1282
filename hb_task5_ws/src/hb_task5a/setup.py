@@ -22,7 +22,11 @@ setup(
         'console_scripts': [
             'feedback = hb_task5a.feedback:main',
             'controller = hb_task5a.controller:main',
-            'nextgoal = hb_task5a.nextGoalPub:main'
+            'controllerik = hb_task5a.controller_ik:main',
+            'nextgoal = hb_task5a.nextGoalPub:main',
+            'map = hb_task5a.mapping:main',
+            'interp = hb_task5a.interpolation:main',
+
         ],
     },
 )
