@@ -29,6 +29,12 @@ setup(
             'nextgoal = hb_task5a.nextGoalPub:main',
             'map = hb_task5a.mapping:main',
             'interp = hb_task5a.interpolation:main',
+            'controllerik2 = hb_task5a.controller_ik2:main',
+            'map2 = hb_task5a.mapping2:main',
+            'interp2 = hb_task5a.interpolation2:main',
+            'controllerik3 = hb_task5a.controller_ik3:main',
+            'map3 = hb_task5a.mapping3:main',
+            'interp3 = hb_task5a.interpolation3:main',
 
         ],
     },

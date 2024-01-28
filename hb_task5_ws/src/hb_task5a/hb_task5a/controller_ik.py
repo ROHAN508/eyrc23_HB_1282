@@ -43,13 +43,13 @@ class HBControl(Node):
         self.q=1
         
 
-        self.subscription_bot3 = self.create_subscription(Goal,'hb_bot_2/goal', self.goalCallBack1, 10) 
+        self.subscription_bot3 = self.create_subscription(Goal,'hb_bot_1/goal', self.goalCallBack1, 10) 
         
 
         self.sub_bot_1 = self.create_subscription(Pose2D, "/pen1_pose", self.Callback1, 10)
         self.twist_1 =  Float64MultiArray()
-        self.pen1=Bool()
-        self.pen1.data=False
+        
+        
         # self.twist_1.linear.x=90.0
         # self.twist_1.linear.y=90.0
         # self.twist_1.linear.z=90.0
@@ -58,6 +58,8 @@ class HBControl(Node):
 
         self.pub_1 = self.create_publisher(Float64MultiArray, '/map', 10)
         self.pen_pub1 = self.create_publisher(Bool, '/pen1_down', 10)
+        self.pen1=Bool()
+        self.pen1.data=False
 
         self.rate = self.create_rate(100)
     
@@ -159,12 +161,14 @@ def main(args=None):
 
            
             if distance < distance_threshold :
-                # hb_controller.twist_1.angular.z=0.0
+                hb_controller.pen1.data=True
                 i = i+1
+                hb_controller.pen_pub1.publish(hb_controller.pen1)
             if i==len(hb_controller.bot_x_goal):
                 hb_controller.twist_1.data[0]=0.0
                 hb_controller.twist_1.data[1]=0.0
                 hb_controller.twist_1.data[2]=0.0
+                hb_controller.pen1.data=False
                 hb_controller.pub_1.publish(hb_controller.twist_1)
                 hb_controller.pen_pub1.publish(hb_controller.pen1)
 

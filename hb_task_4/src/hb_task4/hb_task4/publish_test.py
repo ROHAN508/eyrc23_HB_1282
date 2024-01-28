@@ -4,6 +4,7 @@ from geometry_msgs.msg import Twist
 # import _wheel_vel as WheelVel
 import tkinter as tk
 from tkinter import ttk
+from std_msgs.msg import Bool
 
 i=0
 
@@ -20,10 +21,12 @@ class Publisher(Node):
         self.twist_1 =  Twist()
         self.twist_2=   Twist()
         self.twist_3=   Twist()
-        self.pub_1 = self.create_publisher(Twist, '/cmd_vel/bot1', 10)
-        self.pub_2 = self.create_publisher(Twist, '/cmd_vel/bot2', 10)
-        self.pub_3 = self.create_publisher(Twist, '/cmd_vel/bot3', 10)
-        
+        self.bool=Bool()
+        self.pub_1 = self.create_publisher(Twist, '/cmd_vel/bot2', 10)
+        # self.pub_2 = self.create_publisher(Twist, '/cmd_vel/bot2', 10)
+        # self.pub_3 = self.create_publisher(Twist, '/cmd_vel/bot3', 10)
+        self.penpub = self.create_publisher(Bool, '/pen2_down', 10)
+        self.bool.data=False
         # Initialize Twist message with all components set to 0.0
         self.twist_1.linear.x = 90.0
         self.twist_1.linear.y = 90.0
@@ -146,6 +149,11 @@ class GuiApp:
         ttk.Button(root, text="Update", command=self.update_twist).pack()
         ttk.Button(root, text="Stop", command=self.stop_twist).pack()
 
+        # Checkbutton for Bool message
+        ttk.Label(root, text="Pen Down:").pack()
+        self.pen_down_var = tk.BooleanVar(value=False)
+        ttk.Checkbutton(root, variable=self.pen_down_var, text="Down", command=self.update_bool).pack()
+
         self.publisher_node = publisher_node
         
 
@@ -177,6 +185,13 @@ class GuiApp:
         # self.publisher_node.get_logger().info(f'wheel_vels:  {self.publisher_node.wheel_vel}')
         # Publish the stopped Twist message
         self.publisher_node.pub_1.publish(self.publisher_node.twist_1)
+    def update_bool(self):
+        # Update the Bool message with the value from Checkbutton
+        self.publisher_node.bool.data = self.pen_down_var.get()
+
+        # Publish the updated Bool message
+        self.publisher_node.penpub.publish(self.publisher_node.bool)
+
 
 def main(args=None):
     rclpy.init(args=args)

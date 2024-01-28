@@ -8,7 +8,7 @@ import random
 import time
 from my_robot_interfaces.msg import Goal           
 from my_robot_interfaces.msg import Shape           
-
+import math
 
 hexagon_points=[[200, 150], [175, 200],[150,200], [125, 200], [100, 150], [125, 100], [175, 100],[200, 150]]
 triangle_points=[[300, 100], [400, 100], [300, 200], [300, 100]]
@@ -27,6 +27,45 @@ class ServiceNode(Node):
         # self.publish_shape_1  = self.create_publisher(Shape, 'shape_1', 10)
         # self.publish_shape_2  = self.create_publisher(Shape, 'shape_2', 10)
         # self.publish_shape_3  = self.create_publisher(Shape, 'shape_3', 10)
+        self.resolution=1
+        self.scale=1
+
+
+    def generate_points(self):
+        coordinates_list1x = []
+        coordinates_list1y = []
+        coordinates_list2x = []
+        coordinates_list2y = []
+        coordinates_list3x = []
+        coordinates_list3y = []
+
+        for angle in range(0, 121, self.resolution):
+            t_rad = math.radians(angle)
+            x1 = (200 * math.cos(t_rad)) / self.scale
+            y1 = (150 * math.sin(4 * t_rad)) / self.scale
+            coordinates_list1x.append(x1)
+            coordinates_list1y.append(y1)
+
+        for angle in range(120, 241, self.resolution):
+            t_rad = math.radians(angle)
+            x2 = (200 * math.cos(t_rad)) / self.scale
+            y2 = (150 * math.sin(4 * t_rad)) / self.scale
+            coordinates_list2x.append(x2)
+            coordinates_list2y.append(y2)
+
+        for angle in range(240, 361, self.resolution):
+            t_rad = math.radians(angle)
+            x3 = (200 * math.cos(t_rad)) / self.scale
+            y3 = (150 * math.sin(4 * t_rad)) / self.scale
+            coordinates_list3x.append(x3)
+            coordinates_list3y.append(y3)
+
+
+        return coordinates_list1x,coordinates_list1y,coordinates_list2x,coordinates_list2y,coordinates_list3x,coordinates_list3y      
+    
+
+
+
 
 
 def generate_decagon(side_length, x_center, y_center, theta, num_points):
@@ -119,34 +158,43 @@ def main(args=None):
     # msg_shape_2 = Shape()
     # msg_shape_3 = Shape()
 
+    
+    ##5a
+    # msg_bot_1.bot_id = 1
+    # msg_bot_1.x = []
+    # msg_bot_1.y = []
+    # for coordinate in hexagon_points:
+    #    msg_bot_1.x.append(coordinate[0])
+    #    msg_bot_1.y.append(coordinate[1]) 
+    
+    # msg_bot_1.theta = 0.0
+
+    # msg_bot_2.bot_id = 2
+    # msg_bot_2.x = []
+    # msg_bot_2.y = []
+
+    # for coordinate in rectangle_points:
+    #    msg_bot_2.x.append(coordinate[0])
+    #    msg_bot_2.y.append(coordinate[1]) 
+    
+    # msg_bot_2.theta = 0.0
+
+    # msg_bot_3.bot_id = 3
+    # msg_bot_3.x = []
+    # msg_bot_3.y = []
+
+    # for coordinate in triangle_points:
+    #    msg_bot_3.x.append(coordinate[0])
+    #    msg_bot_3.y.append(coordinate[1]) 
+
+    # msg_bot_3.theta = 0.0
+
+
+    ##5b
+    msg_bot_1.x,msg_bot_1.y,msg_bot_2.x,msg_bot_2.y,msg_bot_3.x,msg_bot_3.y=service_node.generate_points()
     msg_bot_1.bot_id = 1
-    msg_bot_1.x = []
-    msg_bot_1.y = []
-    for coordinate in hexagon_points:
-       msg_bot_1.x.append(coordinate[0])
-       msg_bot_1.y.append(coordinate[1]) 
-    
-    msg_bot_1.theta = 0.0
-
     msg_bot_2.bot_id = 2
-    msg_bot_2.x = []
-    msg_bot_2.y = []
-
-    for coordinate in rectangle_points:
-       msg_bot_2.x.append(coordinate[0])
-       msg_bot_2.y.append(coordinate[1]) 
-    
-    msg_bot_2.theta = 0.0
-
     msg_bot_3.bot_id = 3
-    msg_bot_3.x = []
-    msg_bot_3.y = []
-
-    for coordinate in triangle_points:
-       msg_bot_3.x.append(coordinate[0])
-       msg_bot_3.y.append(coordinate[1]) 
-
-    msg_bot_3.theta = 0.0
 
     
 
