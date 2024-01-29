@@ -11,8 +11,12 @@ from my_robot_interfaces.msg import Shape
 import math
 
 hexagon_points=[[200, 150], [175, 200],[150,200], [125, 200], [100, 150], [125, 100], [175, 100],[200, 150]]
-triangle_points=[[300, 100], [400, 100], [300, 200], [300, 100]]
-rectangle_points= [[200, 300],[250,300],[300,300] ,[350,300],[400, 300],[400,350], [400, 400],[375,400],[350,400],[325,400],[300,400],[275,400],[250,400],[225,400], [200, 400],[200,350], [200, 300]]
+
+triangle_points=[[300, 100], [400, 100],[300, 200], [300, 100]]
+
+
+# rectangle_points= [[200, 300],[250,300],[300,300] ,[350,300],[400, 300],[400,350], [400, 400],[375,400],[350,400],[325,400],[300,400],[275,400],[250,400],[225,400], [200, 400],[200,350], [200, 300]]
+rectangle_points= [[200, 300],[250,300],[300,300] ,[350,300],[400, 300],[400,350], [400, 400],[350,400],[300,400],[250,400],[225,400], [200, 400],[200,350], [200, 300]]
 
 
 class ServiceNode(Node):
@@ -165,45 +169,45 @@ def main(args=None):
     # msg_shape_3 = Shape()
 
     
-    ##5a
-    # msg_bot_1.bot_id = 1
-    # msg_bot_1.x = []
-    # msg_bot_1.y = []
-    # for coordinate in hexagon_points:
-    #    msg_bot_1.x.append(coordinate[0])
-    #    msg_bot_1.y.append(coordinate[1]) 
+    # #5a
+    msg_bot_1.bot_id = 1
+    msg_bot_1.x = []
+    msg_bot_1.y = []
+    for coordinate in hexagon_points:
+       msg_bot_1.x.append(coordinate[0])
+       msg_bot_1.y.append(coordinate[1]) 
     
-    # msg_bot_1.theta = 0.0
+    msg_bot_1.theta = 0.0
 
-    # msg_bot_2.bot_id = 2
-    # msg_bot_2.x = []
-    # msg_bot_2.y = []
+    msg_bot_2.bot_id = 2
+    msg_bot_2.x = []
+    msg_bot_2.y = []
 
-    # for coordinate in rectangle_points:
-    #    msg_bot_2.x.append(coordinate[0])
-    #    msg_bot_2.y.append(coordinate[1]) 
+    for coordinate in rectangle_points:
+       msg_bot_2.x.append(coordinate[0])
+       msg_bot_2.y.append(coordinate[1]) 
     
-    # msg_bot_2.theta = 0.0
+    msg_bot_2.theta = 0.0
 
-    # msg_bot_3.bot_id = 3
-    # msg_bot_3.x = []
-    # msg_bot_3.y = []
+    msg_bot_3.bot_id = 3
+    msg_bot_3.x = []
+    msg_bot_3.y = []
 
-    # for coordinate in triangle_points:
-    #    msg_bot_3.x.append(coordinate[0])
-    #    msg_bot_3.y.append(coordinate[1]) 
+    for coordinate in triangle_points:
+       msg_bot_3.x.append(coordinate[0])
+       msg_bot_3.y.append(coordinate[1]) 
 
-    # msg_bot_3.theta = 0.0
+    msg_bot_3.theta = 0.0
 
 
     ##5b
-    msg_bot_1.x,msg_bot_1.y,msg_bot_2.x,msg_bot_2.y,msg_bot_3.x,msg_bot_3.y=service_node.generate_points()
-    msg_bot_1.theta = 0.0
-    msg_bot_2.theta = 0.0
-    msg_bot_3.theta = 0.0
-    msg_bot_1.bot_id = 1
-    msg_bot_2.bot_id = 2
-    msg_bot_3.bot_id = 3
+    # msg_bot_1.x,msg_bot_1.y,msg_bot_2.x,msg_bot_2.y,msg_bot_3.x,msg_bot_3.y=service_node.generate_points()
+    # msg_bot_1.theta = 0.0
+    # msg_bot_2.theta = 0.0
+    # msg_bot_3.theta = 0.0
+    # msg_bot_1.bot_id = 1
+    # msg_bot_2.bot_id = 2
+    # msg_bot_3.bot_id = 3
 
     
 

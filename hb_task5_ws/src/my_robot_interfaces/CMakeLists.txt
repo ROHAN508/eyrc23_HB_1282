@@ -17,6 +17,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/NextGoal.srv"
   "msg/Goal.msg"
   "msg/Shape.msg"
+  
  )
 
 ament_package()
