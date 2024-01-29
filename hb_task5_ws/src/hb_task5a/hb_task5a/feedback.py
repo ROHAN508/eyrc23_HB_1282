@@ -117,8 +117,10 @@ class ArUcoDetector(Node):
                             self.get_logger().info(f'YAW:  {aruco_id1[0],yaw}')
                             
                             if aruco_id1[0]==1:
-                                self.pen1_pos.x=float(centroid_x)
-                                self.pen1_pos.y=(float(centroid_y)-500)*-1
+                                # self.pen1_pos.x=(float(centroid_x))-250
+                                self.pen1_pos.x=(float(centroid_x))
+                                # self.pen1_pos.y=((float(centroid_y)-500)*-1)-250
+                                self.pen1_pos.y=((float(centroid_y)-500)*-1)
                                 self.pen1_pos.theta=float(yaw)
                                 self.get_logger().info(f'{self.pen1_pos}')
                                 self.pen1.publish(self.pen1_pos)

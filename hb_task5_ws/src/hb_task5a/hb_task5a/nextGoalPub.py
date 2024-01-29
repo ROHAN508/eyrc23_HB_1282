@@ -41,22 +41,28 @@ class ServiceNode(Node):
 
         for angle in range(0, 121, self.resolution):
             t_rad = math.radians(angle)
-            x1 = (200 * math.cos(t_rad)) / self.scale
-            y1 = (150 * math.sin(4 * t_rad)) / self.scale
+            # x1 = (200 * math.cos(t_rad)) / self.scale
+            # y1 = (150 * math.sin(4 * t_rad)) / self.scale
+            x1 = ((200 * math.cos(t_rad)) / self.scale)+250
+            y1 = ((150 * math.sin(4 * t_rad)) / self.scale)+250
             coordinates_list1x.append(x1)
             coordinates_list1y.append(y1)
 
         for angle in range(120, 241, self.resolution):
             t_rad = math.radians(angle)
-            x2 = (200 * math.cos(t_rad)) / self.scale
-            y2 = (150 * math.sin(4 * t_rad)) / self.scale
+            # x2 = (200 * math.cos(t_rad)) / self.scale
+            # y2 = (150 * math.sin(4 * t_rad)) / self.scale
+            x2 = ((200 * math.cos(t_rad)) / self.scale)+250
+            y2 = ((150 * math.sin(4 * t_rad)) / self.scale)+250
             coordinates_list2x.append(x2)
             coordinates_list2y.append(y2)
 
         for angle in range(240, 361, self.resolution):
             t_rad = math.radians(angle)
-            x3 = (200 * math.cos(t_rad)) / self.scale
-            y3 = (150 * math.sin(4 * t_rad)) / self.scale
+            # x3 = (200 * math.cos(t_rad)) / self.scale
+            # y3 = (150 * math.sin(4 * t_rad)) / self.scale
+            x3 = ((200 * math.cos(t_rad)) / self.scale)+250
+            y3 = ((150 * math.sin(4 * t_rad)) / self.scale)+250
             coordinates_list3x.append(x3)
             coordinates_list3y.append(y3)
 
@@ -192,6 +198,9 @@ def main(args=None):
 
     ##5b
     msg_bot_1.x,msg_bot_1.y,msg_bot_2.x,msg_bot_2.y,msg_bot_3.x,msg_bot_3.y=service_node.generate_points()
+    msg_bot_1.theta = 0.0
+    msg_bot_2.theta = 0.0
+    msg_bot_3.theta = 0.0
     msg_bot_1.bot_id = 1
     msg_bot_2.bot_id = 2
     msg_bot_3.bot_id = 3
