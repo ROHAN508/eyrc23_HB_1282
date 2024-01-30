@@ -16,7 +16,7 @@ triangle_points=[[300, 100], [400, 100],[300, 200], [300, 100]]
 
 
 # rectangle_points= [[200, 300],[250,300],[300,300] ,[350,300],[400, 300],[400,350], [400, 400],[375,400],[350,400],[325,400],[300,400],[275,400],[250,400],[225,400], [200, 400],[200,350], [200, 300]]
-rectangle_points= [[200, 300],[250,300],[300,300] ,[350,300],[400, 300],[400,350], [400, 400],[350,400],[300,400],[250,400],[225,400], [200, 400],[200,350], [200, 300]]
+rectangle_points= [[200, 300],[250,300],[300,300] ,[350,300],[400, 300],[400,350], [400, 400],[300,400], [200, 400],[200,350], [200, 300]]
 
 
 class ServiceNode(Node):
@@ -31,7 +31,9 @@ class ServiceNode(Node):
         # self.publish_shape_1  = self.create_publisher(Shape, 'shape_1', 10)
         # self.publish_shape_2  = self.create_publisher(Shape, 'shape_2', 10)
         # self.publish_shape_3  = self.create_publisher(Shape, 'shape_3', 10)
-        self.resolution=1
+        self.resolution1=1
+        self.resolution2=2
+        self.resolution3=1
         self.scale=1
 
 
@@ -43,7 +45,7 @@ class ServiceNode(Node):
         coordinates_list3x = []
         coordinates_list3y = []
 
-        for angle in range(0, 121, self.resolution):
+        for angle in range(0, 121, self.resolution1):
             t_rad = math.radians(angle)
             # x1 = (200 * math.cos(t_rad)) / self.scale
             # y1 = (150 * math.sin(4 * t_rad)) / self.scale
@@ -52,7 +54,7 @@ class ServiceNode(Node):
             coordinates_list1x.append(x1)
             coordinates_list1y.append(y1)
 
-        for angle in range(120, 241, self.resolution):
+        for angle in range(120, 241, self.resolution2):
             t_rad = math.radians(angle)
             # x2 = (200 * math.cos(t_rad)) / self.scale
             # y2 = (150 * math.sin(4 * t_rad)) / self.scale
@@ -61,7 +63,7 @@ class ServiceNode(Node):
             coordinates_list2x.append(x2)
             coordinates_list2y.append(y2)
 
-        for angle in range(240, 361, self.resolution):
+        for angle in range(240, 361, self.resolution3):
             t_rad = math.radians(angle)
             # x3 = (200 * math.cos(t_rad)) / self.scale
             # y3 = (150 * math.sin(4 * t_rad)) / self.scale

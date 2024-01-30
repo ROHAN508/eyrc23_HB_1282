@@ -1,0 +1,35 @@
+running egg_info
+writing ../../build/hb_task5a/hb_task5a.egg-info/PKG-INFO
+writing dependency_links to ../../build/hb_task5a/hb_task5a.egg-info/dependency_links.txt
+writing entry points to ../../build/hb_task5a/hb_task5a.egg-info/entry_points.txt
+writing requirements to ../../build/hb_task5a/hb_task5a.egg-info/requires.txt
+writing top-level names to ../../build/hb_task5a/hb_task5a.egg-info/top_level.txt
+reading manifest file '../../build/hb_task5a/hb_task5a.egg-info/SOURCES.txt'
+writing manifest file '../../build/hb_task5a/hb_task5a.egg-info/SOURCES.txt'
+running build
+running build_py
+copying hb_task5a/interpolation3.py -> /home/akshar/eyrc_hb/hb_task5_ws/build/hb_task5a/build/lib/hb_task5a
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install
+running install_lib
+copying /home/akshar/eyrc_hb/hb_task5_ws/build/hb_task5a/build/lib/hb_task5a/interpolation3.py -> /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/python3.10/site-packages/hb_task5a
+byte-compiling /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/python3.10/site-packages/hb_task5a/interpolation3.py to interpolation3.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/python3.10/site-packages/hb_task5a-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/hb_task5a/hb_task5a.egg-info to /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/python3.10/site-packages/hb_task5a-0.0.0-py3.10.egg-info
+running install_scripts
+Installing controller script to /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+Installing controllerik script to /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+Installing controllerik2 script to /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+Installing controllerik3 script to /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+Installing feedback script to /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+Installing interp script to /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+Installing interp2 script to /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+Installing interp3 script to /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+Installing map script to /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+Installing map2 script to /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+Installing map3 script to /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+Installing nextgoal script to /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+writing list of installed files to '/home/akshar/eyrc_hb/hb_task5_ws/build/hb_task5a/install.log'

@@ -40,7 +40,7 @@ class HBControl(Node):
         self.bot_y = 0.0
         self.bot_theta = 0.0
         self.p=1
-        self.q=1
+        self.q=1.05
         
 
         self.subscription_bot3 = self.create_subscription(Goal,'hb_bot_3/goal', self.goalCallBack1, 10) 
@@ -80,7 +80,11 @@ class HBControl(Node):
         x_b= (x_goal-h)*(math.cos(q))+(y_goal-k)*(math.sin(q)) #error in x value
         y_b= (h-x_goal)*(math.sin(q))-(math.cos(q))*(k-y_goal) #error in y value
         q_b= (q-theta_goal)*(-1) #error in theta value
-        # angle=math.atan2(y_b,x_b)
+        if q_b>=0:
+            q_b=q_b
+        else :
+            q_b=-1*q_b    
+        angle=math.atan2(y_b,x_b)
         distance= ((x_b)**2 + (y_b)**2)**(0.5) #distance of bot from goal pose
         return [x_b,y_b,distance,q_b]        
 
@@ -131,6 +135,8 @@ def main(args=None):
             #########           GOAL POSE             #########
             x_goal= hb_controller.bot_x_goal[i]
             y_goal= hb_controller.bot_y_goal[i]
+            # x_goal= hb_controller.bot_x
+            # y_goal= hb_controller.bot_y
             # x_goal= x_golar
             # y_goal= y_golar
             # theta_goal= hb_controller.bot_theta_goal

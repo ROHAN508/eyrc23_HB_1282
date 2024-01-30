@@ -21,6 +21,7 @@ hb_task5a/mapping.py
 hb_task5a/mapping2.py
 hb_task5a/mapping3.py
 hb_task5a/nextGoalPub.py
+hb_task5a/rough.py
 launch/bot1.launch.py
 launch/bot2.launch.py
 launch/bot3.launch.py

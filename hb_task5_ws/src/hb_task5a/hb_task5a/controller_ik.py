@@ -72,10 +72,12 @@ class HBControl(Node):
         self.bot_y_goal = msg1.y
         self.bot_theta_goal = msg1.theta
 
+
     def errors(self,x_goal,y_goal,theta_goal):
         h=self.bot_x
         k=self.bot_y
         q=self.bot_theta
+
         # transformations with respect to the bot frame.
         x_b= (x_goal-h)*(math.cos(q))+(y_goal-k)*(math.sin(q)) #error in x value
         y_b= (h-x_goal)*(math.sin(q))-(math.cos(q))*(k-y_goal) #error in y value
@@ -106,6 +108,8 @@ class HBControl(Node):
         xControl=xError*self.p
         yControl=yError*self.p
         qControl=qError*self.q
+
+
 
         return xControl,yControl,qControl
 
