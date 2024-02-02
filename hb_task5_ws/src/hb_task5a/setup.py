@@ -35,6 +35,8 @@ setup(
             'controllerik3 = hb_task5a.controller_ik3:main',
             'map3 = hb_task5a.mapping3:main',
             'interp3 = hb_task5a.interpolation3:main',
+            'StopFlag = hb_task5a.stop_bot_srv:main',
+            'server =hb_task5a.StopFlagServer:main'
 
         ],
     },

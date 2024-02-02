@@ -10,7 +10,7 @@ from my_robot_interfaces.msg import Goal
 from my_robot_interfaces.msg import Shape           
 import math
 
-hexagon_points=[[200, 150], [175, 200],[150,200], [125, 200], [100, 150], [125, 100], [175, 100],[200, 150]]
+hexagon_points=[[200, 150], [175, 200], [125, 200], [100, 150], [125, 100], [175, 100],[200, 150]]
 
 triangle_points=[[300, 100], [400, 100],[300, 200], [300, 100]]
 
@@ -22,7 +22,7 @@ rectangle_points= [[200, 300],[250,300],[300,300] ,[350,300],[400, 300],[400,350
 class ServiceNode(Node):
 
     def __init__(self):
-        super().__init__('service_node')
+        super().__init__('GOAL_node')
 
         self.publish_goal_1 = self.create_publisher(Goal, 'hb_bot_1/goal', 10)
         self.publish_goal_2 = self.create_publisher(Goal, 'hb_bot_2/goal', 10)
@@ -32,7 +32,7 @@ class ServiceNode(Node):
         # self.publish_shape_2  = self.create_publisher(Shape, 'shape_2', 10)
         # self.publish_shape_3  = self.create_publisher(Shape, 'shape_3', 10)
         self.resolution1=1
-        self.resolution2=2
+        self.resolution2=1
         self.resolution3=1
         self.scale=1
 

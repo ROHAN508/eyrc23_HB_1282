@@ -1,0 +1,35 @@
+[0.631s] Invoking command in '/home/akshar/eyrc_hb/hb_task5_ws/src/hb_task5a': PYTHONPATH=/home/akshar/eyrc_hb/hb_task5_ws/build/hb_task5a/prefix_override:/home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hb_task5a build --build-base /home/akshar/eyrc_hb/hb_task5_ws/build/hb_task5a/build install --record /home/akshar/eyrc_hb/hb_task5_ws/build/hb_task5a/install.log --single-version-externally-managed
+[0.839s] running egg_info
+[0.839s] writing ../../build/hb_task5a/hb_task5a.egg-info/PKG-INFO
+[0.840s] writing dependency_links to ../../build/hb_task5a/hb_task5a.egg-info/dependency_links.txt
+[0.840s] writing entry points to ../../build/hb_task5a/hb_task5a.egg-info/entry_points.txt
+[0.840s] writing requirements to ../../build/hb_task5a/hb_task5a.egg-info/requires.txt
+[0.840s] writing top-level names to ../../build/hb_task5a/hb_task5a.egg-info/top_level.txt
+[0.842s] reading manifest file '../../build/hb_task5a/hb_task5a.egg-info/SOURCES.txt'
+[0.843s] writing manifest file '../../build/hb_task5a/hb_task5a.egg-info/SOURCES.txt'
+[0.843s] running build
+[0.843s] running build_py
+[0.844s] running install
+[0.844s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.844s]   warnings.warn(
+[0.844s] running install_lib
+[0.846s] running install_data
+[0.846s] running install_egg_info
+[0.848s] removing '/home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/python3.10/site-packages/hb_task5a-0.0.0-py3.10.egg-info' (and everything under it)
+[0.848s] Copying ../../build/hb_task5a/hb_task5a.egg-info to /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/python3.10/site-packages/hb_task5a-0.0.0-py3.10.egg-info
+[0.849s] running install_scripts
+[0.867s] Installing StopFlag script to /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+[0.868s] Installing controller script to /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+[0.868s] Installing controllerik script to /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+[0.868s] Installing controllerik2 script to /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+[0.869s] Installing controllerik3 script to /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+[0.869s] Installing feedback script to /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+[0.869s] Installing interp script to /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+[0.869s] Installing interp2 script to /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+[0.869s] Installing interp3 script to /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+[0.870s] Installing map script to /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+[0.870s] Installing map2 script to /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+[0.870s] Installing map3 script to /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+[0.870s] Installing nextgoal script to /home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+[0.870s] writing list of installed files to '/home/akshar/eyrc_hb/hb_task5_ws/build/hb_task5a/install.log'
+[0.896s] Invoked command in '/home/akshar/eyrc_hb/hb_task5_ws/src/hb_task5a' returned '0': PYTHONPATH=/home/akshar/eyrc_hb/hb_task5_ws/build/hb_task5a/prefix_override:/home/akshar/eyrc_hb/hb_task5_ws/install/hb_task5a/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hb_task5a build --build-base /home/akshar/eyrc_hb/hb_task5_ws/build/hb_task5a/build install --record /home/akshar/eyrc_hb/hb_task5_ws/build/hb_task5a/install.log --single-version-externally-managed

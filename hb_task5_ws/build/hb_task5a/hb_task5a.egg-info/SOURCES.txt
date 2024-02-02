@@ -8,6 +8,7 @@ setup.py
 ../../build/hb_task5a/hb_task5a.egg-info/requires.txt
 ../../build/hb_task5a/hb_task5a.egg-info/top_level.txt
 ../../build/hb_task5a/hb_task5a.egg-info/zip-safe
+hb_task5a/StopFlagServer.py
 hb_task5a/__init__.py
 hb_task5a/controller.py
 hb_task5a/controller_ik.py
@@ -22,6 +23,7 @@ hb_task5a/mapping2.py
 hb_task5a/mapping3.py
 hb_task5a/nextGoalPub.py
 hb_task5a/rough.py
+hb_task5a/stop_bot_srv.py
 launch/bot1.launch.py
 launch/bot2.launch.py
 launch/bot3.launch.py

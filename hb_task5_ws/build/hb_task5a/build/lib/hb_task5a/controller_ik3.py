@@ -22,6 +22,7 @@ anticlockwise=[70.0,70.0,70.0]
 clockwise=[110.0,110.0,110.0]
 i=0
 r=1.9
+# dc=0.45
 dc=7.0
 
 
@@ -40,7 +41,7 @@ class HBControl(Node):
         self.bot_y = 0.0
         self.bot_theta = 0.0
         self.p=1
-        self.q=1.05
+        self.q=1
         
 
         self.subscription_bot3 = self.create_subscription(Goal,'hb_bot_3/goal', self.goalCallBack1, 10) 
@@ -48,6 +49,10 @@ class HBControl(Node):
 
         self.sub_bot_1 = self.create_subscription(Pose2D, "/pen3_pose", self.Callback1, 10)
         self.twist_1 =  Float64MultiArray()
+
+        self.stop_pub_3 = self.create_publisher(Bool, "/stop_bot3", 10)
+        self.stop_bot = Bool()
+        self.stop_bot.data = False
         
         
         # self.twist_1.linear.x=90.0
@@ -80,11 +85,11 @@ class HBControl(Node):
         x_b= (x_goal-h)*(math.cos(q))+(y_goal-k)*(math.sin(q)) #error in x value
         y_b= (h-x_goal)*(math.sin(q))-(math.cos(q))*(k-y_goal) #error in y value
         q_b= (q-theta_goal)*(-1) #error in theta value
-        if q_b>=0:
-            q_b=q_b
-        else :
-            q_b=-1*q_b    
-        angle=math.atan2(y_b,x_b)
+        # if q_b>=0:
+        #     q_b=q_b
+        # else :
+        #     q_b=-1*q_b    
+        # angle=math.atan2(y_b,x_b)
         distance= ((x_b)**2 + (y_b)**2)**(0.5) #distance of bot from goal pose
         return [x_b,y_b,distance,q_b]        
 
@@ -101,9 +106,11 @@ class HBControl(Node):
         wheel_vel_1 = (1/r) * ((ang_vel*dc) + (-0.5*xvel) + (0.866*yvel))
         wheel_vel_2 = (1/r) * ((ang_vel*dc) + (-0.5*xvel) + (-0.866*yvel))
         wheel_vel_3 = (1/r) * ((ang_vel*dc) + (1*xvel) + (0*yvel))
+        ## fun mode
         # wheel_vel_1= (1/r)*(-0.33*xvel)+(0.58*yvel)+(0.04762*ang_vel)
         # wheel_vel_2= (1/r)*(-0.33*xvel)+(-0.58*yvel)+(0.04762*ang_vel)
         # wheel_vel_3= (1/r)*(0.66666*xvel)+(0.04762*ang_vel)
+        ##
         return [wheel_vel_1, wheel_vel_2, wheel_vel_3]    
     def pController(self,xError,yError,qError):
 
@@ -175,8 +182,10 @@ def main(args=None):
                 hb_controller.twist_1.data[1]=0.0
                 hb_controller.twist_1.data[2]=0.0
                 hb_controller.pen1.data=False
+                hb_controller.stop_bot.data=True
                 hb_controller.pub_1.publish(hb_controller.twist_1)
                 hb_controller.pen_pub1.publish(hb_controller.pen1)
+                hb_controller.stop_pub_3.publish(hb_controller.stop_bot)
 
                 break     
                 ####################################################

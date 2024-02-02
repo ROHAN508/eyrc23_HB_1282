@@ -22,6 +22,7 @@ anticlockwise=[70.0,70.0,70.0]
 clockwise=[110.0,110.0,110.0]
 i=0
 r=1.9
+# dc=0.1
 dc=7.0
 
 
@@ -49,6 +50,9 @@ class HBControl(Node):
         self.sub_bot_1 = self.create_subscription(Pose2D, "/pen1_pose", self.Callback1, 10)
         self.twist_1 =  Float64MultiArray()
         
+        self.stop_pub_1 = self.create_publisher(Bool, "/stop_bot1", 10)
+        self.stop_bot = Bool()
+        self.stop_bot.data = False
         
         # self.twist_1.linear.x=90.0
         # self.twist_1.linear.y=90.0
@@ -92,10 +96,11 @@ class HBControl(Node):
     #     self.pub_1.publish(self.twist_1)
     #     self.pen_pub1.publish(self.pen1)
     def inverse_kinematics(self,xvel, yvel, ang_vel):
-        
+        ## fun mode
         # wheel_vel_1= (-0.33*xvel)+(0.58*yvel)+(0.33*ang_vel)
         # wheel_vel_2= (-0.33*xvel)+(-0.58*yvel)+(0.33*ang_vel)
         # wheel_vel_3= (0.66666*xvel)+(0.33333*ang_vel)
+        ##
         wheel_vel_1 = (1/r) * ((ang_vel*dc) + (-0.5*xvel) + (0.866*yvel))
         wheel_vel_2 = (1/r) * ((ang_vel*dc) + (-0.5*xvel) + (-0.866*yvel))
         wheel_vel_3 = (1/r) * ((ang_vel*dc) + (1*xvel) + (0*yvel))
@@ -173,8 +178,10 @@ def main(args=None):
                 hb_controller.twist_1.data[1]=0.0
                 hb_controller.twist_1.data[2]=0.0
                 hb_controller.pen1.data=False
+                hb_controller.stop_bot.data=True
                 hb_controller.pub_1.publish(hb_controller.twist_1)
                 hb_controller.pen_pub1.publish(hb_controller.pen1)
+                hb_controller.stop_pub_1.publish(hb_controller.stop_bot)
 
                 break     
                 ####################################################

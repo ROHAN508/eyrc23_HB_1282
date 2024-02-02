@@ -22,10 +22,10 @@ class Publisher(Node):
         self.twist_2=   Twist()
         self.twist_3=   Twist()
         self.bool=Bool()
-        self.pub_1 = self.create_publisher(Twist, '/cmd_vel/bot3', 10)
+        self.pub_1 = self.create_publisher(Twist, '/cmd_vel/bot2', 10)
         # self.pub_2 = self.create_publisher(Twist, '/cmd_vel/bot2', 10)
         # self.pub_3 = self.create_publisher(Twist, '/cmd_vel/bot3', 10)
-        self.penpub = self.create_publisher(Bool, '/pen3_down', 10)
+        self.penpub = self.create_publisher(Bool, '/pen2_down', 10)
         self.bool.data=False
         # Initialize Twist message with all components set to 0.0
         self.twist_1.linear.x = 90.0
