@@ -23,7 +23,7 @@ clockwise=[110.0,110.0,110.0]
 i=0
 r=1.9
 # dc=0.45
-dc=7.0
+dc=1
 
 
 class HBControl(Node):
