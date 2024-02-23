@@ -14,6 +14,8 @@ hb_task5a/controller.py
 hb_task5a/controller_ik.py
 hb_task5a/controller_ik2.py
 hb_task5a/controller_ik3.py
+hb_task5a/countour_extraction.py
+hb_task5a/draw.py
 hb_task5a/feedback.py
 hb_task5a/interpolation.py
 hb_task5a/interpolation2.py
@@ -21,6 +23,7 @@ hb_task5a/interpolation3.py
 hb_task5a/mapping.py
 hb_task5a/mapping2.py
 hb_task5a/mapping3.py
+hb_task5a/nextGOal1.py
 hb_task5a/nextGoalPub.py
 hb_task5a/rough.py
 hb_task5a/stop_bot_srv.py

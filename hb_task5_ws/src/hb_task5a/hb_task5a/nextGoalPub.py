@@ -18,6 +18,18 @@ triangle_points=[[300, 100], [400, 100],[300, 200], [300, 100]]
 # rectangle_points= [[200, 300],[250,300],[300,300] ,[350,300],[400, 300],[400,350], [400, 400],[375,400],[350,400],[325,400],[300,400],[275,400],[250,400],[225,400], [200, 400],[200,350], [200, 300]]
 rectangle_points= [[200, 300],[250,300],[300,300] ,[350,300],[400, 300],[400,350], [400, 400],[300,400], [200, 400],[200,350], [200, 300]]
 
+contour_3 = [
+    [214, 251], [212, 253], [212, 254], [213, 255], [213, 258], [214, 259], [214, 262], [215, 263], 
+    [215, 265], [216, 266], [216, 268], [217, 269], [217, 270], [218, 271], [218, 272], [220, 274], 
+    [220, 275], [223, 278], [223, 279], [226, 282], [227, 282], [230, 285], [231, 285], [233, 287], 
+    [234, 287], [235, 288], [236, 288], [237, 289], [239, 289], [240, 290], [242, 290], [243, 291], 
+    [247, 291], [248, 292], [260, 292], [261, 291], [264, 291], [265, 290], [268, 290], [269, 289], 
+    [270, 289], [271, 288], [272, 288], [273, 287], [274, 287], [275, 286], [276, 286], [279, 283], 
+    [280, 283], [286, 277], [286, 276], [288, 274], [288, 273], [290, 271], [290, 270], [291, 269], 
+    [291, 267], [292, 266], [292, 264], [293, 263], [293, 261], [294, 260], [294, 256], [295, 255], 
+    [295, 252], [294, 252], [293, 251], [290, 251], [289, 252], [219, 252], [218, 251]
+]
+
 
 class ServiceNode(Node):
 
@@ -171,38 +183,42 @@ def main(args=None):
     # msg_shape_3 = Shape()
 
     
-    # #5a
-    msg_bot_1.bot_id = 1
-    msg_bot_1.x = []
-    msg_bot_1.y = []
-    for coordinate in hexagon_points:
-       msg_bot_1.x.append(coordinate[0])
-       msg_bot_1.y.append(coordinate[1]) 
+    # # #5a
+    # msg_bot_1.bot_id = 1
+    # msg_bot_1.x = []
+    # msg_bot_1.y = []
+    # for coordinate in hexagon_points:
+    #    msg_bot_1.x.append(coordinate[0])
+    #    msg_bot_1.y.append(coordinate[1]) 
     
-    msg_bot_1.theta = 0.0
+    # msg_bot_1.theta = 0.0
 
-    msg_bot_2.bot_id = 2
-    msg_bot_2.x = []
-    msg_bot_2.y = []
+    # msg_bot_2.bot_id = 2
+    # msg_bot_2.x = []
+    # msg_bot_2.y = []
 
-    for coordinate in rectangle_points:
-       msg_bot_2.x.append(coordinate[0])
-       msg_bot_2.y.append(coordinate[1]) 
+    # for coordinate in rectangle_points:
+    #    msg_bot_2.x.append(coordinate[0])
+    #    msg_bot_2.y.append(coordinate[1]) 
     
-    msg_bot_2.theta = 0.0
+    # msg_bot_2.theta = 0.0
 
-    msg_bot_3.bot_id = 3
-    msg_bot_3.x = []
-    msg_bot_3.y = []
+    # msg_bot_3.bot_id = 3
+    # msg_bot_3.x = []
+    # msg_bot_3.y = []
 
-    for coordinate in triangle_points:
-       msg_bot_3.x.append(coordinate[0])
-       msg_bot_3.y.append(coordinate[1]) 
+    # for coordinate in triangle_points:
+    #    msg_bot_3.x.append(coordinate[0])
+    #    msg_bot_3.y.append(coordinate[1]) 
 
-    msg_bot_3.theta = 0.0
+    # msg_bot_3.theta = 0.0
 
 
     ##5b
+
+    # for coordinate in rectangle_points:
+    #    msg_bot_2.x.append(coordinate[0])
+    #    msg_bot_2.y.append(coordinate[1]) 
     # msg_bot_1.x,msg_bot_1.y,msg_bot_2.x,msg_bot_2.y,msg_bot_3.x,msg_bot_3.y=service_node.generate_points()
     # msg_bot_1.theta = 0.0
     # msg_bot_2.theta = 0.0
@@ -210,7 +226,14 @@ def main(args=None):
     # msg_bot_1.bot_id = 1
     # msg_bot_2.bot_id = 2
     # msg_bot_3.bot_id = 3
-
+    #6
+    msg_bot_2.bot_id = 2
+    msg_bot_2.x = []
+    msg_bot_2.y = []
+    for coordinate in contour_3:
+       msg_bot_2.x.append(coordinate[0]+250)
+       msg_bot_2.y.append(coordinate[1]+250) 
+    msg_bot_2.theta = 0.0   
     
 
     while rclpy.ok():

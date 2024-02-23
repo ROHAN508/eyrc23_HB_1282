@@ -36,7 +36,8 @@ setup(
             'map3 = hb_task5a.mapping3:main',
             'interp3 = hb_task5a.interpolation3:main',
             'StopFlag = hb_task5a.stop_bot_srv:main',
-            'server =hb_task5a.StopFlagServer:main'
+            'server =hb_task5a.StopFlagServer:main',
+            'img =hb_task5a.nextGOal1:main'
 
         ],
     },
