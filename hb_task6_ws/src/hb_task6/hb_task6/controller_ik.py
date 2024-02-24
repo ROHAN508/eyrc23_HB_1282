@@ -25,6 +25,7 @@ r=1.9
 dc=0.1
 # dc=7.0
 stop_flag=False
+futureindex=3
 
 class HBControl(Node):
     def __init__(self):
@@ -137,7 +138,7 @@ def main(args=None):
     hb_controller = HBControl()
     # x_golar=250
     # y_golar=250
-    global i,pen_down,stop_flag
+    global i,pen_down,stop_flag,futureindex
     # Main loop
     while rclpy.ok():
         # Check if the service call is done
@@ -148,8 +149,8 @@ def main(args=None):
             x_goal= hb_controller.bot_x_goal[i]
             y_goal= hb_controller.bot_y_goal[i]
             try:
-                x_goal_future= hb_controller.bot_x_goal[i+5]
-                y_goal_future= hb_controller.bot_y_goal[i+5]
+                x_goal_future= hb_controller.bot_x_goal[i+futureindex]
+                y_goal_future= hb_controller.bot_y_goal[i+futureindex]
             except:
                 pass    
             # x_goal= x_golar
@@ -164,6 +165,9 @@ def main(args=None):
             w1_vel,w2_vel,w3_vel=hb_controller.inverse_kinematics(controlX,controlY,controlQ)
             # w1_vel,w2_vel,w3_vel=hb_controller.inverse_kinematics(100,0.0,controlQ)
 
+            presentdist_fromc=hb_controller.distance(x_goal,y_goal)
+            futuredist_fromc=hb_controller.distance(x_goal_future,y_goal_future)
+            difference_dist=futuredist_fromc-presentdist_fromc
 
 
             if stop_flag==False:
@@ -171,12 +175,18 @@ def main(args=None):
                 hb_controller.twist_1.data[1]=w2_vel
                 hb_controller.twist_1.data[2]=w3_vel
                 hb_controller.pub_1.publish(hb_controller.twist_1)
-            elif stop_flag==True:
+            elif stop_flag==True and difference_dist<0:
                 hb_controller.get_logger().info(f'bot1 stopped!')
                 hb_controller.twist_1.data[0]=0.0
                 hb_controller.twist_1.data[1]=0.0
                 hb_controller.twist_1.data[2]=0.0
-                hb_controller.pub_1.publish(hb_controller.twist_1) 
+                hb_controller.pub_1.publish(hb_controller.twist_1)
+            elif stop_flag==True and difference_dist>0:
+                hb_controller.twist_1.data[0]=w1_vel
+                hb_controller.twist_1.data[1]=w2_vel
+                hb_controller.twist_1.data[2]=w3_vel
+                hb_controller.pub_1.publish(hb_controller.twist_1)
+
 
 
 

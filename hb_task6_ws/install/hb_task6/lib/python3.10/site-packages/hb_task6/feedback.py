@@ -19,7 +19,7 @@ mid_x=0
 mid_y=0
 # Declare points_in_last_20_frames as a global variable
 points_in_last_20_frames = {'1': [], '2': [], '3': []}
-distance_thres=70.0
+distance_thres=90.0
 
 class ArUcoDetector(Node):
 
@@ -37,9 +37,17 @@ class ArUcoDetector(Node):
         self.pen2_sf=Bool()
         self.pen3_sf=Bool()
 
+        self.pen2_stop_tc= self.create_publisher(Bool,"/pen2_stoptc",10)
+        self.pen3_stop_tc= self.create_publisher(Bool,"/pen3_stoptc",10)
+        self.pen2_sftc=Bool()
+        self.pen3_sftc=Bool()
+
         self.pen1_sf.data=False
         self.pen2_sf.data=False
         self.pen3_sf.data=False
+
+        self.pen2_sftc.data=False
+        self.pen3_sftc.data=False
 
         self.pen1_pos= Pose2D()
         self.pen2_pos= Pose2D()
@@ -160,29 +168,29 @@ class ArUcoDetector(Node):
                                 self.pen3_pos.theta=float(yaw)
                                 self.pen3.publish(self.pen3_pos)
                             
-                            # self.distance12=self.distance(self.pen1_pos.x,self.pen1_pos.y,self.pen2_pos.x,self.pen2_pos.y)
-                            # self.distance23=self.distance(self.pen2_pos.x,self.pen2_pos.y,self.pen3_pos.x,self.pen3_pos.y)
-                            # self.distance31=self.distance(self.pen3_pos.x,self.pen3_pos.y,self.pen1_pos.x,self.pen1_pos.y)
+                            self.distance12=self.distance(self.pen1_pos.x,self.pen1_pos.y,self.pen2_pos.x,self.pen2_pos.y)
+                            self.distance23=self.distance(self.pen2_pos.x,self.pen2_pos.y,self.pen3_pos.x,self.pen3_pos.y)
+                            self.distance31=self.distance(self.pen3_pos.x,self.pen3_pos.y,self.pen1_pos.x,self.pen1_pos.y)
                             
-                            # if self.distance12<distance_thres:
-                            #     self.pen2_sf.data=True
-                            #     self.pen2_stop.publish(self.pen2_sf)
-                            # elif self.distance12>=distance_thres:
-                            #     self.pen2_sf.data=False
-                            #     self.pen2_stop.publish(self.pen2_sf)
-                            # if self.distance23<distance_thres:
-                            #     self.pen3_sf.data=True
-                            #     self.pen3_stop.publish(self.pen3_sf)
-                            # elif self.distance23>=distance_thres:
-                            #     self.pen3_sf.data=False
-                            #     self.pen3_stop.publish(self.pen3_sf)    
-
-                            # if self.distance31<distance_thres:
-                            #     self.pen3_sf.data=True
-                            #     self.pen3_stop.publish(self.pen3_sf)
-                            # elif self.distance31>=distance_thres:
-                            #     self.pen3_sf.data=False
-                            #     self.pen3_stop.publish(self.pen3_sf) 
+                            if self.distance12<distance_thres:
+                                self.pen2_sftc.data=True
+                                self.pen2_stop_tc.publish(self.pen2_sftc)
+                            elif self.distance12>=distance_thres:
+                                self.pen2_sftc.data=False
+                                self.pen2_stop_tc.publish(self.pen2_sftc)
+                            if self.distance23<distance_thres:
+                                self.pen3_sftc.data=True
+                                self.pen3_stop_tc.publish(self.pen3_sftc)
+                            elif self.distance23>=distance_thres:
+                                self.pen3_sftc.data=False
+                                self.pen3_stop_tc.publish(self.pen3_sftc)    
+                            if self.distance31<distance_thres:
+                                self.pen3_sftc.data=True
+                                self.pen3_stop_tc.publish(self.pen3_sftc)
+                            elif self.distance31>=distance_thres:
+                                self.pen3_sftc.data=False
+                                self.pen3_stop_tc.publish(self.pen3_sftc) 
+                                
                             self.dist1c=self.distance_from_c(self.pen1_pos.x,self.pen1_pos.y)   
                             self.dist2c=self.distance_from_c(self.pen2_pos.x,self.pen2_pos.y) 
                             self.dist3c=self.distance_from_c(self.pen3_pos.x,self.pen3_pos.y)

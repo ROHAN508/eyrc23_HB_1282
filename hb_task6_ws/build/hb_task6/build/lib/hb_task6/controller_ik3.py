@@ -23,9 +23,11 @@ clockwise=[110.0,110.0,110.0]
 i=0
 r=1.9
 dc=0.1
+futureindex=3
 # dc=1
 
 stop_flag=False
+stop_flagtc=False
 
 class HBControl(Node):
     def __init__(self):
@@ -51,6 +53,7 @@ class HBControl(Node):
 
         self.sub_bot_1 = self.create_subscription(Pose2D, "/pen3_pose", self.Callback1, 10)
         self.twist_1 =  Float64MultiArray()
+        self.stopCollisiontc = self.create_subscription(Bool,"/pen3_stoptc", self.stopcallbacktc, 10)
 
         self.stop_pub_3 = self.create_publisher(Bool, "/stop_bot3", 10)
         self.stop_bot = Bool()
@@ -71,7 +74,10 @@ class HBControl(Node):
         self.rate = self.create_rate(100)
     def stopcallback(self,msg):
         global stop_flag
-        stop_flag=msg.data    
+        stop_flag=msg.data
+    def stopcallbacktc(self,msg):
+        global stop_flagtc
+        stop_flagtc=msg.data         
     
     def Callback1(self, msg):
         self.bot_x = msg.x
@@ -124,7 +130,8 @@ class HBControl(Node):
         qControl=qError*self.q
 
         return xControl,yControl,qControl
-
+    def distance(self,x,y):
+        return ((x-250)**2+(y-250)**2)**0.5
 
 
 
@@ -137,7 +144,7 @@ def main(args=None):
     hb_controller = HBControl()
     # x_golar=250
     # y_golar=250
-    global i,pen_down,stop_flag
+    global i,pen_down,stop_flag,futureindex
     # Main loop
     while rclpy.ok():
         # Check if the service call is done
@@ -147,6 +154,11 @@ def main(args=None):
             #########           GOAL POSE             #########
             x_goal= hb_controller.bot_x_goal[i]
             y_goal= hb_controller.bot_y_goal[i]
+            try:
+                x_goal_future= hb_controller.bot_x_goal[i+futureindex]
+                y_goal_future= hb_controller.bot_y_goal[i+futureindex]
+            except:
+                pass  
             # x_goal= hb_controller.bot_x
             # y_goal= hb_controller.bot_y
             # x_goal= x_golar
@@ -161,18 +173,32 @@ def main(args=None):
             w1_vel,w2_vel,w3_vel=hb_controller.inverse_kinematics(controlX,controlY,controlQ)
             # w1_vel,w2_vel,w3_vel=hb_controller.inverse_kinematics(100,0.0,controlQ)
 
+            presentdist_fromc=hb_controller.distance(x_goal,y_goal)
+            futuredist_fromc=hb_controller.distance(x_goal_future,y_goal_future)
+            difference_dist=futuredist_fromc-presentdist_fromc
 
-            if stop_flag==False:
+            if stop_flag==False  and stop_flagtc==False:
                 hb_controller.twist_1.data[0]=w1_vel
                 hb_controller.twist_1.data[1]=w2_vel
                 hb_controller.twist_1.data[2]=w3_vel
                 hb_controller.pub_1.publish(hb_controller.twist_1)
-            elif stop_flag==True:
+            elif stop_flag==True and difference_dist<0 and stop_flagtc==False:
                 hb_controller.get_logger().info(f'bot3 stopped!')
                 hb_controller.twist_1.data[0]=0.0
                 hb_controller.twist_1.data[1]=0.0
                 hb_controller.twist_1.data[2]=0.0
-                hb_controller.pub_1.publish(hb_controller.twist_1)    
+                hb_controller.pub_1.publish(hb_controller.twist_1)
+            elif stop_flag==True and difference_dist>0 and stop_flagtc==False:
+                hb_controller.twist_1.data[0]=w1_vel
+                hb_controller.twist_1.data[1]=w2_vel
+                hb_controller.twist_1.data[2]=w3_vel
+                hb_controller.pub_1.publish(hb_controller.twist_1)
+            elif stop_flagtc==True:
+                hb_controller.get_logger().info(f'bot3 stopped!')
+                hb_controller.twist_1.data[0]=0.0
+                hb_controller.twist_1.data[1]=0.0
+                hb_controller.twist_1.data[2]=0.0
+                hb_controller.pub_1.publish(hb_controller.twist_1)           
 
 
 
