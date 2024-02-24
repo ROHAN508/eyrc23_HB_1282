@@ -1,0 +1,6 @@
+[0.179s] Invoking command in '/home/premsai/eyrc23_HB_1282/hb_task5_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/premsai/eyrc23_HB_1282/hb_task5_ws/build/my_robot_interfaces -- -j12 -l12
+[0.182s] [0mCMake Error: The current CMakeCache.txt directory /home/premsai/eyrc23_HB_1282/hb_task5_ws/build/my_robot_interfaces/CMakeCache.txt is different than the directory /home/akshar/eyrc_hb/hb_task5_ws/build/my_robot_interfaces where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0.188s] [0mCMake Error: The source directory "/home/akshar/eyrc_hb/hb_task5_ws/src/my_robot_interfaces" does not exist.
+[0.189s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.189s] gmake: *** [Makefile:1179: cmake_check_build_system] Error 1
+[0.190s] Invoked command in '/home/premsai/eyrc23_HB_1282/hb_task5_ws/build/my_robot_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/premsai/eyrc23_HB_1282/hb_task5_ws/build/my_robot_interfaces -- -j12 -l12

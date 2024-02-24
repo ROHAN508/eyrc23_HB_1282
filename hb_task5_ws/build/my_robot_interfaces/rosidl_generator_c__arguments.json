@@ -1,11 +1,11 @@
 {
   "package_name": "my_robot_interfaces",
-  "output_dir": "/home/akshar/eyrc_hb/hb_task5_ws/build/my_robot_interfaces/rosidl_generator_c/my_robot_interfaces",
+  "output_dir": "/home/premsai/eyrc23_HB_1282/hb_task5_ws/build/my_robot_interfaces/rosidl_generator_c/my_robot_interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
-    "/home/akshar/eyrc_hb/hb_task5_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:srv/NextGoal.idl",
-    "/home/akshar/eyrc_hb/hb_task5_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:msg/Goal.idl",
-    "/home/akshar/eyrc_hb/hb_task5_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:msg/Shape.idl"
+    "/home/premsai/eyrc23_HB_1282/hb_task5_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:srv/NextGoal.idl",
+    "/home/premsai/eyrc23_HB_1282/hb_task5_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:msg/Goal.idl",
+    "/home/premsai/eyrc23_HB_1282/hb_task5_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:msg/Shape.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
@@ -21,8 +21,8 @@
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
-    "/home/akshar/eyrc_hb/hb_task5_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/srv/NextGoal.idl",
-    "/home/akshar/eyrc_hb/hb_task5_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/msg/Goal.idl",
-    "/home/akshar/eyrc_hb/hb_task5_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/msg/Shape.idl"
+    "/home/premsai/eyrc23_HB_1282/hb_task5_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/srv/NextGoal.idl",
+    "/home/premsai/eyrc23_HB_1282/hb_task5_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/msg/Goal.idl",
+    "/home/premsai/eyrc23_HB_1282/hb_task5_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/msg/Shape.idl"
   ]
 }

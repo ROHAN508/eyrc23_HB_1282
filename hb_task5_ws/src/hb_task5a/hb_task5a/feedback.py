@@ -24,7 +24,7 @@ class ArUcoDetector(Node):
 
     def __init__(self):
         super().__init__('feedback_node')
-        self.sub = self.create_subscription(Image, "/camera1/image_raw", self.image_callback, 10)
+        self.sub = self.create_subscription(Image, "/image_raw", self.image_callback, 10)
         self.pen1= self.create_publisher(Pose2D,"/pen1_pose",10)
         self.pen2= self.create_publisher(Pose2D,"/pen2_pose",10)
         self.pen3= self.create_publisher(Pose2D,"/pen3_pose",10)
