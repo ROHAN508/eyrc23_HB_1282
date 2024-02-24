@@ -1,2 +1,0 @@
-Invoking command in '/home/premsai/eyrc23_HB_1282/hb_task5_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/premsai/eyrc23_HB_1282/hb_task5_ws/build/my_robot_interfaces -- -j12 -l12
-Invoked command in '/home/premsai/eyrc23_HB_1282/hb_task5_ws/build/my_robot_interfaces' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/premsai/eyrc23_HB_1282/hb_task5_ws/build/my_robot_interfaces -- -j12 -l12

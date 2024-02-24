@@ -22,12 +22,9 @@ anticlockwise=[70.0,70.0,70.0]
 clockwise=[110.0,110.0,110.0]
 i=0
 r=1.9
-# dc=0.4
-dc=5.0
-prev_msgx=[]
+# dc=0.45
+dc=1
 
-run_complete=Bool()
-run_complete.data=False
 
 class HBControl(Node):
     def __init__(self):
@@ -47,15 +44,13 @@ class HBControl(Node):
         self.q=1
         
 
-        
-
         self.subscription_bot3 = self.create_subscription(Goal,'hb_bot_3/goal', self.goalCallBack1, 10) 
-        self.run_complete=self.create_subscription(Bool,'/pen2_complete',self.completeCallback,10)
+        
 
         self.sub_bot_1 = self.create_subscription(Pose2D, "/pen3_pose", self.Callback1, 10)
         self.twist_1 =  Float64MultiArray()
 
-        self.stop_pub_2 = self.create_publisher(Bool, "/stop_bot3", 10)
+        self.stop_pub_3 = self.create_publisher(Bool, "/stop_bot3", 10)
         self.stop_bot = Bool()
         self.stop_bot.data = False
         
@@ -72,25 +67,15 @@ class HBControl(Node):
         self.pen1.data=False
 
         self.rate = self.create_rate(100)
-    def completeCallback(self,msg):
-        global run_complete
-        run_complete.data=msg.data
-
+    
     def Callback1(self, msg):
         self.bot_x = msg.x
         self.bot_y = msg.y
         self.bot_theta = msg.theta
     def goalCallBack1(self, msg1):
-        global prev_msgx
-        if prev_msgx!=msg1.x:
-            # i=0
-            self.bot_x_goal = msg1.x
-            self.bot_y_goal = msg1.y
-            self.bot_theta_goal = msg1.theta
-
-            prev_msgx=self.bot_x_goal
-        
-
+        self.bot_x_goal = msg1.x
+        self.bot_y_goal = msg1.y
+        self.bot_theta_goal = msg1.theta
 
     def errors(self,x_goal,y_goal,theta_goal):
         h=self.bot_x
@@ -100,11 +85,11 @@ class HBControl(Node):
         x_b= (x_goal-h)*(math.cos(q))+(y_goal-k)*(math.sin(q)) #error in x value
         y_b= (h-x_goal)*(math.sin(q))-(math.cos(q))*(k-y_goal) #error in y value
         q_b= (q-theta_goal)*(-1) #error in theta value
-        # angle=math.atan2(y_b,x_b)
         # if q_b>=0:
         #     q_b=q_b
         # else :
-        #     q_b=-1*q_b   
+        #     q_b=-1*q_b    
+        # angle=math.atan2(y_b,x_b)
         distance= ((x_b)**2 + (y_b)**2)**(0.5) #distance of bot from goal pose
         return [x_b,y_b,distance,q_b]        
 
@@ -118,14 +103,14 @@ class HBControl(Node):
         # wheel_vel_1= (-0.33*xvel)+(0.58*yvel)+(0.33*ang_vel)
         # wheel_vel_2= (-0.33*xvel)+(-0.58*yvel)+(0.33*ang_vel)
         # wheel_vel_3= (0.66666*xvel)+(0.33333*ang_vel)
-        ## fun mode
         wheel_vel_1 = (1/r) * ((ang_vel*dc) + (-0.5*xvel) + (0.866*yvel))
         wheel_vel_2 = (1/r) * ((ang_vel*dc) + (-0.5*xvel) + (-0.866*yvel))
         wheel_vel_3 = (1/r) * ((ang_vel*dc) + (1*xvel) + (0*yvel))
-        ##
+        ## fun mode
         # wheel_vel_1= (1/r)*(-0.33*xvel)+(0.58*yvel)+(0.04762*ang_vel)
         # wheel_vel_2= (1/r)*(-0.33*xvel)+(-0.58*yvel)+(0.04762*ang_vel)
         # wheel_vel_3= (1/r)*(0.66666*xvel)+(0.04762*ang_vel)
+        ##
         return [wheel_vel_1, wheel_vel_2, wheel_vel_3]    
     def pController(self,xError,yError,qError):
 
@@ -147,11 +132,9 @@ def main(args=None):
     hb_controller = HBControl()
     # x_golar=250
     # y_golar=250
-    global i,pen_down, run_complete
+    global i,pen_down
     # Main loop
     while rclpy.ok():
-        # global i,pen_down
-        
         # Check if the service call is done
         if hb_controller.bot_x_goal == []  and hb_controller.bot_x_goal == []:
             pass
@@ -159,6 +142,8 @@ def main(args=None):
             #########           GOAL POSE             #########
             x_goal= hb_controller.bot_x_goal[i]
             y_goal= hb_controller.bot_y_goal[i]
+            # x_goal= hb_controller.bot_x
+            # y_goal= hb_controller.bot_y
             # x_goal= x_golar
             # y_goal= y_golar
             # theta_goal= hb_controller.bot_theta_goal
@@ -189,34 +174,18 @@ def main(args=None):
 
            
             if distance < distance_threshold :
-                # hb_controller.pen1.data=True
-                i = i+1
-                # hb_controller.pen_pub1.publish(hb_controller.pen1)
-            if i==1:
                 hb_controller.pen1.data=True
+                i = i+1
                 hb_controller.pen_pub1.publish(hb_controller.pen1)
-
             if i==len(hb_controller.bot_x_goal):
                 hb_controller.twist_1.data[0]=0.0
                 hb_controller.twist_1.data[1]=0.0
                 hb_controller.twist_1.data[2]=0.0
                 hb_controller.pen1.data=False
-                i=0
-                hb_controller.pub_1.publish(hb_controller.twist_1)
-                hb_controller.pen_pub1.publish(hb_controller.pen1)
-                # hb_controller.stop_pub_2.publish(hb_controller.stop_bot)
-                time.sleep(0.5)
-                hb_controller.get_logger().info(f'{run_complete.data}')
-
-            if run_complete.data==True and i==len(hb_controller.bot_x_goal)-1:
-                hb_controller.twist_1.data[0]=0.0
-                hb_controller.twist_1.data[1]=0.0
-                hb_controller.twist_1.data[2]=0.0
                 hb_controller.stop_bot.data=True
-                hb_controller.pen1.data=False
                 hb_controller.pub_1.publish(hb_controller.twist_1)
                 hb_controller.pen_pub1.publish(hb_controller.pen1)
-                hb_controller.stop_pub_2.publish(hb_controller.stop_bot)
+                hb_controller.stop_pub_3.publish(hb_controller.stop_bot)
 
                 break     
                 ####################################################

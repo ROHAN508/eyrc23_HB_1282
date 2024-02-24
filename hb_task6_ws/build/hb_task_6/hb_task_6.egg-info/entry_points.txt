@@ -1,0 +1,17 @@
+[console_scripts]
+StopFlag = hb_task_6.stop_bot_srv:main
+controller = hb_task_6.controller:main
+controllerik = hb_task_6.controller_ik:main
+controllerik2 = hb_task_6.controller_ik2:main
+controllerik3 = hb_task_6.controller_ik3:main
+feedback = hb_task_6.feedback:main
+img = hb_task_6.nextGOal1:main
+interp = hb_task_6.interpolation:main
+interp2 = hb_task_6.interpolation2:main
+interp3 = hb_task_6.interpolation3:main
+map = hb_task_6.mapping:main
+map2 = hb_task_6.mapping2:main
+map3 = hb_task_6.mapping3:main
+nextgoal = hb_task_6.nextGoalPub:main
+server = hb_task_6.StopFlagServer:main
+

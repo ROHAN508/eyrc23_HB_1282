@@ -1,0 +1,297 @@
+[0.198s] Invoking command in '/home/premsai/eyrc23_HB_1282/hb_task5_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/premsai/eyrc23_HB_1282/hb_task5_ws/install/hb_task5a:/opt/ros/humble /usr/bin/cmake /home/premsai/eyrc23_HB_1282/hb_task5_ws/src/my_robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces
+[0.257s] -- The C compiler identification is GNU 11.4.0
+[0.306s] -- The CXX compiler identification is GNU 11.4.0
+[0.312s] -- Detecting C compiler ABI info
+[0.354s] -- Detecting C compiler ABI info - done
+[0.359s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.359s] -- Detecting C compile features
+[0.359s] -- Detecting C compile features - done
+[0.362s] -- Detecting CXX compiler ABI info
+[0.411s] -- Detecting CXX compiler ABI info - done
+[0.415s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.415s] -- Detecting CXX compile features
+[0.416s] -- Detecting CXX compile features - done
+[0.418s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.523s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.587s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.589s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.593s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.622s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.803s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.911s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.056s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.070s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.071s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.086s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.086s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.086s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.086s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.099s] -- Found PythonExtra: .so  
+[1.122s] -- Configuring done
+[1.137s] -- Generating done
+[1.138s] -- Build files have been written to: /home/premsai/eyrc23_HB_1282/hb_task5_ws/build/my_robot_interfaces
+[1.145s] Invoked command in '/home/premsai/eyrc23_HB_1282/hb_task5_ws/build/my_robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/premsai/eyrc23_HB_1282/hb_task5_ws/install/hb_task5a:/opt/ros/humble /usr/bin/cmake /home/premsai/eyrc23_HB_1282/hb_task5_ws/src/my_robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces
+[1.145s] Invoking command in '/home/premsai/eyrc23_HB_1282/hb_task5_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/premsai/eyrc23_HB_1282/hb_task5_ws/install/hb_task5a:/opt/ros/humble /usr/bin/cmake --build /home/premsai/eyrc23_HB_1282/hb_task5_ws/build/my_robot_interfaces -- -j12 -l12
+[1.168s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.174s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.179s] [  4%] Built target ament_cmake_python_copy_my_robot_interfaces
+[1.307s] running egg_info
+[1.308s] creating my_robot_interfaces.egg-info
+[1.308s] writing my_robot_interfaces.egg-info/PKG-INFO
+[1.308s] writing dependency_links to my_robot_interfaces.egg-info/dependency_links.txt
+[1.308s] writing top-level names to my_robot_interfaces.egg-info/top_level.txt
+[1.308s] writing manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'
+[1.309s] reading manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'
+[1.310s] writing manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'
+[1.327s] [  4%] Built target ament_cmake_python_build_my_robot_interfaces_egg
+[1.379s] [  4%] Built target my_robot_interfaces__cpp
+[1.384s] [ 10%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.384s] [ 10%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.384s] [ 10%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.390s] [ 12%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interfaces/msg/detail/shape__functions.c.o[0m
+[1.392s] [ 17%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interfaces/msg/detail/goal__functions.c.o[0m
+[1.392s] [ 17%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interfaces/srv/detail/next_goal__functions.c.o[0m
+[1.435s] [ 19%] [32m[1mLinking C shared library libmy_robot_interfaces__rosidl_generator_c.so[0m
+[1.457s] [ 19%] Built target my_robot_interfaces__rosidl_generator_c
+[1.463s] [ 21%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.466s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.466s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.552s] [ 27%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_robot_interfaces/srv/next_goal__type_support.cpp.o[0m
+[1.555s] [ 31%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_robot_interfaces/msg/shape__type_support.cpp.o[0m
+[1.555s] [ 31%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_robot_interfaces/msg/goal__type_support.cpp.o[0m
+[1.582s] [ 36%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interfaces/srv/detail/next_goal__type_support.cpp.o[0m
+[1.582s] [ 36%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interfaces/msg/detail/goal__type_support.cpp.o[0m
+[1.582s] [ 38%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interfaces/msg/detail/shape__type_support.cpp.o[0m
+[1.659s] [ 42%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_robot_interfaces/srv/detail/dds_fastrtps/next_goal__type_support.cpp.o[0m
+[1.659s] [ 42%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_robot_interfaces/msg/detail/dds_fastrtps/goal__type_support.cpp.o[0m
+[1.667s] [ 44%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_robot_interfaces/msg/detail/dds_fastrtps/shape__type_support.cpp.o[0m
+[1.725s] [ 46%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_robot_interfaces/srv/detail/next_goal__type_support_c.cpp.o[0m
+[1.780s] [ 48%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_robot_interfaces/srv/detail/next_goal__type_support.c.o[0m
+[1.780s] [ 51%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_robot_interfaces/srv/next_goal__type_support.cpp.o[0m
+[1.819s] [ 53%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_robot_interfaces/msg/goal__type_support.cpp.o[0m
+[1.821s] [ 55%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_robot_interfaces/msg/detail/goal__type_support.c.o[0m
+[1.833s] [ 57%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_robot_interfaces/msg/detail/shape__type_support.c.o[0m
+[1.838s] [ 59%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_robot_interfaces/msg/detail/goal__type_support_c.cpp.o[0m
+[1.862s] [ 65%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_robot_interfaces/msg/detail/shape__type_support_c.cpp.o[0m
+[1.862s] [ 65%] [32m[1mLinking CXX shared library libmy_robot_interfaces__rosidl_typesupport_cpp.so[0m
+[1.863s] [ 65%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_robot_interfaces/msg/shape__type_support.cpp.o[0m
+[1.869s] [ 68%] [32m[1mLinking C shared library libmy_robot_interfaces__rosidl_typesupport_introspection_c.so[0m
+[1.898s] [ 70%] [32m[1mLinking CXX shared library libmy_robot_interfaces__rosidl_typesupport_c.so[0m
+[1.900s] [ 70%] Built target my_robot_interfaces__rosidl_typesupport_introspection_c
+[1.917s] [ 70%] Built target my_robot_interfaces__rosidl_typesupport_cpp
+[1.939s] [ 70%] Built target my_robot_interfaces__rosidl_typesupport_c
+[2.035s] [ 72%] [32m[1mLinking CXX shared library libmy_robot_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[2.046s] [ 74%] [32m[1mLinking CXX shared library libmy_robot_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.091s] [ 74%] Built target my_robot_interfaces__rosidl_typesupport_introspection_cpp
+[2.102s] [ 74%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_cpp
+[2.115s] [ 76%] [32m[1mLinking CXX shared library libmy_robot_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[2.157s] [ 76%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_c
+[2.168s] [ 76%] Built target my_robot_interfaces
+[2.180s] [ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.454s] [ 78%] Built target my_robot_interfaces__py
+[2.466s] [ 85%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_robot_interfaces/msg/_shape_s.c.o[0m
+[2.466s] [ 85%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_robot_interfaces/srv/_next_goal_s.c.o[0m
+[2.466s] [ 85%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_robot_interfaces/msg/_goal_s.c.o[0m
+[2.543s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/my_robot_interfaces/libmy_robot_interfaces__rosidl_generator_py.so[0m
+[2.567s] [ 87%] Built target my_robot_interfaces__rosidl_generator_py
+[2.579s] [ 93%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.579s] [ 93%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[2.579s] [ 93%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[2.635s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.635s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.635s] [100%] [32m[1mLinking C shared library rosidl_generator_py/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.656s] [100%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[2.656s] [100%] Built target my_robot_interfaces__rosidl_typesupport_c__pyext
+[2.656s] [100%] Built target my_robot_interfaces__rosidl_typesupport_introspection_c__pyext
+[2.663s] Invoked command in '/home/premsai/eyrc23_HB_1282/hb_task5_ws/build/my_robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/premsai/eyrc23_HB_1282/hb_task5_ws/install/hb_task5a:/opt/ros/humble /usr/bin/cmake --build /home/premsai/eyrc23_HB_1282/hb_task5_ws/build/my_robot_interfaces -- -j12 -l12
+[2.718s] Invoking command in '/home/premsai/eyrc23_HB_1282/hb_task5_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/premsai/eyrc23_HB_1282/hb_task5_ws/install/hb_task5a:/opt/ros/humble /usr/bin/cmake --install /home/premsai/eyrc23_HB_1282/hb_task5_ws/build/my_robot_interfaces
+[2.722s] -- Install configuration: ""
+[2.722s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/ament_index/resource_index/rosidl_interfaces/my_robot_interfaces
+[2.722s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces
+[2.723s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg
+[2.723s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/shape.h
+[2.723s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/rosidl_generator_c__visibility_control.h
+[2.723s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/goal.h
+[2.723s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail
+[2.723s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__functions.h
+[2.723s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__functions.c
+[2.723s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__struct.h
+[2.723s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__struct.h
+[2.723s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__type_support.h
+[2.723s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__functions.h
+[2.723s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__type_support.h
+[2.723s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__functions.c
+[2.723s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv
+[2.724s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/next_goal.h
+[2.724s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail
+[2.724s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__functions.h
+[2.724s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__functions.c
+[2.724s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__struct.h
+[2.724s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__type_support.h
+[2.724s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/library_path.sh
+[2.724s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/library_path.dsv
+[2.724s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_generator_c.so
+[2.724s] -- Set runtime path of "/home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_generator_c.so" to ""
+[2.724s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces
+[2.724s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg
+[2.724s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.724s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail
+[2.725s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__rosidl_typesupport_fastrtps_c.h
+[2.725s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__rosidl_typesupport_fastrtps_c.h
+[2.725s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv
+[2.725s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail
+[2.725s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__rosidl_typesupport_fastrtps_c.h
+[2.725s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_fastrtps_c.so
+[2.725s] -- Set runtime path of "/home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[2.725s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces
+[2.725s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg
+[2.725s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.725s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail
+[2.725s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__rosidl_typesupport_introspection_c.h
+[2.725s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__rosidl_typesupport_introspection_c.h
+[2.725s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__type_support.c
+[2.725s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__type_support.c
+[2.725s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv
+[2.725s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail
+[2.725s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__type_support.c
+[2.725s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__rosidl_typesupport_introspection_c.h
+[2.725s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_introspection_c.so
+[2.725s] -- Set runtime path of "/home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[2.725s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_c.so
+[2.725s] -- Set runtime path of "/home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_c.so" to ""
+[2.725s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces
+[2.725s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg
+[2.725s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/goal.hpp
+[2.725s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/shape.hpp
+[2.725s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail
+[2.725s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__struct.hpp
+[2.725s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__traits.hpp
+[2.725s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__builder.hpp
+[2.725s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__struct.hpp
+[2.725s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__builder.hpp
+[2.726s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__traits.hpp
+[2.726s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv
+[2.726s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/next_goal.hpp
+[2.726s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail
+[2.726s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__struct.hpp
+[2.726s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__traits.hpp
+[2.726s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__builder.hpp
+[2.726s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces
+[2.726s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg
+[2.726s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.726s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail
+[2.726s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__rosidl_typesupport_fastrtps_cpp.hpp
+[2.726s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__rosidl_typesupport_fastrtps_cpp.hpp
+[2.726s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/dds_fastrtps
+[2.726s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv
+[2.726s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail
+[2.726s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__rosidl_typesupport_fastrtps_cpp.hpp
+[2.726s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/dds_fastrtps
+[2.726s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[2.726s] -- Set runtime path of "/home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[2.726s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces
+[2.726s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg
+[2.726s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail
+[2.726s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__rosidl_typesupport_introspection_cpp.hpp
+[2.726s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__type_support.cpp
+[2.726s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__type_support.cpp
+[2.726s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__rosidl_typesupport_introspection_cpp.hpp
+[2.726s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv
+[2.726s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail
+[2.726s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__type_support.cpp
+[2.726s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__rosidl_typesupport_introspection_cpp.hpp
+[2.726s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_introspection_cpp.so
+[2.726s] -- Set runtime path of "/home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[2.727s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_cpp.so
+[2.727s] -- Set runtime path of "/home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_cpp.so" to ""
+[2.727s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/pythonpath.sh
+[2.727s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/pythonpath.dsv
+[2.727s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces-0.0.0-py3.10.egg-info
+[2.727s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[2.727s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[2.727s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[2.727s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[2.727s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces
+[2.727s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_c.c
+[2.727s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.727s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[2.727s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.727s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/libmy_robot_interfaces__rosidl_generator_py.so
+[2.727s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.727s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg
+[2.727s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/_goal.py
+[2.727s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/_shape_s.c
+[2.727s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/__init__.py
+[2.727s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/_goal_s.c
+[2.727s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/_shape.py
+[2.727s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/__init__.py
+[2.728s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.728s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv
+[2.728s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv/_next_goal.py
+[2.728s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv/__init__.py
+[2.728s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv/_next_goal_s.c
+[2.751s] Listing '/home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces'...
+[2.751s] Compiling '/home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/__init__.py'...
+[2.751s] Listing '/home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg'...
+[2.751s] Compiling '/home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/__init__.py'...
+[2.751s] Compiling '/home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/_goal.py'...
+[2.751s] Compiling '/home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/_shape.py'...
+[2.751s] Listing '/home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv'...
+[2.751s] Compiling '/home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv/__init__.py'...
+[2.751s] Compiling '/home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv/_next_goal.py'...
+[2.753s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.753s] -- Set runtime path of "/home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.754s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.754s] -- Set runtime path of "/home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.754s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.754s] -- Set runtime path of "/home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.754s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_generator_py.so
+[2.754s] -- Set runtime path of "/home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_generator_py.so" to ""
+[2.754s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/srv/NextGoal.idl
+[2.754s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/msg/Goal.idl
+[2.754s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/msg/Shape.idl
+[2.754s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/srv/NextGoal.srv
+[2.755s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/srv/NextGoal_Request.msg
+[2.755s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/srv/NextGoal_Response.msg
+[2.755s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/msg/Goal.msg
+[2.755s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/msg/Shape.msg
+[2.755s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/ament_index/resource_index/package_run_dependencies/my_robot_interfaces
+[2.755s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/ament_index/resource_index/parent_prefix_path/my_robot_interfaces
+[2.755s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/ament_prefix_path.sh
+[2.755s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/ament_prefix_path.dsv
+[2.755s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/path.sh
+[2.755s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/path.dsv
+[2.755s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/local_setup.bash
+[2.755s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/local_setup.sh
+[2.755s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/local_setup.zsh
+[2.755s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/local_setup.dsv
+[2.756s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.dsv
+[2.756s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/ament_index/resource_index/packages/my_robot_interfaces
+[2.756s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_cExport.cmake
+[2.756s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_cExport-noconfig.cmake
+[2.756s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[2.756s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.756s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[2.756s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.756s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_cExport.cmake
+[2.756s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[2.756s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_cppExport.cmake
+[2.756s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.756s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.756s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[2.757s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.757s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_cppExport.cmake
+[2.757s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[2.757s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_pyExport.cmake
+[2.757s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[2.757s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/rosidl_cmake-extras.cmake
+[2.757s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.757s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[2.757s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[2.757s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.757s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.757s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.757s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfacesConfig.cmake
+[2.757s] -- Installing: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfacesConfig-version.cmake
+[2.757s] -- Up-to-date: /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.xml
+[2.758s] Invoked command in '/home/premsai/eyrc23_HB_1282/hb_task5_ws/build/my_robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/premsai/eyrc23_HB_1282/hb_task5_ws/install/hb_task5a:/opt/ros/humble /usr/bin/cmake --install /home/premsai/eyrc23_HB_1282/hb_task5_ws/build/my_robot_interfaces

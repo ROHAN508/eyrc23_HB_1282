@@ -1,0 +1,104 @@
+running egg_info
+creating ../../build/hb_task_6/hb_task_6.egg-info
+writing ../../build/hb_task_6/hb_task_6.egg-info/PKG-INFO
+writing dependency_links to ../../build/hb_task_6/hb_task_6.egg-info/dependency_links.txt
+writing entry points to ../../build/hb_task_6/hb_task_6.egg-info/entry_points.txt
+writing requirements to ../../build/hb_task_6/hb_task_6.egg-info/requires.txt
+writing top-level names to ../../build/hb_task_6/hb_task_6.egg-info/top_level.txt
+writing manifest file '../../build/hb_task_6/hb_task_6.egg-info/SOURCES.txt'
+reading manifest file '../../build/hb_task_6/hb_task_6.egg-info/SOURCES.txt'
+writing manifest file '../../build/hb_task_6/hb_task_6.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build
+creating /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib
+creating /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6
+copying hb_task_6/feedback.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6
+copying hb_task_6/mapping3.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6
+copying hb_task_6/rough.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6
+copying hb_task_6/countour_extraction.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6
+copying hb_task_6/StopFlagServer.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6
+copying hb_task_6/controller_ik.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6
+copying hb_task_6/interpolation.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6
+copying hb_task_6/nextGoalPub.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6
+copying hb_task_6/controller.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6
+copying hb_task_6/draw.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6
+copying hb_task_6/__init__.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6
+copying hb_task_6/interpolation2.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6
+copying hb_task_6/nextGOal1.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6
+copying hb_task_6/controller_ik2.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6
+copying hb_task_6/stop_bot_srv.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6
+copying hb_task_6/mapping.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6
+copying hb_task_6/mapping2.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6
+copying hb_task_6/controller_ik3.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6
+copying hb_task_6/interpolation3.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6
+running install
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+creating /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6
+copying /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6/feedback.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6
+copying /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6/mapping3.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6
+copying /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6/rough.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6
+copying /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6/countour_extraction.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6
+copying /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6/StopFlagServer.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6
+copying /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6/controller_ik.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6
+copying /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6/interpolation.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6
+copying /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6/nextGoalPub.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6
+copying /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6/controller.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6
+copying /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6/draw.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6
+copying /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6/__init__.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6
+copying /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6/interpolation2.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6
+copying /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6/nextGOal1.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6
+copying /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6/controller_ik2.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6
+copying /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6/stop_bot_srv.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6
+copying /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6/mapping.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6
+copying /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6/mapping2.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6
+copying /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6/controller_ik3.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6
+copying /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/build/lib/hb_task_6/interpolation3.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6
+byte-compiling /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6/feedback.py to feedback.cpython-310.pyc
+byte-compiling /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6/mapping3.py to mapping3.cpython-310.pyc
+byte-compiling /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6/rough.py to rough.cpython-310.pyc
+byte-compiling /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6/countour_extraction.py to countour_extraction.cpython-310.pyc
+byte-compiling /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6/StopFlagServer.py to StopFlagServer.cpython-310.pyc
+byte-compiling /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6/controller_ik.py to controller_ik.cpython-310.pyc
+byte-compiling /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6/interpolation.py to interpolation.cpython-310.pyc
+byte-compiling /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6/nextGoalPub.py to nextGoalPub.cpython-310.pyc
+byte-compiling /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6/controller.py to controller.cpython-310.pyc
+byte-compiling /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6/draw.py to draw.cpython-310.pyc
+byte-compiling /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6/interpolation2.py to interpolation2.cpython-310.pyc
+byte-compiling /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6/nextGOal1.py to nextGOal1.cpython-310.pyc
+byte-compiling /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6/controller_ik2.py to controller_ik2.cpython-310.pyc
+byte-compiling /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6/stop_bot_srv.py to stop_bot_srv.cpython-310.pyc
+byte-compiling /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6/mapping.py to mapping.cpython-310.pyc
+byte-compiling /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6/mapping2.py to mapping2.cpython-310.pyc
+byte-compiling /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6/controller_ik3.py to controller_ik3.cpython-310.pyc
+byte-compiling /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6/interpolation3.py to interpolation3.cpython-310.pyc
+running install_data
+creating /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/share/ament_index
+creating /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/share/ament_index/resource_index
+creating /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/share/ament_index/resource_index/packages
+copying resource/hb_task_6 -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/share/ament_index/resource_index/packages
+copying package.xml -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/share/hb_task_6
+creating /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/share/hb_task_6/launch
+creating /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/share/hb_task_6/scripts
+running install_egg_info
+Copying ../../build/hb_task_6/hb_task_6.egg-info to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/python3.10/site-packages/hb_task_6-0.0.0-py3.10.egg-info
+running install_scripts
+Installing StopFlag script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/hb_task_6
+Installing controller script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/hb_task_6
+Installing controllerik script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/hb_task_6
+Installing controllerik2 script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/hb_task_6
+Installing controllerik3 script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/hb_task_6
+Installing feedback script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/hb_task_6
+Installing img script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/hb_task_6
+Installing interp script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/hb_task_6
+Installing interp2 script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/hb_task_6
+Installing interp3 script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/hb_task_6
+Installing map script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/hb_task_6
+Installing map2 script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/hb_task_6
+Installing map3 script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/hb_task_6
+Installing nextgoal script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/hb_task_6
+Installing server script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task_6/lib/hb_task_6
+writing list of installed files to '/home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task_6/install.log'
