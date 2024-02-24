@@ -95,7 +95,7 @@ class ServiceNode(Node):
         self.bot2_complete=Bool()
         self.bot2_complete.data=False
 
-        self.pen_2_status = self.create_subscription(Bool, "/pen2_down", self.checkPenStatus_2, 10)
+        self.pen_2_status = self.create_subscription(Bool, "/pen3_down", self.checkPenStatus_2, 10)
         
         # self.publish_shape_1  = self.create_publisher(Shape, 'shape_1', 10)
         # self.publish_shape_2  = self.create_publisher(Shape, 'shape_2', 10)
@@ -313,9 +313,9 @@ def main(args=None):
 
 
 
-        service_node.publish_goal_1.publish(msg_bot_1)    
+        service_node.publish_goal_1.publish(msg_bot_2)    
         service_node.publish_goal_2.publish(msg_bot_2)    
-        service_node.publish_goal_3.publish(msg_bot_3)    
+        service_node.publish_goal_3.publish(msg_bot_2)    
     
         # service_node.publish_shape_1.publish(msg_shape_1)
         # service_node.publish_shape_2.publish(msg_shape_2)

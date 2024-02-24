@@ -1,0 +1,37 @@
+[0.470s] Invoking command in '/home/premsai/eyrc23_HB_1282/hb_task5_ws/src/hb_task5a': PYTHONPATH=/home/premsai/eyrc23_HB_1282/hb_task5_ws/build/hb_task5a/prefix_override:/home/premsai/eyrc23_HB_1282/hb_task5_ws/install/hb_task5a/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hb_task5a build --build-base /home/premsai/eyrc23_HB_1282/hb_task5_ws/build/hb_task5a/build install --record /home/premsai/eyrc23_HB_1282/hb_task5_ws/build/hb_task5a/install.log --single-version-externally-managed
+[0.621s] running egg_info
+[0.622s] writing ../../build/hb_task5a/hb_task5a.egg-info/PKG-INFO
+[0.622s] writing dependency_links to ../../build/hb_task5a/hb_task5a.egg-info/dependency_links.txt
+[0.622s] writing entry points to ../../build/hb_task5a/hb_task5a.egg-info/entry_points.txt
+[0.623s] writing requirements to ../../build/hb_task5a/hb_task5a.egg-info/requires.txt
+[0.623s] writing top-level names to ../../build/hb_task5a/hb_task5a.egg-info/top_level.txt
+[0.624s] reading manifest file '../../build/hb_task5a/hb_task5a.egg-info/SOURCES.txt'
+[0.624s] writing manifest file '../../build/hb_task5a/hb_task5a.egg-info/SOURCES.txt'
+[0.624s] running build
+[0.624s] running build_py
+[0.624s] running install
+[0.625s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.625s]   warnings.warn(
+[0.625s] running install_lib
+[0.626s] running install_data
+[0.626s] running install_egg_info
+[0.626s] removing '/home/premsai/eyrc23_HB_1282/hb_task5_ws/install/hb_task5a/lib/python3.10/site-packages/hb_task5a-0.0.0-py3.10.egg-info' (and everything under it)
+[0.627s] Copying ../../build/hb_task5a/hb_task5a.egg-info to /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/hb_task5a/lib/python3.10/site-packages/hb_task5a-0.0.0-py3.10.egg-info
+[0.627s] running install_scripts
+[0.643s] Installing StopFlag script to /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+[0.643s] Installing controller script to /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+[0.643s] Installing controllerik script to /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+[0.643s] Installing controllerik2 script to /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+[0.643s] Installing controllerik3 script to /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+[0.644s] Installing feedback script to /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+[0.644s] Installing img script to /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+[0.644s] Installing interp script to /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+[0.644s] Installing interp2 script to /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+[0.644s] Installing interp3 script to /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+[0.644s] Installing map script to /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+[0.644s] Installing map2 script to /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+[0.644s] Installing map3 script to /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+[0.644s] Installing nextgoal script to /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+[0.644s] Installing server script to /home/premsai/eyrc23_HB_1282/hb_task5_ws/install/hb_task5a/lib/hb_task5a
+[0.644s] writing list of installed files to '/home/premsai/eyrc23_HB_1282/hb_task5_ws/build/hb_task5a/install.log'
+[0.662s] Invoked command in '/home/premsai/eyrc23_HB_1282/hb_task5_ws/src/hb_task5a' returned '0': PYTHONPATH=/home/premsai/eyrc23_HB_1282/hb_task5_ws/build/hb_task5a/prefix_override:/home/premsai/eyrc23_HB_1282/hb_task5_ws/install/hb_task5a/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hb_task5a build --build-base /home/premsai/eyrc23_HB_1282/hb_task5_ws/build/hb_task5a/build install --record /home/premsai/eyrc23_HB_1282/hb_task5_ws/build/hb_task5a/install.log --single-version-externally-managed
