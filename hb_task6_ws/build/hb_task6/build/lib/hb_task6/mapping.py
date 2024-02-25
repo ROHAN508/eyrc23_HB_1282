@@ -13,7 +13,7 @@ from my_robot_interfaces.msg import Goal
 from std_msgs.msg import Float64MultiArray
 
 # max_rpm=36
-max_rpm=37
+max_rpm=38
 
 
 class mapper(Node):
