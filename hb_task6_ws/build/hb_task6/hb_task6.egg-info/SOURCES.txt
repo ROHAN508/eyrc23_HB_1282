@@ -31,6 +31,7 @@ hb_task6/stop_bot_srv.py
 launch/bot1.launch.py
 launch/bot2.launch.py
 launch/bot3.launch.py
+launch/utils.launch.py
 resource/hb_task6
 test/test_copyright.py
 test/test_flake8.py

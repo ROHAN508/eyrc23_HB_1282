@@ -63,6 +63,7 @@ def main():
     StopBot = stop_bot()
     while True:
         rclpy.spin_once(StopBot)
+        StopBot.get_logger().info(f'bot:{bot_1.data} bot2:{bot_2.data} bot3: {bot_3.data}')
         if bot_1.data == True and bot_2.data == True and bot_3.data == True:
             break
     

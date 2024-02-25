@@ -14,7 +14,7 @@ from std_msgs.msg import Float64MultiArray
 
 
 pen_down=False
-distance_threshold=5
+distance_threshold=3.5
 angle_threshold=0.1
 forward_vel=[25.0,180.0,90.0]
 # forward_vel=[0.0,170.0,90.0]
@@ -210,6 +210,7 @@ def main(args=None):
                 hb_controller.pub_1.publish(hb_controller.twist_1)
                 hb_controller.pen_pub1.publish(hb_controller.pen1)
                 hb_controller.stop_pub_1.publish(hb_controller.stop_bot)
+                hb_controller.get_logger().info( f'bot1 stopped {hb_controller.stop_bot.data}')
 
                 break     
                 ####################################################

@@ -127,7 +127,7 @@ def main(args=None):
             #     startControl.startrun.data=False   
 
             # startControl.startrunControl.publish(startControl.startrun)
-            startControl.get_logger().info(f'bot1:{dist1}  bot2:{dist2}  bot3:{dist3}')
+            # startControl.get_logger().info(f'bot1:{dist1}  bot2:{dist2}  bot3:{dist3}')
             if dist1<dist_thres+10 and dist2<dist_thres+10 and dist3<dist_thres+10:
                 startControl.startrun.data = True
             # startControl.startrun.data = True    

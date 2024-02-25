@@ -92,8 +92,8 @@ class interp(Node):
         self.pwms.linear.x=self.pwm_right
         self.pwms.linear.y=self.pwm_left
         self.pwms.linear.z=self.pwm_rear
-        self.get_logger().info(f'right_rpm={self.w1} left_rpm={self.w2} rear_rpm={self.w3}')
-        self.get_logger().info(f'right_pwm={self.pwms.linear.x} left_pwm={self.pwms.linear.y} rear_pwm={self.pwms.linear.z}')
+        # self.get_logger().info(f'right_rpm={self.w1} left_rpm={self.w2} rear_rpm={self.w3}')
+        # self.get_logger().info(f'right_pwm={self.pwms.linear.x} left_pwm={self.pwms.linear.y} rear_pwm={self.pwms.linear.z}')
         
         self.pub_1.publish(self.pwms)
 
