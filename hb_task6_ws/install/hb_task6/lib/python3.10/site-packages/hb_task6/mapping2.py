@@ -12,15 +12,15 @@ from geometry_msgs.msg import Twist
 from my_robot_interfaces.msg import Goal             
 from std_msgs.msg import Float64MultiArray
 
-max_rpm=40
+max_rpm=35
 
 
 class mapper(Node):
     def __init__(self):
         super().__init__('mapper2')
-        
-        self.mapper = self.create_subscription(Float64MultiArray,'/map2', self.mapCallBack1, 10)
-        self.interp=self.create_publisher(Float64MultiArray,'/interp2',10)
+        self.buffer=10
+        self.mapper = self.create_subscription(Float64MultiArray,'/map2', self.mapCallBack1, self.buffer)
+        self.interp=self.create_publisher(Float64MultiArray,'/interp2',self.buffer)
         self.interpMsg=Float64MultiArray
         # self.w_max=0.0
         

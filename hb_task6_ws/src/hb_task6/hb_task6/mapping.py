@@ -18,9 +18,9 @@ max_rpm=40
 class mapper(Node):
     def __init__(self):
         super().__init__('mapper')
-        
-        self.mapper = self.create_subscription(Float64MultiArray,'/map', self.mapCallBack1, 10)
-        self.interp=self.create_publisher(Float64MultiArray,'/interp',10)
+        self.buffer=10
+        self.mapper = self.create_subscription(Float64MultiArray,'/map', self.mapCallBack1, self.buffer)
+        self.interp=self.create_publisher(Float64MultiArray,'/interp',self.buffer)
         self.interpMsg=Float64MultiArray
         # self.w_max=0.0
         

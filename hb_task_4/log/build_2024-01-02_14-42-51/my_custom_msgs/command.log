@@ -1,2 +1,0 @@
-Invoking command in '/home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs': /usr/bin/cmake /home/akshar/eyrc_hb/hb_task_4/src/my_custom_msgs -DCMAKE_INSTALL_PREFIX=/home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs
-Invoked command in '/home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs' returned '1': /usr/bin/cmake /home/akshar/eyrc_hb/hb_task_4/src/my_custom_msgs -DCMAKE_INSTALL_PREFIX=/home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs

@@ -23,9 +23,8 @@ clockwise=[110.0,110.0,110.0]
 i=0
 r=1.9
 dc=0.1
-# dc=7.0
-stop_flag=False
-futureindex=3
+# dc=5.0
+
 
 class HBControl(Node):
     def __init__(self):
@@ -43,14 +42,16 @@ class HBControl(Node):
         self.bot_theta = 0.0
         self.p=1
         self.q=1
+
+        # self.start_bot = Bool()
+        self.start_bot = False
         
 
-        self.subscription_bot1 = self.create_subscription(Goal,'hb_bot_1/goal', self.goalCallBack1, 10) 
+        self.subscription_bot3 = self.create_subscription(Goal,'hb_bot_1/goal', self.goalCallBack1, 10) 
+        self.startrun = self.create_subscription(Bool,"/startrun", self.startCallBack1, 10)
         
 
         self.sub_bot_1 = self.create_subscription(Pose2D, "/pen1_pose", self.Callback1, 10)
-
-        self.stopCollision = self.create_subscription(Bool,"/pen1_stop", self.stopcallback, 10)
         self.twist_1 =  Float64MultiArray()
         
         self.stop_pub_1 = self.create_publisher(Bool, "/stop_bot1", 10)
@@ -69,9 +70,9 @@ class HBControl(Node):
         self.pen1.data=False
 
         self.rate = self.create_rate(100)
-    def stopcallback(self,msg):
-        global stop_flag
-        stop_flag=msg.data     
+
+    def startCallBack1(self, msg):
+        self.start_bot=msg.data    
     
     def Callback1(self, msg):
         self.bot_x = msg.x
@@ -123,8 +124,6 @@ class HBControl(Node):
 
 
         return xControl,yControl,qControl
-    def distance(self,x,y):
-        return ((x-250)**2+(y-250)**2)**0.5
 
 
 
@@ -138,7 +137,7 @@ def main(args=None):
     hb_controller = HBControl()
     # x_golar=250
     # y_golar=250
-    global i,pen_down,stop_flag,futureindex
+    global i,pen_down
     # Main loop
     while rclpy.ok():
         # Check if the service call is done
@@ -148,11 +147,6 @@ def main(args=None):
             #########           GOAL POSE             #########
             x_goal= hb_controller.bot_x_goal[i]
             y_goal= hb_controller.bot_y_goal[i]
-            try:
-                x_goal_future= hb_controller.bot_x_goal[i+futureindex]
-                y_goal_future= hb_controller.bot_y_goal[i+futureindex]
-            except:
-                pass    
             # x_goal= x_golar
             # y_goal= y_golar
             # theta_goal= hb_controller.bot_theta_goal
@@ -165,28 +159,29 @@ def main(args=None):
             w1_vel,w2_vel,w3_vel=hb_controller.inverse_kinematics(controlX,controlY,controlQ)
             # w1_vel,w2_vel,w3_vel=hb_controller.inverse_kinematics(100,0.0,controlQ)
 
-            presentdist_fromc=hb_controller.distance(x_goal,y_goal)
-            futuredist_fromc=hb_controller.distance(x_goal_future,y_goal_future)
-            difference_dist=futuredist_fromc-presentdist_fromc
-
-
-            if stop_flag==False:
+            if i ==0:
                 hb_controller.twist_1.data[0]=w1_vel
                 hb_controller.twist_1.data[1]=w2_vel
                 hb_controller.twist_1.data[2]=w3_vel
-                hb_controller.pub_1.publish(hb_controller.twist_1)
-            elif stop_flag==True and difference_dist<0:
-                hb_controller.get_logger().info(f'bot1 stopped!')
+
+
+            if i==1 and hb_controller.start_bot==False:
+
                 hb_controller.twist_1.data[0]=0.0
                 hb_controller.twist_1.data[1]=0.0
                 hb_controller.twist_1.data[2]=0.0
-                hb_controller.pub_1.publish(hb_controller.twist_1)
-            elif stop_flag==True and difference_dist>0:
+
+            if i>0 and hb_controller.start_bot==True:    
+
                 hb_controller.twist_1.data[0]=w1_vel
                 hb_controller.twist_1.data[1]=w2_vel
                 hb_controller.twist_1.data[2]=w3_vel
-                hb_controller.pub_1.publish(hb_controller.twist_1)
+                hb_controller.pen1.data=True
 
+            # hb_controller.twist_1.data[0]=w1_vel
+            # hb_controller.twist_1.data[1]=w2_vel
+            # hb_controller.twist_1.data[2]=w3_vel
+            hb_controller.pub_1.publish(hb_controller.twist_1)
 
 
 
@@ -199,9 +194,13 @@ def main(args=None):
 
            
             if distance < distance_threshold :
-                hb_controller.pen1.data=True
+                # hb_controller.pen1.data=True
                 i = i+1
                 hb_controller.pen_pub1.publish(hb_controller.pen1)
+            # if distance < distance_threshold :
+                
+            #     i = i+1
+                
             if i==len(hb_controller.bot_x_goal):
                 hb_controller.twist_1.data[0]=0.0
                 hb_controller.twist_1.data[1]=0.0

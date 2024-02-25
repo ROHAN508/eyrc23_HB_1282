@@ -6,7 +6,6 @@ import cv2
 from cv_bridge import CvBridge
 import numpy as np
 import math
-from std_msgs.msg import Bool
 corner_ids=[8,10,12,4]
 bot_ids=[1,2,3]
 arena_corlist=[]
@@ -19,36 +18,17 @@ mid_x=0
 mid_y=0
 # Declare points_in_last_20_frames as a global variable
 points_in_last_20_frames = {'1': [], '2': [], '3': []}
-distance_thres=90.0
+
 
 class ArUcoDetector(Node):
 
     def __init__(self):
         super().__init__('feedback_node')
-        self.sub = self.create_subscription(Image, "/image_raw", self.image_callback, 10)
-        self.pen1= self.create_publisher(Pose2D,"/pen1_pose",10)
-        self.pen2= self.create_publisher(Pose2D,"/pen2_pose",10)
-        self.pen3= self.create_publisher(Pose2D,"/pen3_pose",10)
-
-        self.pen1_stop= self.create_publisher(Bool,"/pen1_stop",10)
-        self.pen2_stop= self.create_publisher(Bool,"/pen2_stop",10)
-        self.pen3_stop= self.create_publisher(Bool,"/pen3_stop",10)
-        self.pen1_sf=Bool()
-        self.pen2_sf=Bool()
-        self.pen3_sf=Bool()
-
-        self.pen2_stop_tc= self.create_publisher(Bool,"/pen2_stoptc",10)
-        self.pen3_stop_tc= self.create_publisher(Bool,"/pen3_stoptc",10)
-        self.pen2_sftc=Bool()
-        self.pen3_sftc=Bool()
-
-        self.pen1_sf.data=False
-        self.pen2_sf.data=False
-        self.pen3_sf.data=False
-
-        self.pen2_sftc.data=False
-        self.pen3_sftc.data=False
-
+        self.buffer=10
+        self.sub = self.create_subscription(Image, "/image_raw", self.image_callback, self.buffer)
+        self.pen1= self.create_publisher(Pose2D,"/pen1_pose",self.buffer)
+        self.pen2= self.create_publisher(Pose2D,"/pen2_pose",self.buffer)
+        self.pen3= self.create_publisher(Pose2D,"/pen3_pose",self.buffer)
         self.pen1_pos= Pose2D()
         self.pen2_pos= Pose2D()
         self.pen3_pos= Pose2D()
@@ -61,18 +41,9 @@ class ArUcoDetector(Node):
 
         self.distortion_coefficients = np.array([-0.355877, 0.106938, -0.011005, 0.004376, 0.000000])
 
-        self.distance12=200.0
-        self.distance23=200.0
-        self.distance31=200.0
-
-        self.dist1c=100.0
-        self.dist2c=100.0
-        self.dist3c=100.0
-        
-
 
     def image_callback(self, msg):
-        global a, ids, corners,framed,i,a,prev_positions,distance_thres
+        global a, ids, corners,framed,i,a,prev_positions
         try:
             self.cv_image = self.cvimg.imgmsg_to_cv2(msg, desired_encoding='bgr8')
         except Exception as e:
@@ -167,63 +138,8 @@ class ArUcoDetector(Node):
                                 self.pen3_pos.y=(float(centroid_y)-500)*-1
                                 self.pen3_pos.theta=float(yaw)
                                 self.pen3.publish(self.pen3_pos)
-                            
-                            self.distance12=self.distance(self.pen1_pos.x,self.pen1_pos.y,self.pen2_pos.x,self.pen2_pos.y)
-                            self.distance23=self.distance(self.pen2_pos.x,self.pen2_pos.y,self.pen3_pos.x,self.pen3_pos.y)
-                            self.distance31=self.distance(self.pen3_pos.x,self.pen3_pos.y,self.pen1_pos.x,self.pen1_pos.y)
-                            
-                            if self.distance12<distance_thres:
-                                self.pen2_sftc.data=True
-                                self.pen2_stop_tc.publish(self.pen2_sftc)
-                            elif self.distance12>=distance_thres:
-                                self.pen2_sftc.data=False
-                                self.pen2_stop_tc.publish(self.pen2_sftc)
-                            if self.distance23<distance_thres:
-                                self.pen3_sftc.data=True
-                                self.pen3_stop_tc.publish(self.pen3_sftc)
-                            elif self.distance23>=distance_thres:
-                                self.pen3_sftc.data=False
-                                self.pen3_stop_tc.publish(self.pen3_sftc)    
-                            if self.distance31<distance_thres:
-                                self.pen3_sftc.data=True
-                                self.pen3_stop_tc.publish(self.pen3_sftc)
-                            elif self.distance31>=distance_thres:
-                                self.pen3_sftc.data=False
-                                self.pen3_stop_tc.publish(self.pen3_sftc) 
-                                
-                            self.dist1c=self.distance_from_c(self.pen1_pos.x,self.pen1_pos.y)   
-                            self.dist2c=self.distance_from_c(self.pen2_pos.x,self.pen2_pos.y) 
-                            self.dist3c=self.distance_from_c(self.pen3_pos.x,self.pen3_pos.y)
-                            if self.dist1c<distance_thres and  self.dist2c>distance_thres and  self.dist3c>distance_thres :
-                                self.pen1_sf.data=False
-                                self.pen1_stop.publish(self.pen1_sf)
-                                self.pen2_sf.data=True
-                                self.pen2_stop.publish(self.pen2_sf)
-                                self.pen3_sf.data=True
-                                self.pen3_stop.publish(self.pen3_sf)
-                            if self.dist1c>distance_thres and  self.dist2c<distance_thres and  self.dist3c>distance_thres :
-                                self.pen1_sf.data=True
-                                self.pen1_stop.publish(self.pen1_sf)
-                                self.pen2_sf.data=False
-                                self.pen2_stop.publish(self.pen2_sf)
-                                self.pen3_sf.data=True
-                                self.pen3_stop.publish(self.pen3_sf)
-                            if self.dist1c>distance_thres and  self.dist2c>distance_thres and  self.dist3c<distance_thres :
-                                self.pen1_sf.data=True
-                                self.pen1_stop.publish(self.pen1_sf)
-                                self.pen2_sf.data=True
-                                self.pen2_stop.publish(self.pen2_sf)
-                                self.pen3_sf.data=False
-                                self.pen3_stop.publish(self.pen3_sf)
-                            if self.dist1c>distance_thres and  self.dist2c>distance_thres and  self.dist3c>distance_thres :
-                                self.pen1_sf.data=False
-                                self.pen1_stop.publish(self.pen1_sf)
-                                self.pen2_sf.data=False
-                                self.pen2_stop.publish(self.pen2_sf)
-                                self.pen3_sf.data=False
-                                self.pen3_stop.publish(self.pen3_sf)                       
 
-                            if len(points_in_last_20_frames[str(aruco_id1[0])]) > 300:
+                            if len(points_in_last_20_frames[str(aruco_id1[0])]) > 500:
                                 points_in_last_20_frames[str(aruco_id1[0])].pop(0)
 
                             # Draw trajectory
@@ -258,14 +174,7 @@ class ArUcoDetector(Node):
     # Return None if the specified ArUco marker is not found
         # return None         
 
-
-    def distance_from_c(self,x,y):
-        return ((x-250)**2+(y-250)**2)**0.5
-
-    def distance(self,x1,y1,x2,y2):
-
-
-        return ((x2-x1)**2+(y2-y1)**2)**0.5    
+        
         
             
             

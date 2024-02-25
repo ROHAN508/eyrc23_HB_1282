@@ -38,7 +38,8 @@ setup(
         'interp3 = hb_task6.interpolation3:main',
         'StopFlag = hb_task6.stop_bot_srv:main',
         'server = hb_task6.StopFlagServer:main',
-        'img = hb_task6.nextGOal1:main'
+        'img = hb_task6.nextGOal1:main',
+        'startFlag= hb_task6.startpointflag:main',
         ],
     },
 )

@@ -26,6 +26,7 @@ hb_task6/mapping3.py
 hb_task6/nextGOal1.py
 hb_task6/nextGoalPub.py
 hb_task6/rough.py
+hb_task6/startpointflag.py
 hb_task6/stop_bot_srv.py
 launch/bot1.launch.py
 launch/bot2.launch.py

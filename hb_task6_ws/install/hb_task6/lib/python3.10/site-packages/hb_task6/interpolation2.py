@@ -56,9 +56,9 @@ sorted_pwm_rear = np.array(pwmValues_rear)[unique_indices_rear][sorted_indices_r
 class interp(Node):
     def __init__(self):
         super().__init__('interpolator2')
-        
-        self.mapper = self.create_subscription(Float64MultiArray,'/interp2', self.mapCallBack1, 10)
-        self.pub_1 = self.create_publisher(Twist, '/cmd_vel/bot2', 10)
+        self.buffer=10
+        self.mapper = self.create_subscription(Float64MultiArray,'/interp2', self.mapCallBack1, self.buffer)
+        self.pub_1 = self.create_publisher(Twist, '/cmd_vel/bot2', self.buffer)
         self.timer = self.create_timer(0.05, self.timer_callback)
         self.pwms=Twist()
         self.pwms.linear.x=90.0

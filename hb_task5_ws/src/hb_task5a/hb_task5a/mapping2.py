@@ -12,7 +12,7 @@ from geometry_msgs.msg import Twist
 from my_robot_interfaces.msg import Goal             
 from std_msgs.msg import Float64MultiArray
 
-max_rpm=40
+max_rpm=30
 
 
 class mapper(Node):

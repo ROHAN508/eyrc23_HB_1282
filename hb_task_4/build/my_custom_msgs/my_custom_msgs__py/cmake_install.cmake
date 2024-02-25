@@ -1,8 +1,8 @@
-# Install script for directory: /home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs/my_custom_msgs__py
+# Install script for directory: /home/premsai/eyrc23_HB_1282/hb_task_4/build/my_custom_msgs/my_custom_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/premsai/eyrc23_HB_1282/hb_task_4/install/my_custom_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

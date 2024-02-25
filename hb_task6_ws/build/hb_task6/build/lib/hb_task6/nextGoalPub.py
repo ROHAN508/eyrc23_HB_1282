@@ -23,10 +23,10 @@ class ServiceNode(Node):
 
     def __init__(self):
         super().__init__('GOAL_node')
-
-        self.publish_goal_1 = self.create_publisher(Goal, 'hb_bot_1/goal', 10)
-        self.publish_goal_2 = self.create_publisher(Goal, 'hb_bot_2/goal', 10)
-        self.publish_goal_3 = self.create_publisher(Goal, 'hb_bot_3/goal', 10)
+        self.buffer=10
+        self.publish_goal_1 = self.create_publisher(Goal, 'hb_bot_1/goal', self.buffer)
+        self.publish_goal_2 = self.create_publisher(Goal, 'hb_bot_2/goal', self.buffer)
+        self.publish_goal_3 = self.create_publisher(Goal, 'hb_bot_3/goal', self.buffer)
         
         # self.publish_shape_1  = self.create_publisher(Shape, 'shape_1', 10)
         # self.publish_shape_2  = self.create_publisher(Shape, 'shape_2', 10)

@@ -14,4 +14,5 @@ map2 = hb_task6.mapping2:main
 map3 = hb_task6.mapping3:main
 nextgoal = hb_task6.nextGoalPub:main
 server = hb_task6.StopFlagServer:main
+startFlag = hb_task6.startpointflag:main
 

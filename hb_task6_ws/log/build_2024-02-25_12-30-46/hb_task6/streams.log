@@ -1,0 +1,41 @@
+[0.499s] Invoking command in '/home/premsai/eyrc23_HB_1282/hb_task6_ws/src/hb_task6': PYTHONPATH=/home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task6/prefix_override:/home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task6/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hb_task6 build --build-base /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task6/build install --record /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task6/install.log --single-version-externally-managed
+[0.676s] running egg_info
+[0.677s] writing ../../build/hb_task6/hb_task6.egg-info/PKG-INFO
+[0.677s] writing dependency_links to ../../build/hb_task6/hb_task6.egg-info/dependency_links.txt
+[0.677s] writing entry points to ../../build/hb_task6/hb_task6.egg-info/entry_points.txt
+[0.677s] writing requirements to ../../build/hb_task6/hb_task6.egg-info/requires.txt
+[0.678s] writing top-level names to ../../build/hb_task6/hb_task6.egg-info/top_level.txt
+[0.679s] reading manifest file '../../build/hb_task6/hb_task6.egg-info/SOURCES.txt'
+[0.679s] writing manifest file '../../build/hb_task6/hb_task6.egg-info/SOURCES.txt'
+[0.679s] running build
+[0.679s] running build_py
+[0.679s] copying hb_task6/startpointflag.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task6/build/lib/hb_task6
+[0.680s] running install
+[0.680s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.680s]   warnings.warn(
+[0.680s] running install_lib
+[0.681s] copying /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task6/build/lib/hb_task6/startpointflag.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task6/lib/python3.10/site-packages/hb_task6
+[0.681s] byte-compiling /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task6/lib/python3.10/site-packages/hb_task6/startpointflag.py to startpointflag.cpython-310.pyc
+[0.682s] running install_data
+[0.682s] running install_egg_info
+[0.683s] removing '/home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task6/lib/python3.10/site-packages/hb_task6-0.0.0-py3.10.egg-info' (and everything under it)
+[0.684s] Copying ../../build/hb_task6/hb_task6.egg-info to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task6/lib/python3.10/site-packages/hb_task6-0.0.0-py3.10.egg-info
+[0.684s] running install_scripts
+[0.700s] Installing StopFlag script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task6/lib/hb_task6
+[0.700s] Installing controller script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task6/lib/hb_task6
+[0.700s] Installing controllerik script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task6/lib/hb_task6
+[0.701s] Installing controllerik2 script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task6/lib/hb_task6
+[0.701s] Installing controllerik3 script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task6/lib/hb_task6
+[0.701s] Installing feedback script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task6/lib/hb_task6
+[0.701s] Installing img script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task6/lib/hb_task6
+[0.701s] Installing interp script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task6/lib/hb_task6
+[0.701s] Installing interp2 script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task6/lib/hb_task6
+[0.701s] Installing interp3 script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task6/lib/hb_task6
+[0.701s] Installing map script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task6/lib/hb_task6
+[0.701s] Installing map2 script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task6/lib/hb_task6
+[0.701s] Installing map3 script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task6/lib/hb_task6
+[0.701s] Installing nextgoal script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task6/lib/hb_task6
+[0.701s] Installing server script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task6/lib/hb_task6
+[0.701s] Installing startFlag script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task6/lib/hb_task6
+[0.701s] writing list of installed files to '/home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task6/install.log'
+[0.726s] Invoked command in '/home/premsai/eyrc23_HB_1282/hb_task6_ws/src/hb_task6' returned '0': PYTHONPATH=/home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task6/prefix_override:/home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_task6/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hb_task6 build --build-base /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task6/build install --record /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_task6/install.log --single-version-externally-managed
