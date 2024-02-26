@@ -7,14 +7,6 @@ from my_robot_interfaces.msg import Goal
 from geometry_msgs.msg import Pose2D
 
 
-# start1=Bool()
-# start2=Bool()
-# start3=Bool()
-
-
-# start1.data=False
-# start2.data=True
-# start3.data=True
 dist_thres=7.0
 
 class ControlFlag(Node):
@@ -51,12 +43,7 @@ class ControlFlag(Node):
         self.startrun=Bool()
         self.startrun.data=False
 
-        # self.subscription_bot1 = self.create_subscription(Bool,'hb_bot_1/startpt', self.startCallBack1, self.buffer) 
-
-        # self.subscription_bot2 = self.create_subscription(Bool,'hb_bot_2/startpt', self.startCallBack2, self.buffer) 
-
-
-        # self.subscription_bot3 = self.create_subscription(Bool,'hb_bot_3/startpt', self.startCallBack3, self.buffer) 
+    
         self.rate = self.create_rate(100)
     def Callback1(self, msg):
         self.bot1_x = msg.x
@@ -85,22 +72,7 @@ class ControlFlag(Node):
 
     def distance_from_1st(self, x1, y1, x2, y2):
         return ((x1 - x2)**2 + (y1 - y2)**2)**0.5    # def startCallBack1(self,msg):
-        # global start1
-        # start1.data=msg.data
-        # if start1==True:
-            # self.get_logger().info(f'bot1 true')
-    # def startCallBack2(self,msg):
-    #     global start2
-    #     start2.data=msg.data
-    #     # start2.data=True
-    # #     # if start2==True:
-    # #         # self.get_logger().info(f'bot2 true')
-    # def startCallBack3(self,msg):
-    #     global start3
-    #     start3.data=msg.data 
-    #     start3.data=True
-    #     # if start3==True:
-    #         # self.get_logger().info(f'bot3 true')       
+             
 
 def main(args=None):
 
@@ -112,11 +84,11 @@ def main(args=None):
             pass
         else:
             dist1 = startControl.distance_from_1st(startControl.bot1_x_goal[0], startControl.bot1_y_goal[0], startControl.bot1_x, startControl.bot1_y)
-            # global start1,start2,start3
+            
             dist2 = startControl.distance_from_1st(startControl.bot2_x_goal[0], startControl.bot2_y_goal[0], startControl.bot2_x, startControl.bot2_y)
-            # global start1,start2,start3
+            
             dist3 = startControl.distance_from_1st(startControl.bot3_x_goal[0], startControl.bot3_y_goal[0], startControl.bot3_x, startControl.bot3_y)
-            # global start1,start2,start3
+            
             # if start1.data==True and start2.data==True and start3.data==True:
             #     startControl.startrun.data=True
             # startControl.get_logger().info(f'bot1 : {start1}')
