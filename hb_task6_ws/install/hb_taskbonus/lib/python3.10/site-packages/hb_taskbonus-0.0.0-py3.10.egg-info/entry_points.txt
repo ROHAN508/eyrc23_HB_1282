@@ -1,0 +1,9 @@
+[console_scripts]
+controller1 = hb_taskbonus.controller1:main
+feedback = hb_taskbonus.feedback:main
+imgutl = hb_taskbonus.image_utlis:main
+interp1 = hb_taskbonus.interpolation:main
+map1 = hb_taskbonus.mapping:main
+nextGoal1 = hb_taskbonus.nextGoal_image1:main
+nextGoalfunc = hb_taskbonus.nextGoal_function:main
+

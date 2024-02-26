@@ -16,10 +16,7 @@ from std_msgs.msg import Float64MultiArray
 pen_down=False
 distance_threshold=3.5
 angle_threshold=0.1
-forward_vel=[25.0,180.0,90.0]
-# forward_vel=[0.0,170.0,90.0]
-anticlockwise=[70.0,70.0,70.0]
-clockwise=[110.0,110.0,110.0]
+
 i=0
 r=1.9
 dc=0.1
@@ -194,12 +191,10 @@ def main(args=None):
 
            
             if distance < distance_threshold :
-                # hb_controller.pen1.data=True
+                #
                 i = i+1
                 hb_controller.pen_pub1.publish(hb_controller.pen1)
-            # if distance < distance_threshold :
-                
-            #     i = i+1
+           
                 
             if i==len(hb_controller.bot_x_goal):
                 hb_controller.twist_1.data[0]=0.0
