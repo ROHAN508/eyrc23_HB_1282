@@ -1,3 +1,15 @@
+# ```
+# * Team Id : HB#1282
+# * Author List : AKSHAR DASH, ROHAN MOHAPATRA
+# * Filename: image_utlis
+# * Theme: HologlyphBots
+# * Functions: returncontour
+
+###########################
+
+##this file stores all the diluted points of the contours of the image##
+
+
 contour1=[[164, 430], [163, 425], [165, 420], [168, 415], [171, 411], [176, 408], 
 [181, 407], [186, 407], [191, 408], [196, 410], [201, 409], [205, 412], [204, 417], [205, 422], [205, 427]] 
 
@@ -151,7 +163,13 @@ contour24=[[154, 280], [150, 276], [146, 272], [143, 267], [140, 263], [137, 258
 mainlist=[contour1,contour2,contour3,contour4,contour5,contour6,contour7,contour8
           ,contour9,contour10,contour11,contour12,contour13,contour14,contour15,contour16
           ,contour17,contour18,contour19,contour20,contour21,contour22,contour23,contour24]
-
+# ``
+# * Function Name: returncontour
+# * Input: index of the desired contour
+# * Output: list of contours
+# * Logic: It returns the index-1Th element of the list of all contours
+# * in the function>
+# * Example Call: returncontour(5)
 def returncontour(index):
     return mainlist[index-1]
 
