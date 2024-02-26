@@ -156,7 +156,7 @@ def returncontour(index):
     return mainlist[index-1]
 
 def main():
-    pass
+    print('hello')
 
 if __name__ == '__main__':
     main()

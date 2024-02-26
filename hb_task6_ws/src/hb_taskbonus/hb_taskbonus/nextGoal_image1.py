@@ -14,8 +14,8 @@ from .image_utlis import *
 
 spacing=5.0
 
-
-fullimage2=[returncontour(6),returncontour(12),returncontour(23),returncontour(21),returncontour(14),returncontour(19)]
+msg_bot_2 = Goal()
+fullimage2=[returncontour(13),returncontour(20),returncontour(18),returncontour(22),returncontour(5),returncontour(11)]
 
 pen_status_2=Bool()
 pen_status_2.data=False
@@ -40,6 +40,11 @@ class ServiceNode(Node):
         self.resolution2=1
         self.resolution3=1
         self.scale=1
+        self.timer = self.create_timer(0.5, self.timer_callback)
+
+    def timer_callback(self):
+        # self.get_logger().info(f'goal published')
+        self.publish_goal_2.publish(msg_bot_2)
     
     def checkPenStatus_2(self,msg):
         global pen_status_2
@@ -49,10 +54,10 @@ class ServiceNode(Node):
 def main(args=None):
     rclpy.init(args=args)
     service_node = ServiceNode()
-    
-    msg_bot_1 = Goal()
-    msg_bot_2 = Goal()
-    msg_bot_3 = Goal()
+    global  msg_bot_2 
+    # msg_bot_1 = Goal()
+   
+    # msg_bot_3 = Goal()
     
 
     image_idx=0
@@ -66,21 +71,20 @@ def main(args=None):
                 msg_bot_2.x = []
                 msg_bot_2.y = []
                 contour=fullimage2[image_idx]
-                prev_x=0.0
-                prev_y=0.0
+               
                 for coordinate in contour:
-                    distance=((coordinate[0]-prev_x)**2+(coordinate[1]-prev_y)**2)**0.5
-                    if distance>spacing:
-                            msg_bot_2.x.append(coordinate[0])
-                            msg_bot_2.y.append(coordinate[1]) 
+                    
+                    msg_bot_2.x.append(coordinate[0])
+                    msg_bot_2.y.append(coordinate[1]) 
+                    
 
-                            prev_x=coordinate[0]
-                            prev_y=coordinate[1]
+                    
                 msg_bot_2.theta = 0.0
+
                 list_update_2=True
                 image_idx+=1  
                 service_node.get_logger().info(f'goal created')
-            # service_node.publish_goal_2.publish(msg_bot_2)
+                service_node.publish_goal_2.publish(msg_bot_2)
             # service_node.get_logger().info(msg_bot_2)
 
             if pen_status_2.data==True and list_update_2==True:
@@ -88,7 +92,9 @@ def main(args=None):
         if image_idx==len(fullimage2):
             service_node.bot2_complete.data=True
             service_node.run_complete2.publish(service_node.bot2_complete) 
-            service_node.get_logger().info(f'stup {service_node.bot2_complete}')       
+            service_node.get_logger().info(f'stup {service_node.bot2_complete}')
+
+               
         
             
 

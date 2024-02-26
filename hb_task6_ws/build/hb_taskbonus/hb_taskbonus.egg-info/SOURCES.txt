@@ -26,6 +26,7 @@ hb_taskbonus/nextGoal_image1.py
 hb_taskbonus/nextGoal_image2.py
 hb_taskbonus/nextGoal_image3.py
 hb_taskbonus/startpointflag.py
+launch/goals.launch.py
 launch/utils.launch.py
 resource/hb_taskbonus
 test/test_copyright.py

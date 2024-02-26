@@ -1,3 +1,14 @@
+# ```
+# * Team Id : HB#1282
+# * Author List : AKSHAR DASH, ROHAN MOHAPATRA
+# * Filename: controller1
+# * Theme: HologlyphBots
+# * Functions: errors, inverse kinematics,Pcontroller
+# * Global Variables: pen_down,distance_threshold,angle_threshold,i,r,dc,prev_msgx,run_complete
+###########################
+
+
+
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Pose2D
@@ -5,25 +16,23 @@ import time
 import math
 import numpy as np
 from std_msgs.msg import Bool
-# from tf_transformations import euler_from_quaternion
-from geometry_msgs.msg import Twist
 from my_robot_interfaces.msg import Goal   
 from std_msgs.msg import Float64MultiArray   
 
-pen_down=False
-distance_threshold=5
+pen_down=False ##initialisation of pen status
+distance_threshold=5.5## distance to achieve before moving to next goal
 
-angle_threshold=0.1
+angle_threshold=0.1# angular threshold
 
-i=0
-r=1.9
-dc=0.1
+i=0 ##index for traversing through list of coordinates
+r=1.9## radius of individual wheel
+dc=0.1## radius of the bot
 # dc=5.0
 
 prev_msgx=[]
 
 run_complete=Bool()
-run_complete.data=False
+run_complete.data=False## to check if run is completed
 
 
 class HBControl(Node):
@@ -34,15 +43,14 @@ class HBControl(Node):
         # Initialise the required variables
         self.bot_x_goal = []
         self.bot_y_goal = []
-        # self.bot_3_theta_goal = 0.0
-
+        
         self.bot_x = 0.0
         self.bot_y = 0.0
         self.bot_theta = 0.0
         self.p=1
         self.q=1
 
-        # self.start_bot = Bool()
+        
         self.start_bot = False
         
 
@@ -57,7 +65,6 @@ class HBControl(Node):
         self.stop_bot = Bool()
         self.stop_bot.data = False
         
-        self.twist_1.data = [0.0, 0.0, 0.0]
 
         self.pub_1 = self.create_publisher(Float64MultiArray, '/map', 10)
         self.pen_pub1 = self.create_publisher(Bool, '/pen1_down', 10)
@@ -153,14 +160,9 @@ class HBControlimg(Node):
         self.bot_y = msg.y
         self.bot_theta = msg.theta
     def goalCallBack1(self, msg1):
-        global prev_msgx
-        if prev_msgx!=msg1.x:
-            # i=0
-            self.bot_x_goal = msg1.x
-            self.bot_y_goal = msg1.y
-            self.bot_theta_goal = msg1.theta
-
-            prev_msgx=self.bot_x_goal
+        self.bot_x_goal = msg1.x
+        self.bot_y_goal = msg1.y
+        self.bot_theta_goal = msg1.theta
         
 
 
@@ -206,8 +208,7 @@ def main(args=None):
     
         # Create an instance of the HBController class
         hb_controller = HBControl()
-        # x_golar=250
-        # y_golar=250
+        
         global i,pen_down
         # Main loop
         while rclpy.ok():
@@ -218,9 +219,7 @@ def main(args=None):
                 #########           GOAL POSE             #########
                 x_goal= hb_controller.bot_x_goal[i]
                 y_goal= hb_controller.bot_y_goal[i]
-                # x_goal= x_golar
-                # y_goal= y_golar
-                # theta_goal= hb_controller.bot_theta_goal
+                
                 ####################################################
                 # hb_controller.get_logger().info(f'present_x:{hb_controller.bot_x} present_y={hb_controller.bot_y}')
                 # hb_controller.get_logger().info(f'xgoal:{x_goal} ygoal={y_goal}')
@@ -228,7 +227,7 @@ def main(args=None):
                 x_bot,y_bot,distance,q_error=hb_controller.errors(x_goal,y_goal,0)
                 controlX,controlY,controlQ=hb_controller.pController(x_bot,y_bot,q_error)
                 w1_vel,w2_vel,w3_vel=hb_controller.inverse_kinematics(controlX,controlY,controlQ)
-                # w1_vel,w2_vel,w3_vel=hb_controller.inverse_kinematics(100,0.0,controlQ)
+                
 
                 if i ==0:
                     hb_controller.twist_1.data[0]=w1_vel
@@ -283,7 +282,7 @@ def main(args=None):
 
                     break     
                     ####################################################
-            # hb_controller.get_logger().info("GOAL: no ")
+            
             # Spin once to process callbacks
             rclpy.spin_once(hb_controller)
         
@@ -296,6 +295,8 @@ def main(args=None):
     
         # Create an instance of the HBControlimg class
         hb_controller = HBControlimg()
+
+        # hb_controller.get_logger().info(f'instance created')
         
         global pen_down, run_complete
         i=0
@@ -303,18 +304,17 @@ def main(args=None):
         while rclpy.ok():
             
             # Check if the service call is done
-            if hb_controller.bot_x_goal == []  and hb_controller.bot_x_goal == []:
-                pass
+            if hb_controller.bot_x_goal == []  and hb_controller.bot_y_goal == []:
+
+                hb_controller.get_logger().info(f'pass')                
+                rclpy.spin_once(hb_controller)
             else:
                 #########           GOAL POSE             #########
                 x_goal= hb_controller.bot_x_goal[i]
                 y_goal= hb_controller.bot_y_goal[i]
-                # x_goal= x_golar
-                # y_goal= y_golar
-                # theta_goal= hb_controller.bot_theta_goal
-                ####################################################
-                # hb_controller.get_logger().info(f'present_x:{hb_controller.bot_x} present_y={hb_controller.bot_y}')
-                # hb_controller.get_logger().info(f'xgoal:{x_goal} ygoal={y_goal}')
+                
+                hb_controller.get_logger().info(f'present_x:{hb_controller.bot_x} present_y={hb_controller.bot_y}')
+                hb_controller.get_logger().info(f'xgoal:{x_goal} ygoal={y_goal}')
                 
                 x_bot,y_bot,distance,q_error=hb_controller.errors(x_goal,y_goal,0)
                 controlX,controlY,controlQ=hb_controller.pController(x_bot,y_bot,q_error)
@@ -331,9 +331,9 @@ def main(args=None):
 
             
                 if distance < distance_threshold :
-                    # hb_controller.pen1.data=True
+                    
                     i = i+1
-                    # hb_controller.pen_pub1.publish(hb_controller.pen1)
+                   
                 if i==1:
                     hb_controller.pen1.data=True
                     hb_controller.pen_pub1.publish(hb_controller.pen1)
@@ -346,7 +346,7 @@ def main(args=None):
                     i=0
                     hb_controller.pub_1.publish(hb_controller.twist_1)
                     hb_controller.pen_pub1.publish(hb_controller.pen1)
-                    # hb_controller.stop_pub_2.publish(hb_controller.stop_bot)
+                    
                     time.sleep(0.5)
                     hb_controller.get_logger().info(f'{run_complete.data}')
 
@@ -362,7 +362,7 @@ def main(args=None):
 
                     break     
                     ####################################################
-            # hb_controller.get_logger().info("GOAL: no ")
+            
             # Spin once to process callbacks
             rclpy.spin_once(hb_controller)
         

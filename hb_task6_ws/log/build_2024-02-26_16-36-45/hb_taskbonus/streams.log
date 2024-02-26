@@ -1,0 +1,45 @@
+[0.674s] Invoking command in '/home/premsai/eyrc23_HB_1282/hb_task6_ws/src/hb_taskbonus': PYTHONPATH=/home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_taskbonus/prefix_override:/home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hb_taskbonus build --build-base /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_taskbonus/build install --record /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_taskbonus/install.log --single-version-externally-managed
+[0.826s] running egg_info
+[0.826s] writing ../../build/hb_taskbonus/hb_taskbonus.egg-info/PKG-INFO
+[0.826s] writing dependency_links to ../../build/hb_taskbonus/hb_taskbonus.egg-info/dependency_links.txt
+[0.826s] writing entry points to ../../build/hb_taskbonus/hb_taskbonus.egg-info/entry_points.txt
+[0.827s] writing requirements to ../../build/hb_taskbonus/hb_taskbonus.egg-info/requires.txt
+[0.827s] writing top-level names to ../../build/hb_taskbonus/hb_taskbonus.egg-info/top_level.txt
+[0.828s] reading manifest file '../../build/hb_taskbonus/hb_taskbonus.egg-info/SOURCES.txt'
+[0.829s] writing manifest file '../../build/hb_taskbonus/hb_taskbonus.egg-info/SOURCES.txt'
+[0.829s] running build
+[0.829s] running build_py
+[0.829s] copying hb_taskbonus/nextGoal_image3.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus
+[0.829s] copying hb_taskbonus/controller1.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus
+[0.830s] running install
+[0.830s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.830s]   warnings.warn(
+[0.830s] running install_lib
+[0.831s] copying /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus/nextGoal_image3.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus
+[0.831s] copying /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus/controller1.py -> /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus
+[0.832s] byte-compiling /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus/nextGoal_image3.py to nextGoal_image3.cpython-310.pyc
+[0.832s] byte-compiling /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus/controller1.py to controller1.cpython-310.pyc
+[0.834s] running install_data
+[0.834s] running install_egg_info
+[0.835s] removing '/home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus-0.0.0-py3.10.egg-info' (and everything under it)
+[0.835s] Copying ../../build/hb_taskbonus/hb_taskbonus.egg-info to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus-0.0.0-py3.10.egg-info
+[0.836s] running install_scripts
+[0.850s] Installing StopFlag script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[0.851s] Installing controller1 script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[0.851s] Installing controller2 script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[0.851s] Installing controller3 script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[0.851s] Installing feedback script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[0.851s] Installing imgutl script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[0.851s] Installing interp1 script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[0.851s] Installing interp2 script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[0.851s] Installing interp3 script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[0.851s] Installing map1 script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[0.851s] Installing map2 script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[0.851s] Installing map3 script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[0.852s] Installing nextGoal1 script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[0.852s] Installing nextGoal2 script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[0.852s] Installing nextGoal3 script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[0.852s] Installing nextGoalfunc script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[0.852s] Installing startpoint script to /home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[0.852s] writing list of installed files to '/home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_taskbonus/install.log'
+[0.879s] Invoked command in '/home/premsai/eyrc23_HB_1282/hb_task6_ws/src/hb_taskbonus' returned '0': PYTHONPATH=/home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_taskbonus/prefix_override:/home/premsai/eyrc23_HB_1282/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hb_taskbonus build --build-base /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_taskbonus/build install --record /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/hb_taskbonus/install.log --single-version-externally-managed

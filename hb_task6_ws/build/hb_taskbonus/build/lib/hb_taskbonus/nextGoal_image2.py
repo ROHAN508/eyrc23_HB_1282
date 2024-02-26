@@ -14,8 +14,8 @@ from .image_utlis import *
 
 spacing=5.0
 
-
-fullimage2=[returncontour(5),returncontour(11),returncontour(22),returncontour(20),returncontour(13),returncontour(18)]
+msg_bot_2 =Goal()
+fullimage2=[returncontour(24),returncontour(15),returncontour(16),returncontour(3),returncontour(1),returncontour(2),returncontour(4)]
 
 pen_status_2=Bool()
 pen_status_2.data=False
@@ -40,6 +40,11 @@ class ServiceNode(Node):
         self.resolution2=1
         self.resolution3=1
         self.scale=1
+        self.timer = self.create_timer(0.5, self.timer_callback)
+
+    def timer_callback(self):
+        # self.get_logger().info(f'goal published')
+        self.publish_goal_2.publish(msg_bot_2)
     
     def checkPenStatus_2(self,msg):
         global pen_status_2
@@ -50,9 +55,7 @@ def main(args=None):
     rclpy.init(args=args)
     service_node = ServiceNode()
     
-    msg_bot_1 = Goal()
-    msg_bot_2 = Goal()
-    msg_bot_3 = Goal()
+    global  msg_bot_2 
     
 
     image_idx=0
@@ -66,21 +69,18 @@ def main(args=None):
                 msg_bot_2.x = []
                 msg_bot_2.y = []
                 contour=fullimage2[image_idx]
-                prev_x=0.0
-                prev_y=0.0
+                
                 for coordinate in contour:
-                    distance=((coordinate[0]-prev_x)**2+(coordinate[1]-prev_y)**2)**0.5
-                    if distance>spacing:
-                            msg_bot_2.x.append(coordinate[0])
-                            msg_bot_2.y.append(coordinate[1]) 
+                    
+                    msg_bot_2.x.append(coordinate[0])
+                    msg_bot_2.y.append(coordinate[1]) 
 
-                            prev_x=coordinate[0]
-                            prev_y=coordinate[1]
+                            
                 msg_bot_2.theta = 0.0
                 list_update_2=True
                 image_idx+=1  
                 service_node.get_logger().info(f'goal created')
-            # service_node.publish_goal_2.publish(msg_bot_2)
+                service_node.publish_goal_2.publish(msg_bot_2)
             # service_node.get_logger().info(msg_bot_2)
 
             if pen_status_2.data==True and list_update_2==True:

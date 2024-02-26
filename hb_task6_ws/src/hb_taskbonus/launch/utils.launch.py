@@ -7,6 +7,7 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
     return LaunchDescription([
+
         Node(
             package='hb_taskbonus',
             executable='startpoint',
@@ -34,18 +35,6 @@ def generate_launch_description():
         Node(
             package='hb_taskbonus',
             executable='map3',
-        ),
-        Node(
-            package='hb_taskbonus',
-            executable='nextGoal1',
-        ),
-        Node(
-            package='hb_taskbonus',
-            executable='nextGoal2',
-        ),
-        Node(
-            package='hb_taskbonus',
-            executable='nextGoal3',
         ),
         Node(
             package='hb_taskbonus',

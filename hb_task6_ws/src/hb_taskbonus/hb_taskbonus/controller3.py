@@ -11,7 +11,7 @@ from my_robot_interfaces.msg import Goal
 from std_msgs.msg import Float64MultiArray   
 
 pen_down=False
-distance_threshold=5
+distance_threshold=5.5
 angle_threshold=0.1
 
 i=0
@@ -152,14 +152,12 @@ class HBControlimg(Node):
         self.bot_y = msg.y
         self.bot_theta = msg.theta
     def goalCallBack1(self, msg1):
-        global prev_msgx
-        if prev_msgx!=msg1.x:
-            # i=0
-            self.bot_x_goal = msg1.x
-            self.bot_y_goal = msg1.y
-            self.bot_theta_goal = msg1.theta
+        
+        self.bot_x_goal = msg1.x
+        self.bot_y_goal = msg1.y
+        self.bot_theta_goal = msg1.theta
 
-            prev_msgx=self.bot_x_goal
+        
         
 
 
@@ -303,7 +301,9 @@ def main(args=None):
             
             # Check if the service call is done
             if hb_controller.bot_x_goal == []  and hb_controller.bot_x_goal == []:
-                pass
+                hb_controller.get_logger().info(f'pass')                
+
+                rclpy.spin_once(hb_controller)
             else:
                 #########           GOAL POSE             #########
                 x_goal= hb_controller.bot_x_goal[i]
@@ -312,8 +312,8 @@ def main(args=None):
                 # y_goal= y_golar
                 # theta_goal= hb_controller.bot_theta_goal
                 ####################################################
-                # hb_controller.get_logger().info(f'present_x:{hb_controller.bot_x} present_y={hb_controller.bot_y}')
-                # hb_controller.get_logger().info(f'xgoal:{x_goal} ygoal={y_goal}')
+                hb_controller.get_logger().info(f'present_x:{hb_controller.bot_x} present_y={hb_controller.bot_y}')
+                hb_controller.get_logger().info(f'xgoal:{x_goal} ygoal={y_goal}')
                 
                 x_bot,y_bot,distance,q_error=hb_controller.errors(x_goal,y_goal,0)
                 controlX,controlY,controlQ=hb_controller.pController(x_bot,y_bot,q_error)
