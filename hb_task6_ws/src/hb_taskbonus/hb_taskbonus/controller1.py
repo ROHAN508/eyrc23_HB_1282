@@ -49,7 +49,7 @@ class HBControl(Node):
         self.bot_theta = 0.0
         self.p=1
         self.q=1
-
+        
         
         self.start_bot = False
         
@@ -64,6 +64,8 @@ class HBControl(Node):
         self.stop_pub_1 = self.create_publisher(Bool, "/stop_bot1", 10)
         self.stop_bot = Bool()
         self.stop_bot.data = False
+
+        self.twist_1.data = [0.0, 0.0, 0.0]
         
 
         self.pub_1 = self.create_publisher(Float64MultiArray, '/map', 10)
