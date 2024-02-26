@@ -24,7 +24,7 @@ list_update_2=False
 class ServiceNode(Node):
 
     def __init__(self):
-        super().__init__('GOAL_node')
+        super().__init__('GOAL_node_img1')
 
         self.publish_goal_2 = self.create_publisher(Goal, 'hb_bot_1/goal_img', 10)
 

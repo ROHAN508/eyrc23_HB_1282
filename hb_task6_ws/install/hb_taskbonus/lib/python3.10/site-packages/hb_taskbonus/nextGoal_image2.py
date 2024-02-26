@@ -10,7 +10,7 @@ from my_robot_interfaces.msg import Goal
 from my_robot_interfaces.msg import Shape           
 import math
 from std_msgs.msg import Bool
-from image_utlis import *
+from .image_utlis import *
 
 spacing=5.0
 
@@ -24,7 +24,7 @@ list_update_2=False
 class ServiceNode(Node):
 
     def __init__(self):
-        super().__init__('GOAL_node')
+        super().__init__('GOAL_node_img2')
 
         self.publish_goal_2 = self.create_publisher(Goal, 'hb_bot_2/goal_img', 10)
 

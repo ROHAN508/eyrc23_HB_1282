@@ -10,7 +10,7 @@ from my_robot_interfaces.msg import Goal
 from my_robot_interfaces.msg import Shape           
 import math
 from std_msgs.msg import Bool
-from image_utlis import *
+from .image_utlis import *
 
 spacing=5.0
 

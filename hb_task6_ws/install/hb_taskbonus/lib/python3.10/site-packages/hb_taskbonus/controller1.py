@@ -11,7 +11,8 @@ from my_robot_interfaces.msg import Goal
 from std_msgs.msg import Float64MultiArray   
 
 pen_down=False
-distance_threshold=3.5
+distance_threshold=5
+
 angle_threshold=0.1
 
 i=0

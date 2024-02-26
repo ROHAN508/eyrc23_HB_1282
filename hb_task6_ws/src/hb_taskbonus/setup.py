@@ -37,8 +37,8 @@ setup(
             'controller3=hb_taskbonus.controller3:main',
             'map3=hb_taskbonus.mapping3:main',
             'interp3=hb_taskbonus.interpolation3:main',
-            'nextGoal2=hb_taskbonus.nextGoal_image1:main',
-            'nextGoal3=hb_taskbonus.nextGoal_image1:main',
+            'nextGoal2=hb_taskbonus.nextGoal_image2:main',
+            'nextGoal3=hb_taskbonus.nextGoal_image3:main',
             'startpoint=hb_taskbonus.startpointflag:main',
             'StopFlag=hb_taskbonus.StopFlagServer:main'
 

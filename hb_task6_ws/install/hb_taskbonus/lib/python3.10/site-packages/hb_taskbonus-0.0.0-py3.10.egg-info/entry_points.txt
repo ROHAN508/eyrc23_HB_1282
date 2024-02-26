@@ -1,9 +1,19 @@
 [console_scripts]
+StopFlag = hb_taskbonus.StopFlagServer:main
 controller1 = hb_taskbonus.controller1:main
+controller2 = hb_taskbonus.controller2:main
+controller3 = hb_taskbonus.controller3:main
 feedback = hb_taskbonus.feedback:main
 imgutl = hb_taskbonus.image_utlis:main
 interp1 = hb_taskbonus.interpolation:main
+interp2 = hb_taskbonus.interpolation2:main
+interp3 = hb_taskbonus.interpolation3:main
 map1 = hb_taskbonus.mapping:main
+map2 = hb_taskbonus.mapping2:main
+map3 = hb_taskbonus.mapping3:main
 nextGoal1 = hb_taskbonus.nextGoal_image1:main
+nextGoal2 = hb_taskbonus.nextGoal_image2:main
+nextGoal3 = hb_taskbonus.nextGoal_image3:main
 nextGoalfunc = hb_taskbonus.nextGoal_function:main
+startpoint = hb_taskbonus.startpointflag:main
 
