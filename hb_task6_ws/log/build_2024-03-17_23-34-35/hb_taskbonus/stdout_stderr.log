@@ -1,0 +1,43 @@
+running egg_info
+writing ../../build/hb_taskbonus/hb_taskbonus.egg-info/PKG-INFO
+writing dependency_links to ../../build/hb_taskbonus/hb_taskbonus.egg-info/dependency_links.txt
+writing entry points to ../../build/hb_taskbonus/hb_taskbonus.egg-info/entry_points.txt
+writing requirements to ../../build/hb_taskbonus/hb_taskbonus.egg-info/requires.txt
+writing top-level names to ../../build/hb_taskbonus/hb_taskbonus.egg-info/top_level.txt
+reading manifest file '../../build/hb_taskbonus/hb_taskbonus.egg-info/SOURCES.txt'
+writing manifest file '../../build/hb_taskbonus/hb_taskbonus.egg-info/SOURCES.txt'
+running build
+running build_py
+copying hb_taskbonus/controller3a.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus
+copying hb_taskbonus/controller2a.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus
+running install
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+copying /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus/controller3a.py -> /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus
+copying /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus/controller2a.py -> /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus
+byte-compiling /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus/controller3a.py to controller3a.cpython-310.pyc
+byte-compiling /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus/controller2a.py to controller2a.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/hb_taskbonus/hb_taskbonus.egg-info to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus-0.0.0-py3.10.egg-info
+running install_scripts
+Installing StopFlag script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+Installing controller1 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+Installing controller2 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+Installing controller3 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+Installing feedback script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+Installing imgutl script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+Installing interp1 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+Installing interp2 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+Installing interp3 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+Installing map1 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+Installing map2 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+Installing map3 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+Installing nextGoal1 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+Installing nextGoal2 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+Installing nextGoal3 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+Installing nextGoalfunc script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+Installing startpoint script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+writing list of installed files to '/home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/install.log'

@@ -1,0 +1,7 @@
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+  File "/home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus/controller1a.py", line 233
+    global i,pen_down,image_complete,func_complete
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: name 'func_complete' is used prior to global declaration
+

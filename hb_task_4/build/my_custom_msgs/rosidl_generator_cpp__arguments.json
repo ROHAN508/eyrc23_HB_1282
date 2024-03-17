@@ -1,9 +1,9 @@
 {
   "package_name": "my_custom_msgs",
-  "output_dir": "/home/premsai/eyrc23_HB_1282/hb_task_4/build/my_custom_msgs/rosidl_generator_cpp/my_custom_msgs",
+  "output_dir": "/home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs/rosidl_generator_cpp/my_custom_msgs",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource",
   "idl_tuples": [
-    "/home/premsai/eyrc23_HB_1282/hb_task_4/build/my_custom_msgs/rosidl_adapter/my_custom_msgs:msg/WheelVel.idl"
+    "/home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs/rosidl_adapter/my_custom_msgs:msg/WheelVel.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp",
@@ -21,6 +21,6 @@
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__builder.hpp.em",
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__struct.hpp.em",
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
-    "/home/premsai/eyrc23_HB_1282/hb_task_4/build/my_custom_msgs/rosidl_adapter/my_custom_msgs/msg/WheelVel.idl"
+    "/home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs/rosidl_adapter/my_custom_msgs/msg/WheelVel.idl"
   ]
 }

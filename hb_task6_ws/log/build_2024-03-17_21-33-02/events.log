@@ -1,0 +1,510 @@
+[0.000000] (-) TimerEvent: {}
+[0.000212] (hb_task6) JobQueued: {'identifier': 'hb_task6', 'dependencies': OrderedDict()}
+[0.000255] (hb_taskbonus) JobQueued: {'identifier': 'hb_taskbonus', 'dependencies': OrderedDict()}
+[0.000284] (my_robot_interfaces) JobQueued: {'identifier': 'my_robot_interfaces', 'dependencies': OrderedDict()}
+[0.000310] (hb_task6) JobStarted: {'identifier': 'hb_task6'}
+[0.074060] (hb_taskbonus) JobStarted: {'identifier': 'hb_taskbonus'}
+[0.099320] (-) TimerEvent: {}
+[0.156583] (my_robot_interfaces) JobStarted: {'identifier': 'my_robot_interfaces'}
+[0.199431] (-) TimerEvent: {}
+[0.299786] (-) TimerEvent: {}
+[0.400121] (-) TimerEvent: {}
+[0.500637] (-) TimerEvent: {}
+[0.600979] (-) TimerEvent: {}
+[0.701294] (-) TimerEvent: {}
+[0.801694] (-) TimerEvent: {}
+[0.844482] (my_robot_interfaces) JobProgress: {'identifier': 'my_robot_interfaces', 'progress': 'cmake'}
+[0.844904] (my_robot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/akshar/eyrc_hb/hb_task6_ws/src/my_robot_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces'], 'cwd': '/home/akshar/eyrc_hb/hb_task6_ws/build/my_robot_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'akshar'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/akshar'), ('OLDPWD', '/home/akshar/eyrc_hb'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3350'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'akshar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'akshar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/akshar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/akshar/.local/bin'), ('SESSION_MANAGER', 'local/akshar-IdeaPad-Gaming-3-15ACH6:@/tmp/.ICE-unix/2432,unix/akshar-IdeaPad-Gaming-3-15ACH6:/tmp/.ICE-unix/2432'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8be7b01e_a09b_42e2_88cc_751b3c51f841'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.92'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/akshar/eyrc_hb/hb_task6_ws/build/my_robot_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.901813] (-) TimerEvent: {}
+[1.002134] (-) TimerEvent: {}
+[1.078044] (my_robot_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.102246] (-) TimerEvent: {}
+[1.202567] (-) TimerEvent: {}
+[1.234112] (my_robot_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.241460] (hb_task6) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/hb_task6', 'build', '--build-base', '/home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build', 'install', '--record', '/home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/install.log', '--single-version-externally-managed'], 'cwd': '/home/akshar/eyrc_hb/hb_task6_ws/src/hb_task6', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_IN:en', 'USER': 'akshar', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/akshar', 'OLDPWD': '/home/akshar/eyrc_hb', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3350', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'akshar', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'akshar', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/akshar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/akshar/.local/bin', 'SESSION_MANAGER': 'local/akshar-IdeaPad-Gaming-3-15ACH6:@/tmp/.ICE-unix/2432,unix/akshar-IdeaPad-Gaming-3-15ACH6:/tmp/.ICE-unix/2432', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/8be7b01e_a09b_42e2_88cc_751b3c51f841', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.92', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/prefix_override:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[1.244767] (hb_taskbonus) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/hb_taskbonus', 'build', '--build-base', '/home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build', 'install', '--record', '/home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/install.log', '--single-version-externally-managed'], 'cwd': '/home/akshar/eyrc_hb/hb_task6_ws/src/hb_taskbonus', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_IN:en', 'USER': 'akshar', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/akshar', 'OLDPWD': '/home/akshar/eyrc_hb', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3350', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'akshar', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'akshar', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/akshar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/akshar/.local/bin', 'SESSION_MANAGER': 'local/akshar-IdeaPad-Gaming-3-15ACH6:@/tmp/.ICE-unix/2432,unix/akshar-IdeaPad-Gaming-3-15ACH6:/tmp/.ICE-unix/2432', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/8be7b01e_a09b_42e2_88cc_751b3c51f841', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.92', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/prefix_override:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[1.250145] (my_robot_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.302685] (-) TimerEvent: {}
+[1.346236] (my_robot_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.353805] (my_robot_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.354607] (my_robot_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.355419] (my_robot_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.359727] (my_robot_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.402800] (-) TimerEvent: {}
+[1.460795] (my_robot_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.468656] (my_robot_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.469055] (my_robot_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.469637] (my_robot_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.479991] (my_robot_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.497227] (hb_task6) StdoutLine: {'line': b'running egg_info\n'}
+[1.497880] (hb_task6) StdoutLine: {'line': b'creating ../../build/hb_task6/hb_task6.egg-info\n'}
+[1.498073] (hb_task6) StdoutLine: {'line': b'writing ../../build/hb_task6/hb_task6.egg-info/PKG-INFO\n'}
+[1.498378] (hb_task6) StdoutLine: {'line': b'writing dependency_links to ../../build/hb_task6/hb_task6.egg-info/dependency_links.txt\n'}
+[1.498636] (hb_task6) StdoutLine: {'line': b'writing entry points to ../../build/hb_task6/hb_task6.egg-info/entry_points.txt\n'}
+[1.498809] (hb_task6) StdoutLine: {'line': b'writing requirements to ../../build/hb_task6/hb_task6.egg-info/requires.txt\n'}
+[1.498948] (hb_task6) StdoutLine: {'line': b'writing top-level names to ../../build/hb_task6/hb_task6.egg-info/top_level.txt\n'}
+[1.499060] (hb_task6) StdoutLine: {'line': b"writing manifest file '../../build/hb_task6/hb_task6.egg-info/SOURCES.txt'\n"}
+[1.500144] (hb_taskbonus) StdoutLine: {'line': b'running egg_info\n'}
+[1.500782] (hb_taskbonus) StdoutLine: {'line': b'creating ../../build/hb_taskbonus/hb_taskbonus.egg-info\n'}
+[1.500959] (hb_taskbonus) StdoutLine: {'line': b'writing ../../build/hb_taskbonus/hb_taskbonus.egg-info/PKG-INFO\n'}
+[1.501182] (hb_task6) StdoutLine: {'line': b"reading manifest file '../../build/hb_task6/hb_task6.egg-info/SOURCES.txt'\n"}
+[1.501365] (hb_taskbonus) StdoutLine: {'line': b'writing dependency_links to ../../build/hb_taskbonus/hb_taskbonus.egg-info/dependency_links.txt\n'}
+[1.501541] (hb_taskbonus) StdoutLine: {'line': b'writing entry points to ../../build/hb_taskbonus/hb_taskbonus.egg-info/entry_points.txt\n'}
+[1.501645] (hb_taskbonus) StdoutLine: {'line': b'writing requirements to ../../build/hb_taskbonus/hb_taskbonus.egg-info/requires.txt\n'}
+[1.501762] (hb_taskbonus) StdoutLine: {'line': b'writing top-level names to ../../build/hb_taskbonus/hb_taskbonus.egg-info/top_level.txt\n'}
+[1.502002] (hb_taskbonus) StdoutLine: {'line': b"writing manifest file '../../build/hb_taskbonus/hb_taskbonus.egg-info/SOURCES.txt'\n"}
+[1.502183] (hb_task6) StdoutLine: {'line': b"writing manifest file '../../build/hb_task6/hb_task6.egg-info/SOURCES.txt'\n"}
+[1.502346] (hb_task6) StdoutLine: {'line': b'running build\n'}
+[1.502423] (hb_task6) StdoutLine: {'line': b'running build_py\n'}
+[1.502603] (hb_task6) StdoutLine: {'line': b'creating /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build\n'}
+[1.502724] (hb_task6) StdoutLine: {'line': b'creating /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib\n'}
+[1.502823] (-) TimerEvent: {}
+[1.502964] (hb_task6) StdoutLine: {'line': b'creating /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6\n'}
+[1.503047] (hb_task6) StdoutLine: {'line': b'copying hb_task6/countour_extraction.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6\n'}
+[1.504050] (hb_taskbonus) StdoutLine: {'line': b"reading manifest file '../../build/hb_taskbonus/hb_taskbonus.egg-info/SOURCES.txt'\n"}
+[1.504954] (hb_taskbonus) StdoutLine: {'line': b"writing manifest file '../../build/hb_taskbonus/hb_taskbonus.egg-info/SOURCES.txt'\n"}
+[1.505171] (hb_taskbonus) StdoutLine: {'line': b'running build\n'}
+[1.505267] (hb_taskbonus) StdoutLine: {'line': b'running build_py\n'}
+[1.505362] (hb_task6) StdoutLine: {'line': b'copying hb_task6/interpolation3.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6\n'}
+[1.505575] (hb_taskbonus) StdoutLine: {'line': b'creating /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build\n'}
+[1.505753] (hb_taskbonus) StdoutLine: {'line': b'creating /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib\n'}
+[1.505836] (hb_taskbonus) StdoutLine: {'line': b'creating /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus\n'}
+[1.505911] (hb_taskbonus) StdoutLine: {'line': b'copying hb_taskbonus/controller3.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus\n'}
+[1.508443] (hb_taskbonus) StdoutLine: {'line': b'copying hb_taskbonus/nextGoal_image2.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus\n'}
+[1.508615] (hb_task6) StdoutLine: {'line': b'copying hb_task6/draw.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6\n'}
+[1.508858] (hb_task6) StdoutLine: {'line': b'copying hb_task6/rough.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6\n'}
+[1.509093] (hb_taskbonus) StdoutLine: {'line': b'copying hb_taskbonus/interpolation3.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus\n'}
+[1.509329] (hb_task6) StdoutLine: {'line': b'copying hb_task6/controller.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6\n'}
+[1.509655] (hb_taskbonus) StdoutLine: {'line': b'copying hb_taskbonus/controller2.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus\n'}
+[1.509936] (hb_task6) StdoutLine: {'line': b'copying hb_task6/controller_ik.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6\n'}
+[1.510308] (hb_taskbonus) StdoutLine: {'line': b'copying hb_taskbonus/mapping3.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus\n'}
+[1.510517] (hb_task6) StdoutLine: {'line': b'copying hb_task6/controller_ik2.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6\n'}
+[1.510684] (hb_taskbonus) StdoutLine: {'line': b'copying hb_taskbonus/image_utlis.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus\n'}
+[1.510944] (hb_task6) StdoutLine: {'line': b'copying hb_task6/mapping3.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6\n'}
+[1.511311] (hb_task6) StdoutLine: {'line': b'copying hb_task6/interpolation2.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6\n'}
+[1.511494] (hb_taskbonus) StdoutLine: {'line': b'copying hb_taskbonus/controller1.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus\n'}
+[1.511834] (hb_task6) StdoutLine: {'line': b'copying hb_task6/mapping2.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6\n'}
+[1.512044] (hb_taskbonus) StdoutLine: {'line': b'copying hb_taskbonus/interpolation2.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus\n'}
+[1.512181] (hb_task6) StdoutLine: {'line': b'copying hb_task6/interpolation.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6\n'}
+[1.512461] (hb_taskbonus) StdoutLine: {'line': b'copying hb_taskbonus/nextGoal_image1.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus\n'}
+[1.512765] (hb_task6) StdoutLine: {'line': b'copying hb_task6/nextGOal1.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6\n'}
+[1.512958] (hb_taskbonus) StdoutLine: {'line': b'copying hb_taskbonus/mapping2.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus\n'}
+[1.513105] (hb_task6) StdoutLine: {'line': b'copying hb_task6/feedback.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6\n'}
+[1.513390] (hb_taskbonus) StdoutLine: {'line': b'copying hb_taskbonus/interpolation.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus\n'}
+[1.513719] (hb_task6) StdoutLine: {'line': b'copying hb_task6/controller_ik3.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6\n'}
+[1.513922] (hb_taskbonus) StdoutLine: {'line': b'copying hb_taskbonus/feedback.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus\n'}
+[1.514226] (hb_task6) StdoutLine: {'line': b'copying hb_task6/startpointflag.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6\n'}
+[1.514448] (hb_taskbonus) StdoutLine: {'line': b'copying hb_taskbonus/startpointflag.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus\n'}
+[1.514767] (hb_task6) StdoutLine: {'line': b'copying hb_task6/stop_bot_srv.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6\n'}
+[1.514944] (hb_taskbonus) StdoutLine: {'line': b'copying hb_taskbonus/nextGoal_image3.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus\n'}
+[1.515166] (hb_task6) StdoutLine: {'line': b'copying hb_task6/StopFlagServer.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6\n'}
+[1.515472] (hb_taskbonus) StdoutLine: {'line': b'copying hb_taskbonus/StopFlagServer.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus\n'}
+[1.515660] (hb_task6) StdoutLine: {'line': b'copying hb_task6/__init__.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6\n'}
+[1.515803] (hb_task6) StdoutLine: {'line': b'copying hb_task6/mapping.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6\n'}
+[1.515933] (hb_taskbonus) StdoutLine: {'line': b'copying hb_taskbonus/__init__.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus\n'}
+[1.516068] (hb_taskbonus) StdoutLine: {'line': b'copying hb_taskbonus/nextGoal_function.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus\n'}
+[1.516198] (hb_task6) StdoutLine: {'line': b'copying hb_task6/nextGoalPub.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6\n'}
+[1.516373] (hb_taskbonus) StdoutLine: {'line': b'copying hb_taskbonus/mapping.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus\n'}
+[1.516848] (hb_task6) StdoutLine: {'line': b'running install\n'}
+[1.517001] (hb_taskbonus) StdoutLine: {'line': b'running install\n'}
+[1.517404] (hb_task6) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[1.517559] (hb_task6) StderrLine: {'line': b'  warnings.warn(\n'}
+[1.517629] (hb_taskbonus) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[1.517808] (hb_taskbonus) StderrLine: {'line': b'  warnings.warn(\n'}
+[1.517886] (hb_taskbonus) StdoutLine: {'line': b'running install_lib\n'}
+[1.517954] (hb_task6) StdoutLine: {'line': b'running install_lib\n'}
+[1.518765] (hb_taskbonus) StdoutLine: {'line': b'copying /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus/nextGoal_image2.py -> /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus\n'}
+[1.519235] (hb_taskbonus) StdoutLine: {'line': b'copying /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus/nextGoal_image1.py -> /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus\n'}
+[1.519535] (hb_taskbonus) StdoutLine: {'line': b'copying /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus/startpointflag.py -> /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus\n'}
+[1.519686] (hb_taskbonus) StdoutLine: {'line': b'copying /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus/nextGoal_image3.py -> /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus\n'}
+[1.519872] (hb_taskbonus) StdoutLine: {'line': b'copying /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus/StopFlagServer.py -> /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus\n'}
+[1.520130] (hb_taskbonus) StdoutLine: {'line': b'copying /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus/nextGoal_function.py -> /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus\n'}
+[1.520819] (hb_task6) StdoutLine: {'line': b'running install_data\n'}
+[1.521095] (hb_taskbonus) StdoutLine: {'line': b'byte-compiling /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus/nextGoal_image2.py to nextGoal_image2.cpython-310.pyc\n'}
+[1.522226] (hb_taskbonus) StdoutLine: {'line': b'byte-compiling /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus/nextGoal_image1.py to nextGoal_image1.cpython-310.pyc\n'}
+[1.522397] (hb_task6) StdoutLine: {'line': b'creating /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/share/hb_task6/scripts\n'}
+[1.522513] (hb_task6) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.523068] (hb_taskbonus) StdoutLine: {'line': b'byte-compiling /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus/startpointflag.py to startpointflag.cpython-310.pyc\n'}
+[1.523914] (hb_taskbonus) StdoutLine: {'line': b'byte-compiling /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus/nextGoal_image3.py to nextGoal_image3.cpython-310.pyc\n'}
+[1.524092] (hb_task6) StdoutLine: {'line': b"removing '/home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/python3.10/site-packages/hb_task6-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.524547] (hb_task6) StdoutLine: {'line': b'Copying ../../build/hb_task6/hb_task6.egg-info to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/python3.10/site-packages/hb_task6-0.0.0-py3.10.egg-info\n'}
+[1.524743] (hb_taskbonus) StdoutLine: {'line': b'byte-compiling /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus/StopFlagServer.py to StopFlagServer.cpython-310.pyc\n'}
+[1.525378] (hb_taskbonus) StdoutLine: {'line': b'byte-compiling /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus/nextGoal_function.py to nextGoal_function.cpython-310.pyc\n'}
+[1.525824] (hb_task6) StdoutLine: {'line': b'running install_scripts\n'}
+[1.526273] (hb_taskbonus) StdoutLine: {'line': b'running install_data\n'}
+[1.527668] (hb_taskbonus) StdoutLine: {'line': b'creating /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/share/hb_taskbonus/scripts\n'}
+[1.527811] (hb_taskbonus) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.529426] (hb_taskbonus) StdoutLine: {'line': b"removing '/home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.529904] (hb_taskbonus) StdoutLine: {'line': b'Copying ../../build/hb_taskbonus/hb_taskbonus.egg-info to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus-0.0.0-py3.10.egg-info\n'}
+[1.531027] (hb_taskbonus) StdoutLine: {'line': b'running install_scripts\n'}
+[1.548258] (hb_task6) StdoutLine: {'line': b'Installing StopFlag script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6\n'}
+[1.548642] (hb_task6) StdoutLine: {'line': b'Installing controller script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6\n'}
+[1.548849] (hb_task6) StdoutLine: {'line': b'Installing controllerik script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6\n'}
+[1.549059] (hb_task6) StdoutLine: {'line': b'Installing controllerik2 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6\n'}
+[1.549246] (hb_task6) StdoutLine: {'line': b'Installing controllerik3 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6\n'}
+[1.549446] (hb_task6) StdoutLine: {'line': b'Installing feedback script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6\n'}
+[1.549641] (hb_task6) StdoutLine: {'line': b'Installing img script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6\n'}
+[1.549803] (hb_task6) StdoutLine: {'line': b'Installing interp script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6\n'}
+[1.549979] (hb_task6) StdoutLine: {'line': b'Installing interp2 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6\n'}
+[1.550137] (hb_task6) StdoutLine: {'line': b'Installing interp3 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6\n'}
+[1.550322] (hb_task6) StdoutLine: {'line': b'Installing map script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6\n'}
+[1.550490] (hb_task6) StdoutLine: {'line': b'Installing map2 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6\n'}
+[1.550681] (hb_task6) StdoutLine: {'line': b'Installing map3 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6\n'}
+[1.550850] (hb_task6) StdoutLine: {'line': b'Installing nextgoal script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6\n'}
+[1.551029] (hb_task6) StdoutLine: {'line': b'Installing server script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6\n'}
+[1.551237] (hb_task6) StdoutLine: {'line': b'Installing startFlag script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6\n'}
+[1.551960] (hb_task6) StdoutLine: {'line': b"writing list of installed files to '/home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/install.log'\n"}
+[1.553517] (hb_taskbonus) StdoutLine: {'line': b'Installing StopFlag script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus\n'}
+[1.553963] (hb_taskbonus) StdoutLine: {'line': b'Installing controller1 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus\n'}
+[1.554156] (hb_taskbonus) StdoutLine: {'line': b'Installing controller2 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus\n'}
+[1.554334] (hb_taskbonus) StdoutLine: {'line': b'Installing controller3 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus\n'}
+[1.554557] (hb_taskbonus) StdoutLine: {'line': b'Installing feedback script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus\n'}
+[1.554750] (hb_taskbonus) StdoutLine: {'line': b'Installing imgutl script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus\n'}
+[1.554912] (hb_taskbonus) StdoutLine: {'line': b'Installing interp1 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus\n'}
+[1.555100] (hb_taskbonus) StdoutLine: {'line': b'Installing interp2 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus\n'}
+[1.555310] (hb_taskbonus) StdoutLine: {'line': b'Installing interp3 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus\n'}
+[1.555498] (hb_taskbonus) StdoutLine: {'line': b'Installing map1 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus\n'}
+[1.555654] (hb_taskbonus) StdoutLine: {'line': b'Installing map2 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus\n'}
+[1.555824] (hb_taskbonus) StdoutLine: {'line': b'Installing map3 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus\n'}
+[1.556035] (hb_taskbonus) StdoutLine: {'line': b'Installing nextGoal1 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus\n'}
+[1.556216] (hb_taskbonus) StdoutLine: {'line': b'Installing nextGoal2 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus\n'}
+[1.556373] (hb_taskbonus) StdoutLine: {'line': b'Installing nextGoal3 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus\n'}
+[1.556557] (hb_taskbonus) StdoutLine: {'line': b'Installing nextGoalfunc script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus\n'}
+[1.556750] (hb_taskbonus) StdoutLine: {'line': b'Installing startpoint script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus\n'}
+[1.557450] (hb_taskbonus) StdoutLine: {'line': b"writing list of installed files to '/home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/install.log'\n"}
+[1.581253] (hb_task6) CommandEnded: {'returncode': 0}
+[1.602934] (-) TimerEvent: {}
+[1.644169] (hb_task6) JobEnded: {'identifier': 'hb_task6', 'rc': 0}
+[1.645820] (hb_taskbonus) CommandEnded: {'returncode': 0}
+[1.659682] (my_robot_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.701823] (hb_taskbonus) JobEnded: {'identifier': 'hb_taskbonus', 'rc': 0}
+[1.703026] (-) TimerEvent: {}
+[1.775823] (my_robot_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.782007] (my_robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.791359] (my_robot_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.803126] (-) TimerEvent: {}
+[1.852740] (my_robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.903523] (-) TimerEvent: {}
+[2.003831] (-) TimerEvent: {}
+[2.104126] (-) TimerEvent: {}
+[2.180086] (my_robot_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[2.204229] (-) TimerEvent: {}
+[2.304521] (-) TimerEvent: {}
+[2.388823] (my_robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.404623] (-) TimerEvent: {}
+[2.504902] (-) TimerEvent: {}
+[2.605267] (-) TimerEvent: {}
+[2.652002] (my_robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.682034] (my_robot_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[2.684369] (my_robot_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.705359] (-) TimerEvent: {}
+[2.716003] (my_robot_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[2.716167] (my_robot_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.716266] (my_robot_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.716358] (my_robot_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.739774] (my_robot_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.788460] (my_robot_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.805761] (-) TimerEvent: {}
+[2.826534] (my_robot_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[2.829838] (my_robot_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/akshar/eyrc_hb/hb_task6_ws/build/my_robot_interfaces\n'}
+[2.838878] (my_robot_interfaces) CommandEnded: {'returncode': 0}
+[2.839617] (my_robot_interfaces) JobProgress: {'identifier': 'my_robot_interfaces', 'progress': 'build'}
+[2.842057] (my_robot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/akshar/eyrc_hb/hb_task6_ws/build/my_robot_interfaces', '--', '-j16', '-l16'], 'cwd': '/home/akshar/eyrc_hb/hb_task6_ws/build/my_robot_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'akshar'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/akshar'), ('OLDPWD', '/home/akshar/eyrc_hb'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3350'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'akshar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'akshar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/akshar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/akshar/.local/bin'), ('SESSION_MANAGER', 'local/akshar-IdeaPad-Gaming-3-15ACH6:@/tmp/.ICE-unix/2432,unix/akshar-IdeaPad-Gaming-3-15ACH6:/tmp/.ICE-unix/2432'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8be7b01e_a09b_42e2_88cc_751b3c51f841'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.92'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/akshar/eyrc_hb/hb_task6_ws/build/my_robot_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.891784] (my_robot_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.903870] (my_robot_interfaces) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.905860] (-) TimerEvent: {}
+[2.914844] (my_robot_interfaces) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_copy_my_robot_interfaces\n'}
+[3.005983] (-) TimerEvent: {}
+[3.106313] (-) TimerEvent: {}
+[3.176421] (my_robot_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[3.177140] (my_robot_interfaces) StdoutLine: {'line': b'creating my_robot_interfaces.egg-info\n'}
+[3.177335] (my_robot_interfaces) StdoutLine: {'line': b'writing my_robot_interfaces.egg-info/PKG-INFO\n'}
+[3.177555] (my_robot_interfaces) StdoutLine: {'line': b'writing dependency_links to my_robot_interfaces.egg-info/dependency_links.txt\n'}
+[3.177750] (my_robot_interfaces) StdoutLine: {'line': b'writing top-level names to my_robot_interfaces.egg-info/top_level.txt\n'}
+[3.177995] (my_robot_interfaces) StdoutLine: {'line': b"writing manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'\n"}
+[3.179805] (my_robot_interfaces) StdoutLine: {'line': b"reading manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'\n"}
+[3.180385] (my_robot_interfaces) StdoutLine: {'line': b"writing manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'\n"}
+[3.206438] (-) TimerEvent: {}
+[3.208586] (my_robot_interfaces) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_my_robot_interfaces_egg\n'}
+[3.269026] (my_robot_interfaces) StdoutLine: {'line': b'[  4%] Built target my_robot_interfaces__cpp\n'}
+[3.281459] (my_robot_interfaces) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.281755] (my_robot_interfaces) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.281876] (my_robot_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.292356] (my_robot_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interfaces/srv/detail/next_goal__functions.c.o\x1b[0m\n'}
+[3.292639] (my_robot_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interfaces/msg/detail/shape__functions.c.o\x1b[0m\n'}
+[3.292741] (my_robot_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interfaces/msg/detail/goal__functions.c.o\x1b[0m\n'}
+[3.306534] (-) TimerEvent: {}
+[3.380810] (my_robot_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[32m\x1b[1mLinking C shared library libmy_robot_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[3.406653] (-) TimerEvent: {}
+[3.425721] (my_robot_interfaces) StdoutLine: {'line': b'[ 19%] Built target my_robot_interfaces__rosidl_generator_c\n'}
+[3.438697] (my_robot_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.438915] (my_robot_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.439017] (my_robot_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.506769] (-) TimerEvent: {}
+[3.574276] (my_robot_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_robot_interfaces/msg/shape__type_support.cpp.o\x1b[0m\n'}
+[3.574572] (my_robot_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_robot_interfaces/srv/next_goal__type_support.cpp.o\x1b[0m\n'}
+[3.574734] (my_robot_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_robot_interfaces/msg/goal__type_support.cpp.o\x1b[0m\n'}
+[3.606907] (-) TimerEvent: {}
+[3.616531] (my_robot_interfaces) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interfaces/srv/detail/next_goal__type_support.cpp.o\x1b[0m\n'}
+[3.616842] (my_robot_interfaces) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interfaces/msg/detail/goal__type_support.cpp.o\x1b[0m\n'}
+[3.617519] (my_robot_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interfaces/msg/detail/shape__type_support.cpp.o\x1b[0m\n'}
+[3.649814] (my_robot_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_robot_interfaces/srv/detail/dds_fastrtps/next_goal__type_support.cpp.o\x1b[0m\n'}
+[3.650050] (my_robot_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_robot_interfaces/msg/detail/dds_fastrtps/shape__type_support.cpp.o\x1b[0m\n'}
+[3.650161] (my_robot_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_robot_interfaces/msg/detail/dds_fastrtps/goal__type_support.cpp.o\x1b[0m\n'}
+[3.707031] (-) TimerEvent: {}
+[3.791509] (my_robot_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_robot_interfaces/srv/next_goal__type_support.cpp.o\x1b[0m\n'}
+[3.795601] (my_robot_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_robot_interfaces/msg/shape__type_support.cpp.o\x1b[0m\n'}
+[3.796128] (my_robot_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_robot_interfaces/msg/goal__type_support.cpp.o\x1b[0m\n'}
+[3.807229] (-) TimerEvent: {}
+[3.816262] (my_robot_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_robot_interfaces/srv/detail/next_goal__type_support.c.o\x1b[0m\n'}
+[3.816686] (my_robot_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_robot_interfaces/msg/detail/shape__type_support.c.o\x1b[0m\n'}
+[3.817000] (my_robot_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_robot_interfaces/msg/detail/goal__type_support.c.o\x1b[0m\n'}
+[3.852433] (my_robot_interfaces) StdoutLine: {'line': b'[ 59%] \x1b[32m\x1b[1mLinking CXX shared library libmy_robot_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[3.892170] (my_robot_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking C shared library libmy_robot_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.905244] (my_robot_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_robot_interfaces/msg/detail/goal__type_support_c.cpp.o\x1b[0m\n'}
+[3.905676] (my_robot_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_robot_interfaces/srv/detail/next_goal__type_support_c.cpp.o\x1b[0m\n'}
+[3.906244] (my_robot_interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_robot_interfaces/msg/detail/shape__type_support_c.cpp.o\x1b[0m\n'}
+[3.907302] (-) TimerEvent: {}
+[3.934246] (my_robot_interfaces) StdoutLine: {'line': b'[ 68%] Built target my_robot_interfaces__rosidl_typesupport_c\n'}
+[3.956503] (my_robot_interfaces) StdoutLine: {'line': b'[ 68%] Built target my_robot_interfaces__rosidl_typesupport_introspection_c\n'}
+[4.007510] (-) TimerEvent: {}
+[4.037565] (my_robot_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libmy_robot_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.090048] (my_robot_interfaces) StdoutLine: {'line': b'[ 70%] Built target my_robot_interfaces__rosidl_typesupport_cpp\n'}
+[4.107651] (-) TimerEvent: {}
+[4.208107] (-) TimerEvent: {}
+[4.276553] (my_robot_interfaces) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library libmy_robot_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.285006] (my_robot_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libmy_robot_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[4.308242] (-) TimerEvent: {}
+[4.371794] (my_robot_interfaces) StdoutLine: {'line': b'[ 74%] Built target my_robot_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[4.379425] (my_robot_interfaces) StdoutLine: {'line': b'[ 74%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[4.387889] (my_robot_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libmy_robot_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[4.408345] (-) TimerEvent: {}
+[4.471887] (my_robot_interfaces) StdoutLine: {'line': b'[ 76%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[4.498007] (my_robot_interfaces) StdoutLine: {'line': b'[ 76%] Built target my_robot_interfaces\n'}
+[4.508444] (-) TimerEvent: {}
+[4.523919] (my_robot_interfaces) StdoutLine: {'line': b'[ 78%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[4.608576] (-) TimerEvent: {}
+[4.708884] (-) TimerEvent: {}
+[4.809193] (-) TimerEvent: {}
+[4.909774] (-) TimerEvent: {}
+[5.010053] (-) TimerEvent: {}
+[5.051786] (my_robot_interfaces) StdoutLine: {'line': b'[ 78%] Built target my_robot_interfaces__py\n'}
+[5.077888] (my_robot_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_robot_interfaces/srv/_next_goal_s.c.o\x1b[0m\n'}
+[5.078197] (my_robot_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_robot_interfaces/msg/_goal_s.c.o\x1b[0m\n'}
+[5.078667] (my_robot_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_robot_interfaces/msg/_shape_s.c.o\x1b[0m\n'}
+[5.110170] (-) TimerEvent: {}
+[5.210497] (-) TimerEvent: {}
+[5.243611] (my_robot_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_robot_interfaces/libmy_robot_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[5.292457] (my_robot_interfaces) StdoutLine: {'line': b'[ 87%] Built target my_robot_interfaces__rosidl_generator_py\n'}
+[5.310616] (-) TimerEvent: {}
+[5.318216] (my_robot_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[5.318450] (my_robot_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[5.318912] (my_robot_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[5.410753] (-) TimerEvent: {}
+[5.433387] (my_robot_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.433649] (my_robot_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.433752] (my_robot_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.475059] (my_robot_interfaces) StdoutLine: {'line': b'[100%] Built target my_robot_interfaces__rosidl_typesupport_c__pyext\n'}
+[5.475315] (my_robot_interfaces) StdoutLine: {'line': b'[100%] Built target my_robot_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[5.475469] (my_robot_interfaces) StdoutLine: {'line': b'[100%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[5.491195] (my_robot_interfaces) CommandEnded: {'returncode': 0}
+[5.510884] (-) TimerEvent: {}
+[5.611233] (-) TimerEvent: {}
+[5.649868] (my_robot_interfaces) JobProgress: {'identifier': 'my_robot_interfaces', 'progress': 'install'}
+[5.661835] (my_robot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/akshar/eyrc_hb/hb_task6_ws/build/my_robot_interfaces'], 'cwd': '/home/akshar/eyrc_hb/hb_task6_ws/build/my_robot_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'akshar'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/akshar'), ('OLDPWD', '/home/akshar/eyrc_hb'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3350'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'akshar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'akshar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/akshar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/akshar/.local/bin'), ('SESSION_MANAGER', 'local/akshar-IdeaPad-Gaming-3-15ACH6:@/tmp/.ICE-unix/2432,unix/akshar-IdeaPad-Gaming-3-15ACH6:/tmp/.ICE-unix/2432'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8be7b01e_a09b_42e2_88cc_751b3c51f841'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.92'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/akshar/eyrc_hb/hb_task6_ws/build/my_robot_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[5.670924] (my_robot_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.672188] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/ament_index/resource_index/rosidl_interfaces/my_robot_interfaces\n'}
+[5.672639] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces\n'}
+[5.672911] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv\n'}
+[5.673217] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/next_goal.h\n'}
+[5.673429] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail\n'}
+[5.673742] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__struct.h\n'}
+[5.673947] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__functions.c\n'}
+[5.674211] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__functions.h\n'}
+[5.674421] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__type_support.h\n'}
+[5.674639] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg\n'}
+[5.674917] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/goal.h\n'}
+[5.675154] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/shape.h\n'}
+[5.675317] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.675526] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail\n'}
+[5.675803] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__functions.h\n'}
+[5.676004] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__struct.h\n'}
+[5.676236] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__type_support.h\n'}
+[5.676529] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__type_support.h\n'}
+[5.676703] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__functions.c\n'}
+[5.676958] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__functions.c\n'}
+[5.677126] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__functions.h\n'}
+[5.677377] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__struct.h\n'}
+[5.678180] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/library_path.sh\n'}
+[5.678423] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/library_path.dsv\n'}
+[5.679940] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_generator_c.so\n'}
+[5.680492] (my_robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_generator_c.so" to ""\n'}
+[5.680732] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces\n'}
+[5.680839] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv\n'}
+[5.680992] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail\n'}
+[5.681081] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__rosidl_typesupport_fastrtps_c.h\n'}
+[5.681226] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg\n'}
+[5.681305] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.681433] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail\n'}
+[5.681536] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__rosidl_typesupport_fastrtps_c.h\n'}
+[5.681604] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__rosidl_typesupport_fastrtps_c.h\n'}
+[5.682665] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[5.683212] (my_robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[5.683394] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces\n'}
+[5.683536] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv\n'}
+[5.683619] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail\n'}
+[5.683752] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__type_support.c\n'}
+[5.683890] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__rosidl_typesupport_introspection_c.h\n'}
+[5.684037] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg\n'}
+[5.684145] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.684271] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail\n'}
+[5.684372] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__type_support.c\n'}
+[5.684475] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__rosidl_typesupport_introspection_c.h\n'}
+[5.684587] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__rosidl_typesupport_introspection_c.h\n'}
+[5.684791] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__type_support.c\n'}
+[5.685963] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[5.686501] (my_robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[5.687265] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_c.so\n'}
+[5.687749] (my_robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[5.687914] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces\n'}
+[5.687998] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv\n'}
+[5.688128] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/next_goal.hpp\n'}
+[5.688210] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail\n'}
+[5.688281] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__struct.hpp\n'}
+[5.688386] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__builder.hpp\n'}
+[5.688516] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__traits.hpp\n'}
+[5.688716] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg\n'}
+[5.688855] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/shape.hpp\n'}
+[5.688980] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/goal.hpp\n'}
+[5.689219] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail\n'}
+[5.689327] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__struct.hpp\n'}
+[5.689559] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__traits.hpp\n'}
+[5.689790] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__traits.hpp\n'}
+[5.690014] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__builder.hpp\n'}
+[5.690205] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__builder.hpp\n'}
+[5.690410] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__struct.hpp\n'}
+[5.690680] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces\n'}
+[5.690866] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv\n'}
+[5.690952] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail\n'}
+[5.691079] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/dds_fastrtps\n'}
+[5.691164] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.691269] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg\n'}
+[5.691336] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.691422] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail\n'}
+[5.691508] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.691671] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.691910] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/dds_fastrtps\n'}
+[5.693274] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.693945] (my_robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[5.694095] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces\n'}
+[5.694248] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv\n'}
+[5.694331] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail\n'}
+[5.694412] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.694508] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__type_support.cpp\n'}
+[5.694626] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg\n'}
+[5.694706] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail\n'}
+[5.694797] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__type_support.cpp\n'}
+[5.694906] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.695081] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__type_support.cpp\n'}
+[5.695293] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.696758] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[5.697883] (my_robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[5.698864] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_cpp.so\n'}
+[5.699374] (my_robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[5.699521] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/pythonpath.sh\n'}
+[5.699728] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/pythonpath.dsv\n'}
+[5.700618] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces-0.0.0-py3.10.egg-info\n'}
+[5.700870] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[5.701111] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[5.701311] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[5.701555] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[5.701852] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces\n'}
+[5.702121] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.702395] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[5.702652] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[5.702890] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[5.703157] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.703419] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/libmy_robot_interfaces__rosidl_generator_py.so\n'}
+[5.703710] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.703960] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/__init__.py\n'}
+[5.704125] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv\n'}
+[5.704408] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv/_next_goal.py\n'}
+[5.704658] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv/_next_goal_s.c\n'}
+[5.704899] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv/__init__.py\n'}
+[5.705084] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg\n'}
+[5.705336] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/_shape_s.c\n'}
+[5.705555] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/_shape.py\n'}
+[5.705806] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/_goal_s.c\n'}
+[5.706053] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/__init__.py\n'}
+[5.706254] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/_goal.py\n'}
+[5.711318] (-) TimerEvent: {}
+[5.749069] (my_robot_interfaces) StdoutLine: {'line': b"Listing '/home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces'...\n"}
+[5.749262] (my_robot_interfaces) StdoutLine: {'line': b"Compiling '/home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/__init__.py'...\n"}
+[5.749361] (my_robot_interfaces) StdoutLine: {'line': b"Listing '/home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg'...\n"}
+[5.749528] (my_robot_interfaces) StdoutLine: {'line': b"Compiling '/home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/__init__.py'...\n"}
+[5.749619] (my_robot_interfaces) StdoutLine: {'line': b"Compiling '/home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/_goal.py'...\n"}
+[5.749697] (my_robot_interfaces) StdoutLine: {'line': b"Compiling '/home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/_shape.py'...\n"}
+[5.749777] (my_robot_interfaces) StdoutLine: {'line': b"Listing '/home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv'...\n"}
+[5.749861] (my_robot_interfaces) StdoutLine: {'line': b"Compiling '/home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv/__init__.py'...\n"}
+[5.749937] (my_robot_interfaces) StdoutLine: {'line': b"Compiling '/home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv/_next_goal.py'...\n"}
+[5.753920] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.754546] (my_robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.754890] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.755439] (my_robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.755662] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.756142] (my_robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.757254] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_generator_py.so\n'}
+[5.757860] (my_robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_generator_py.so" to ""\n'}
+[5.758151] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/srv/NextGoal.idl\n'}
+[5.758625] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/msg/Goal.idl\n'}
+[5.758923] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/msg/Shape.idl\n'}
+[5.759190] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/srv/NextGoal.srv\n'}
+[5.759355] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/srv/NextGoal_Request.msg\n'}
+[5.759507] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/srv/NextGoal_Response.msg\n'}
+[5.759784] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/msg/Goal.msg\n'}
+[5.759935] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/msg/Shape.msg\n'}
+[5.760097] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/ament_index/resource_index/package_run_dependencies/my_robot_interfaces\n'}
+[5.760583] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/ament_index/resource_index/parent_prefix_path/my_robot_interfaces\n'}
+[5.760883] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/ament_prefix_path.sh\n'}
+[5.761156] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/ament_prefix_path.dsv\n'}
+[5.761431] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/path.sh\n'}
+[5.761714] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/path.dsv\n'}
+[5.761974] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/local_setup.bash\n'}
+[5.762234] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/local_setup.sh\n'}
+[5.762502] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/local_setup.zsh\n'}
+[5.762765] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/local_setup.dsv\n'}
+[5.763027] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.dsv\n'}
+[5.763442] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/ament_index/resource_index/packages/my_robot_interfaces\n'}
+[5.764043] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_cExport.cmake\n'}
+[5.764312] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.764950] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.765230] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.765731] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.766028] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.766544] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[5.766852] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.767308] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_cppExport.cmake\n'}
+[5.767818] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.768108] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.768615] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.768908] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.769381] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[5.769719] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.770346] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_pyExport.cmake\n'}
+[5.770649] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.770932] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[5.771203] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.771464] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.771747] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.772008] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.772270] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.772530] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.772785] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfacesConfig.cmake\n'}
+[5.773029] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfacesConfig-version.cmake\n'}
+[5.773267] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.xml\n'}
+[5.776439] (my_robot_interfaces) CommandEnded: {'returncode': 0}
+[5.811519] (-) TimerEvent: {}
+[5.911782] (-) TimerEvent: {}
+[6.012101] (-) TimerEvent: {}
+[6.094615] (my_robot_interfaces) JobEnded: {'identifier': 'my_robot_interfaces', 'rc': 0}
+[6.095570] (-) EventReactorShutdown: {}

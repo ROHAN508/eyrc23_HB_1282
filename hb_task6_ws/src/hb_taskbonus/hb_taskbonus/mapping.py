@@ -14,7 +14,7 @@ from my_robot_interfaces.msg import Goal
 from std_msgs.msg import Float64MultiArray
 
 # max_rpm=36
-max_rpm=37## variable to store the max rpm that can be asiigned to a individual motor
+max_rpm=40## variable to store the max rpm that can be asiigned to a individual motor
 
 
 class mapper(Node):

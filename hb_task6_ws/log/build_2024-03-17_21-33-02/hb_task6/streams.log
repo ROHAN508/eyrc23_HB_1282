@@ -1,0 +1,64 @@
+[1.243s] Invoking command in '/home/akshar/eyrc_hb/hb_task6_ws/src/hb_task6': PYTHONPATH=/home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/prefix_override:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hb_task6 build --build-base /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build install --record /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/install.log --single-version-externally-managed
+[1.497s] running egg_info
+[1.498s] creating ../../build/hb_task6/hb_task6.egg-info
+[1.498s] writing ../../build/hb_task6/hb_task6.egg-info/PKG-INFO
+[1.498s] writing dependency_links to ../../build/hb_task6/hb_task6.egg-info/dependency_links.txt
+[1.498s] writing entry points to ../../build/hb_task6/hb_task6.egg-info/entry_points.txt
+[1.499s] writing requirements to ../../build/hb_task6/hb_task6.egg-info/requires.txt
+[1.499s] writing top-level names to ../../build/hb_task6/hb_task6.egg-info/top_level.txt
+[1.499s] writing manifest file '../../build/hb_task6/hb_task6.egg-info/SOURCES.txt'
+[1.501s] reading manifest file '../../build/hb_task6/hb_task6.egg-info/SOURCES.txt'
+[1.502s] writing manifest file '../../build/hb_task6/hb_task6.egg-info/SOURCES.txt'
+[1.502s] running build
+[1.502s] running build_py
+[1.502s] creating /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build
+[1.502s] creating /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib
+[1.503s] creating /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6
+[1.503s] copying hb_task6/countour_extraction.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6
+[1.505s] copying hb_task6/interpolation3.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6
+[1.508s] copying hb_task6/draw.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6
+[1.509s] copying hb_task6/rough.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6
+[1.509s] copying hb_task6/controller.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6
+[1.510s] copying hb_task6/controller_ik.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6
+[1.510s] copying hb_task6/controller_ik2.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6
+[1.511s] copying hb_task6/mapping3.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6
+[1.511s] copying hb_task6/interpolation2.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6
+[1.512s] copying hb_task6/mapping2.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6
+[1.512s] copying hb_task6/interpolation.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6
+[1.513s] copying hb_task6/nextGOal1.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6
+[1.513s] copying hb_task6/feedback.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6
+[1.514s] copying hb_task6/controller_ik3.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6
+[1.514s] copying hb_task6/startpointflag.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6
+[1.515s] copying hb_task6/stop_bot_srv.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6
+[1.515s] copying hb_task6/StopFlagServer.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6
+[1.515s] copying hb_task6/__init__.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6
+[1.516s] copying hb_task6/mapping.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6
+[1.516s] copying hb_task6/nextGoalPub.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build/lib/hb_task6
+[1.517s] running install
+[1.517s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.517s]   warnings.warn(
+[1.518s] running install_lib
+[1.521s] running install_data
+[1.522s] creating /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/share/hb_task6/scripts
+[1.522s] running install_egg_info
+[1.524s] removing '/home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/python3.10/site-packages/hb_task6-0.0.0-py3.10.egg-info' (and everything under it)
+[1.524s] Copying ../../build/hb_task6/hb_task6.egg-info to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/python3.10/site-packages/hb_task6-0.0.0-py3.10.egg-info
+[1.526s] running install_scripts
+[1.548s] Installing StopFlag script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[1.548s] Installing controller script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[1.549s] Installing controllerik script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[1.549s] Installing controllerik2 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[1.549s] Installing controllerik3 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[1.549s] Installing feedback script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[1.549s] Installing img script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[1.550s] Installing interp script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[1.550s] Installing interp2 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[1.550s] Installing interp3 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[1.550s] Installing map script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[1.550s] Installing map2 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[1.550s] Installing map3 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[1.551s] Installing nextgoal script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[1.551s] Installing server script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[1.551s] Installing startFlag script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[1.552s] writing list of installed files to '/home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/install.log'
+[1.581s] Invoked command in '/home/akshar/eyrc_hb/hb_task6_ws/src/hb_task6' returned '0': PYTHONPATH=/home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/prefix_override:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hb_task6 build --build-base /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build install --record /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/install.log --single-version-externally-managed

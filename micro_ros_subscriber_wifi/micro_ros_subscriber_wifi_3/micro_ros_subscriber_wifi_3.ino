@@ -1,3 +1,20 @@
+//▪ /*
+//▪ * Team Id: HB#1282
+//▪ * Author List: AKSHAR DASH
+//▪ * Filename: micro_ros_subscriber_wifi_3
+//▪ * Theme: HologlyphBots
+//▪ * Functions: publish_vel
+//▪ * Global Variables: servo1_pin,servo2_pin,servo3_pin,LED_PIN
+//▪ */ 
+//▪ /*
+//▪ * Function Name:publish_vel
+//▪ * Input: wheel velocities
+//▪ * Logic: gives the received pwm values to the individual servo motors
+//▪ * Example Call: publish_vel(w1,w2,w3)
+//▪ */ 
+
+
+
 #include <micro_ros_arduino.h>
 #include <stdio.h>
 #include <rcl/rcl.h>
@@ -52,9 +69,11 @@ int publish_vel(int w1, int w2, int w3){
   servo1.write(w1);
   servo2.write(w2);
   servo3.write(w3);
+  //debug print
 //  Serial.println(w1);
 //  Serial.println(w2);
 //  Serial.println(w3);
+//  micro_servo.write(w4);
   return 0;
 }
 
@@ -92,8 +111,8 @@ void subscription_callback_pen_down(const void * msgin)
 
 void setup() {
   servo_init();
-//  set_microros_wifi_transports("motorola edge 20 fusion_2495", "123456789", "192.168.187.45", 8888);/
-  set_microros_wifi_transports("NO_INTERNET", "Qwerty@123", "192.168.0.172", 8888);
+  set_microros_wifi_transports("motorola edge 20 fusion_2495", "123456789", "192.168.187.45", 8888);
+//  set_microros_wifi_transports("NO_INTERNET", "Qwerty@123", "192.168.0.173", 8888);/
   Serial.begin(9600);
   pinMode(LED_PIN, OUTPUT);
   digitalWrite(LED_PIN, HIGH);

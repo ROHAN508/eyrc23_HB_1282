@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/premsai/eyrc23_HB_1282/hb_task6_ws/src/my_robot_interfaces
+CMAKE_SOURCE_DIR = /home/akshar/eyrc_hb/hb_task6_ws/src/my_robot_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/my_robot_interfaces
+CMAKE_BINARY_DIR = /home/akshar/eyrc_hb/hb_task6_ws/build/my_robot_interfaces
 
 # Utility rule file for my_robot_interfaces.
 
@@ -66,11 +66,11 @@ include CMakeFiles/my_robot_interfaces.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/my_robot_interfaces.dir/progress.make
 
-CMakeFiles/my_robot_interfaces: /home/premsai/eyrc23_HB_1282/hb_task6_ws/src/my_robot_interfaces/srv/NextGoal.srv
+CMakeFiles/my_robot_interfaces: /home/akshar/eyrc_hb/hb_task6_ws/src/my_robot_interfaces/srv/NextGoal.srv
 CMakeFiles/my_robot_interfaces: rosidl_cmake/srv/NextGoal_Request.msg
 CMakeFiles/my_robot_interfaces: rosidl_cmake/srv/NextGoal_Response.msg
-CMakeFiles/my_robot_interfaces: /home/premsai/eyrc23_HB_1282/hb_task6_ws/src/my_robot_interfaces/msg/Goal.msg
-CMakeFiles/my_robot_interfaces: /home/premsai/eyrc23_HB_1282/hb_task6_ws/src/my_robot_interfaces/msg/Shape.msg
+CMakeFiles/my_robot_interfaces: /home/akshar/eyrc_hb/hb_task6_ws/src/my_robot_interfaces/msg/Goal.msg
+CMakeFiles/my_robot_interfaces: /home/akshar/eyrc_hb/hb_task6_ws/src/my_robot_interfaces/msg/Shape.msg
 
 my_robot_interfaces: CMakeFiles/my_robot_interfaces
 my_robot_interfaces: CMakeFiles/my_robot_interfaces.dir/build.make
@@ -85,6 +85,6 @@ CMakeFiles/my_robot_interfaces.dir/clean:
 .PHONY : CMakeFiles/my_robot_interfaces.dir/clean
 
 CMakeFiles/my_robot_interfaces.dir/depend:
-	cd /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/my_robot_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/premsai/eyrc23_HB_1282/hb_task6_ws/src/my_robot_interfaces /home/premsai/eyrc23_HB_1282/hb_task6_ws/src/my_robot_interfaces /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/my_robot_interfaces /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/my_robot_interfaces /home/premsai/eyrc23_HB_1282/hb_task6_ws/build/my_robot_interfaces/CMakeFiles/my_robot_interfaces.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/akshar/eyrc_hb/hb_task6_ws/build/my_robot_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/akshar/eyrc_hb/hb_task6_ws/src/my_robot_interfaces /home/akshar/eyrc_hb/hb_task6_ws/src/my_robot_interfaces /home/akshar/eyrc_hb/hb_task6_ws/build/my_robot_interfaces /home/akshar/eyrc_hb/hb_task6_ws/build/my_robot_interfaces /home/akshar/eyrc_hb/hb_task6_ws/build/my_robot_interfaces/CMakeFiles/my_robot_interfaces.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/my_robot_interfaces.dir/depend
 

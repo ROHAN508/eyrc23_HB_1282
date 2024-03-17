@@ -11,8 +11,11 @@ setup.py
 hb_taskbonus/StopFlagServer.py
 hb_taskbonus/__init__.py
 hb_taskbonus/controller1.py
+hb_taskbonus/controller1a.py
 hb_taskbonus/controller2.py
+hb_taskbonus/controller2a.py
 hb_taskbonus/controller3.py
+hb_taskbonus/controller3a.py
 hb_taskbonus/feedback.py
 hb_taskbonus/image_utlis.py
 hb_taskbonus/interpolation.py

@@ -40,7 +40,7 @@ class ArUcoDetector(Node):
         super().__init__('feedback_node')
         self.buffer=10
         ##necessary subscriptions and publishers are created for the bots
-        self.sub = self.create_subscription(Image, "/image_raw", self.image_callback, self.buffer)
+        self.sub = self.create_subscription(Image, "/camera1/image_raw", self.image_callback, self.buffer)
         self.pen1= self.create_publisher(Pose2D,"/pen1_pose",self.buffer)
         self.pen2= self.create_publisher(Pose2D,"/pen2_pose",self.buffer)
         self.pen3= self.create_publisher(Pose2D,"/pen3_pose",self.buffer)

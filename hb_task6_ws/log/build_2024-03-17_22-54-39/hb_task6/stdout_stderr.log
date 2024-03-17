@@ -1,0 +1,36 @@
+running egg_info
+writing ../../build/hb_task6/hb_task6.egg-info/PKG-INFO
+writing dependency_links to ../../build/hb_task6/hb_task6.egg-info/dependency_links.txt
+writing entry points to ../../build/hb_task6/hb_task6.egg-info/entry_points.txt
+writing requirements to ../../build/hb_task6/hb_task6.egg-info/requires.txt
+writing top-level names to ../../build/hb_task6/hb_task6.egg-info/top_level.txt
+reading manifest file '../../build/hb_task6/hb_task6.egg-info/SOURCES.txt'
+writing manifest file '../../build/hb_task6/hb_task6.egg-info/SOURCES.txt'
+running build
+running build_py
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/python3.10/site-packages/hb_task6-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/hb_task6/hb_task6.egg-info to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/python3.10/site-packages/hb_task6-0.0.0-py3.10.egg-info
+running install_scripts
+Installing StopFlag script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+Installing controller script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+Installing controllerik script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+Installing controllerik2 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+Installing controllerik3 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+Installing feedback script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+Installing img script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+Installing interp script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+Installing interp2 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+Installing interp3 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+Installing map script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+Installing map2 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+Installing map3 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+Installing nextgoal script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+Installing server script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+Installing startFlag script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+writing list of installed files to '/home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/install.log'

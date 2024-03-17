@@ -1,10 +1,19 @@
+# ```
+# * Team Id : HB#1282
+# * Author List : AKSHAR DASH, ROHAN MOHAPATRA
+# * Filename: interpolation
+# * Theme: HologlyphBots
+
+# * Global Variables: rpmValues_right,pwmValues_right,rpmValues_left,pwmValues_left,rpmValues_rear,pwmValues_rear
+###########################
+
+
+
+
 import rclpy
 from rclpy.node import Node
-from geometry_msgs.msg import Pose2D
-from geometry_msgs.msg import Wrench
-from nav_msgs.msg import Odometry
-import time
-import math
+
+
 import numpy as np
 from std_msgs.msg import Bool
 # from tf_transformations import euler_from_quaternion
@@ -14,14 +23,17 @@ from std_msgs.msg import Float64MultiArray
 import numpy as np
 import matplotlib.pyplot as plt
 
-rpmValues_right = [-42.55, -40.26, -35.714, -30.76, -21.66, -13.53, -10.60, -9.81, 0, 0, 0, 10.638, 13.495, 16.80, 25, 34.09, 42.55, 45.24, 46.9]
-pwmValues_right = [180, 165, 150, 135, 120, 105, 100, 97, 96, 90, 88, 87, 80, 75, 60, 45, 30, 15, 0]
 
-rpmValues_left= [-41.66, -39,76, -35.3, -30.30, -26.55, -20.54, -18.75, -13.63, -9.38,0.0, 0.0,0.0, 10.20, 13.27, 19.60, 24.9, 30.15, 33.33, 36.36, 40.7, 42.55, 43.17]
-pwmValues_left= [180, 165, 155, 145, 135, 125, 115, 105, 97,96, 90,88, 87, 80, 70, 60, 50, 40, 30, 20, 10, 0]
 
-rpmValues_rear= [-46.73, -44.77, -40.38, -35.30, -29.88, -24.3, -18.66, -13.5, -9.67,0.0,0.0,0.0, 10.31, 13.7, 19.67, 25.21, 30.93, 36.59, 41.66, 48, 49.2, 49.42]
-pwmValues_rear= [180, 165, 155, 145, 135, 125, 115, 105, 97,96, 90, 88,87, 80, 70, 60, 50, 40, 30, 20, 10, 0]
+##data points for individual motors
+rpmValues_rear = [-42.55, -40.26, -35.714, -30.76, -21.66, -13.53, -10.60, -9.81, 0, 0, 0, 10.638, 13.495, 16.80, 25, 34.09, 42.55, 45.24, 46.9]
+pwmValues_rear = [180, 165, 150, 135, 120, 105, 100, 97, 96, 90, 88, 87, 80, 75, 60, 45, 30, 15, 0]
+
+rpmValues_right= [-41.66, -39,76, -35.3, -30.30, -26.55, -20.54, -18.75, -13.63, -9.38,0.0, 0.0,0.0, 10.20, 13.27, 19.60, 24.9, 30.15, 33.33, 36.36, 40.7, 42.55, 43.17]
+pwmValues_right= [180, 165, 155, 145, 135, 125, 115, 105, 97,96, 90,88, 87, 80, 70, 60, 50, 40, 30, 20, 10, 0]
+
+rpmValues_left= [-46.73, -44.77, -40.38, -35.30, -29.88, -24.3, -18.66, -13.5, -9.67,0.0,0.0,0.0, 10.31, 13.7, 19.67, 25.21, 30.93, 36.59, 41.66, 48, 49.2, 49.42]
+pwmValues_left= [180, 165, 155, 145, 135, 125, 115, 105, 97,96, 90, 88,87, 80, 70, 60, 50, 40, 30, 20, 10, 0]
 
 ##right
 # Remove duplicate RPM values
@@ -50,7 +62,9 @@ sorted_pwm_rear = np.array(pwmValues_rear)[unique_indices_rear][sorted_indices_r
 
 
 
-
+##interpolation node subscribes to the mapping node which gives the interpolation node the relative rpms of each motor and 
+##interpolator node interpolates the data points in order to give the correct pwm value to reach the desired rpm
+## the interpolation used is linear
 
 class interp(Node):
     def __init__(self):
@@ -59,6 +73,9 @@ class interp(Node):
         self.mapper = self.create_subscription(Float64MultiArray,'/interp', self.mapCallBack1, self.buffer)
         self.pub_1 = self.create_publisher(Twist, '/cmd_vel/bot1', self.buffer)
         self.timer = self.create_timer(0.05, self.timer_callback)
+
+        ##pwms are stored in Twist datatype and that twist is sent o /cmd_vel/botx topic
+        ##initialisation of the pwm values
         self.pwms=Twist()
         self.pwms.linear.x=90.0
         self.pwms.linear.y=90.0
@@ -76,7 +93,7 @@ class interp(Node):
 
         
         self.rate = self.create_rate(100)
-    
+    ##callback function to take data from mapper nodes and interpolate 
     def mapCallBack1(self, msg1):
         global sorted_pwm_right,sorted_rpm_right,sorted_rpm_left,sorted_pwm_left,sorted_rpm_rear,sorted_pwm_rear
         self.w1=msg1.data[0]
@@ -87,7 +104,7 @@ class interp(Node):
         self.pwm_left=np.interp(self.w2, sorted_rpm_left, sorted_pwm_left)
         self.pwm_rear=np.interp(self.w3, sorted_rpm_rear, sorted_pwm_rear)
 
-
+    ##timer_callback publishes the data to the bots every 0.05 seconds
     def timer_callback(self):
         self.pwms.linear.x=self.pwm_right
         self.pwms.linear.y=self.pwm_left
@@ -107,15 +124,12 @@ def main(args=None):
 
     rclpy.init(args=args)
     
-    # Create an instance of the HBController class
+    # Create an instance of the inertp class
     hb_controller = interp()
 
     # Main loop
     while rclpy.ok():
-        # Check if the service call is done
         
-                ####################################################
-        # hb_controller.get_logger().info("GOAL: no ")
         # Spin once to process callbacks
         rclpy.spin_once(hb_controller)
     

@@ -1,31 +1,45 @@
 
-import numpy as np
-import matplotlib.pyplot as plt
-from my_robot_interfaces.srv import NextGoal             
+# ```
+# * Team Id : HB#1282
+# * Author List : AKSHAR DASH, ROHAN MOHAPATRA
+# * Filename: nextGoal_image3
+# * Theme: HologlyphBots
+# * Global Variables:,msg_bot_2, fullimage2,pen_status_2,list_update_2
+###########################
+##code for giving image contours to bot3 in image mode
+
+
+
+##import necessary modules
 import rclpy
 from rclpy.node import Node  
-import random
-import time
+
 from my_robot_interfaces.msg import Goal           
-from my_robot_interfaces.msg import Shape           
-import math
+
+
 from std_msgs.msg import Bool
-from .image_utlis import *
+from .image_utlis import * ##import functions from image_utlis
 
 spacing=5.0
 
 
 msg_bot_2 = Goal()
+##goal drawing order
 fullimage2=[returncontour(6),returncontour(12),returncontour(23),returncontour(21),returncontour(19),returncontour(14)]
 
 pen_status_2=Bool()
+
+##check status of pen 
 pen_status_2.data=False
+
+####flag for list update
 list_update_2=False
 
 class ServiceNode(Node):
 
     def __init__(self):
         super().__init__('GOAL_node_img3')
+        ##creates publishers and subscribers
         
         self.publish_goal_2 = self.create_publisher(Goal, 'hb_bot_3/goal_img', 10)
 
@@ -42,14 +56,14 @@ class ServiceNode(Node):
         self.resolution3=1
         self.scale=1
         self.timer = self.create_timer(0.5, self.timer_callback)
-
+    ##publishes goal every 0.5 seconds
     def timer_callback(self):
         # self.get_logger().info(f'goal published')
         self.publish_goal_2.publish(msg_bot_2)
 
         # This function will be called every 1 second (1 Hz)
         
-    
+    ##callback to check pen status
     def checkPenStatus_2(self,msg):
         global pen_status_2
         pen_status_2.data=msg.data
@@ -64,12 +78,16 @@ def main(args=None):
     
     
 
+    ##index for accessing image contour
     image_idx=0
 
     while rclpy.ok():
         # service_node.get_logger().info(f'countour number bot2 :{image_idx}')
+        ##if the image index is not at the last index
         if image_idx!=len(fullimage2):
             global list_update_2,pen_status_2
+            ##if the pen is up and the list update flag is false then contour is found out and published and index is incremented
+            ##list_update flag is set to true
             if pen_status_2.data==False and list_update_2==False:
                 msg_bot_2.bot_id = 2
                 msg_bot_2.x = []
@@ -90,22 +108,23 @@ def main(args=None):
                 rclpy.spin_once(service_node)
             # service_node.get_logger().info(msg_bot_2)
 
+            ##if the pen is down and the list update flag is true, then the flag resets
             if pen_status_2.data==True and list_update_2==True:
                 list_update_2=False
+
+        
+        ##if all contours are done , bot complete flag is raised and published          
         if image_idx==len(fullimage2):
             service_node.bot2_complete.data=True
             service_node.run_complete2.publish(service_node.bot2_complete) 
             service_node.get_logger().info(f'stup {service_node.bot2_complete}')       
         
             
-        # else:
-        #     service_node.publish_goal_2.publish(msg_bot_2)
-        #     service_node.get_logger().info('hello')
-        #     # rclpy.spin_once(service_node) 
+        
 
 
         service_node.publish_goal_2.publish(msg_bot_2)
-        # service_node.get_logger().info('hello1')    
+           
            
             
 

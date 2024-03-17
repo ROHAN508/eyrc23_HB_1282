@@ -1,0 +1,225 @@
+[0.513s] Invoking command in '/home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_task_6:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6:/opt/ros/humble /usr/bin/cmake /home/akshar/eyrc_hb/hb_task_4/src/my_custom_msgs -DCMAKE_INSTALL_PREFIX=/home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs
+[0.593s] -- The C compiler identification is GNU 11.4.0
+[0.671s] -- The CXX compiler identification is GNU 11.4.0
+[0.682s] -- Detecting C compiler ABI info
+[0.784s] -- Detecting C compiler ABI info - done
+[0.792s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.792s] -- Detecting C compile features
+[0.793s] -- Detecting C compile features - done
+[0.797s] -- Detecting CXX compiler ABI info
+[0.911s] -- Detecting CXX compiler ABI info - done
+[0.920s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.920s] -- Detecting CXX compile features
+[0.920s] -- Detecting CXX compile features - done
+[0.924s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.138s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.265s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.272s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.284s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.343s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.394s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.770s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.023s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.346s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.381s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.384s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.422s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.423s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.423s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.423s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.451s] -- Found PythonExtra: .so  
+[2.510s] -- Added test 'lint_cmake' to check CMake code style
+[2.512s] -- Added test 'xmllint' to check XML markup files
+[2.520s] -- Configuring done
+[2.563s] -- Generating done
+[2.567s] -- Build files have been written to: /home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs
+[2.576s] Invoked command in '/home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_task_6:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6:/opt/ros/humble /usr/bin/cmake /home/akshar/eyrc_hb/hb_task_4/src/my_custom_msgs -DCMAKE_INSTALL_PREFIX=/home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs
+[2.578s] Invoking command in '/home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_task_6:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6:/opt/ros/humble /usr/bin/cmake --build /home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs -- -j16 -l16
+[2.640s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.653s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.672s] [  6%] Built target ament_cmake_python_copy_my_custom_msgs
+[2.979s] [  9%] [32mBuilding C object CMakeFiles/my_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/my_custom_msgs/msg/detail/wheel_vel__functions.c.o[0m
+[3.009s] running egg_info
+[3.010s] creating my_custom_msgs.egg-info
+[3.010s] writing my_custom_msgs.egg-info/PKG-INFO
+[3.010s] writing dependency_links to my_custom_msgs.egg-info/dependency_links.txt
+[3.010s] writing top-level names to my_custom_msgs.egg-info/top_level.txt
+[3.012s] writing manifest file 'my_custom_msgs.egg-info/SOURCES.txt'
+[3.014s] reading manifest file 'my_custom_msgs.egg-info/SOURCES.txt'
+[3.015s] writing manifest file 'my_custom_msgs.egg-info/SOURCES.txt'
+[3.015s] [  9%] Built target my_custom_msgs__cpp
+[3.033s] [ 19%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.033s] [ 19%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.033s] [ 19%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.047s] [ 22%] [32m[1mLinking C shared library libmy_custom_msgs__rosidl_generator_c.so[0m
+[3.063s] [ 22%] Built target ament_cmake_python_build_my_custom_msgs_egg
+[3.113s] [ 22%] Built target my_custom_msgs__rosidl_generator_c
+[3.136s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.137s] [ 29%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.139s] [ 32%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.398s] [ 35%] [32mBuilding CXX object CMakeFiles/my_custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_custom_msgs/msg/wheel_vel__type_support.cpp.o[0m
+[3.420s] [ 38%] [32mBuilding CXX object CMakeFiles/my_custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_custom_msgs/msg/detail/wheel_vel__type_support.cpp.o[0m
+[3.442s] [ 41%] [32mBuilding CXX object CMakeFiles/my_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_custom_msgs/msg/detail/dds_fastrtps/wheel_vel__type_support.cpp.o[0m
+[3.487s] [ 45%] [32mBuilding CXX object CMakeFiles/my_custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_custom_msgs/msg/wheel_vel__type_support.cpp.o[0m
+[3.523s] [ 48%] [32mBuilding CXX object CMakeFiles/my_custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_custom_msgs/msg/detail/wheel_vel__type_support_c.cpp.o[0m
+[3.541s] [ 51%] [32m[1mLinking CXX shared library libmy_custom_msgs__rosidl_typesupport_c.so[0m
+[3.549s] [ 54%] [32mBuilding C object CMakeFiles/my_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_custom_msgs/msg/detail/wheel_vel__type_support.c.o[0m
+[3.603s] [ 58%] [32m[1mLinking C shared library libmy_custom_msgs__rosidl_typesupport_introspection_c.so[0m
+[3.611s] [ 58%] Built target my_custom_msgs__rosidl_typesupport_c
+[3.663s] [ 58%] Built target my_custom_msgs__rosidl_typesupport_introspection_c
+[3.781s] [ 61%] [32m[1mLinking CXX shared library libmy_custom_msgs__rosidl_typesupport_cpp.so[0m
+[3.856s] [ 61%] Built target my_custom_msgs__rosidl_typesupport_cpp
+[3.969s] [ 64%] [32m[1mLinking CXX shared library libmy_custom_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[3.997s] [ 67%] [32m[1mLinking CXX shared library libmy_custom_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[4.003s] [ 70%] [32m[1mLinking CXX shared library libmy_custom_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[4.055s] [ 70%] Built target my_custom_msgs__rosidl_typesupport_introspection_cpp
+[4.154s] [ 70%] Built target my_custom_msgs__rosidl_typesupport_fastrtps_cpp
+[4.154s] [ 70%] Built target my_custom_msgs__rosidl_typesupport_fastrtps_c
+[4.189s] [ 70%] Built target my_custom_msgs
+[4.229s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[4.623s] [ 74%] Built target my_custom_msgs__py
+[4.657s] [ 77%] [32mBuilding C object CMakeFiles/my_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/my_custom_msgs/msg/_wheel_vel_s.c.o[0m
+[4.798s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/my_custom_msgs/libmy_custom_msgs__rosidl_generator_py.so[0m
+[4.856s] [ 80%] Built target my_custom_msgs__rosidl_generator_py
+[4.886s] [ 87%] [32mBuilding C object CMakeFiles/my_custom_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/my_custom_msgs/_my_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[4.887s] [ 87%] [32mBuilding C object CMakeFiles/my_custom_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/my_custom_msgs/_my_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[4.891s] [ 90%] [32mBuilding C object CMakeFiles/my_custom_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/my_custom_msgs/_my_custom_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[5.005s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/my_custom_msgs/my_custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.005s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/my_custom_msgs/my_custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.006s] [100%] [32m[1mLinking C shared library rosidl_generator_py/my_custom_msgs/my_custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.050s] [100%] Built target my_custom_msgs__rosidl_typesupport_fastrtps_c__pyext
+[5.050s] [100%] Built target my_custom_msgs__rosidl_typesupport_introspection_c__pyext
+[5.056s] [100%] Built target my_custom_msgs__rosidl_typesupport_c__pyext
+[5.074s] Invoked command in '/home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_task_6:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6:/opt/ros/humble /usr/bin/cmake --build /home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs -- -j16 -l16
+[5.177s] Invoking command in '/home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_task_6:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6:/opt/ros/humble /usr/bin/cmake --install /home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs
+[5.187s] -- Install configuration: ""
+[5.188s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/ament_index/resource_index/rosidl_interfaces/my_custom_msgs
+[5.188s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs
+[5.188s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg
+[5.188s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg/rosidl_generator_c__visibility_control.h
+[5.188s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg/wheel_vel.h
+[5.189s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg/detail
+[5.189s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg/detail/wheel_vel__functions.c
+[5.189s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg/detail/wheel_vel__type_support.h
+[5.189s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg/detail/wheel_vel__functions.h
+[5.189s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg/detail/wheel_vel__struct.h
+[5.189s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/environment/library_path.sh
+[5.190s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/environment/library_path.dsv
+[5.192s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/lib/libmy_custom_msgs__rosidl_generator_c.so
+[5.192s] -- Set runtime path of "/home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/lib/libmy_custom_msgs__rosidl_generator_c.so" to ""
+[5.192s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs
+[5.193s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg
+[5.193s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.193s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg/detail
+[5.193s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg/detail/wheel_vel__rosidl_typesupport_fastrtps_c.h
+[5.194s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/lib/libmy_custom_msgs__rosidl_typesupport_fastrtps_c.so
+[5.194s] -- Set runtime path of "/home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/lib/libmy_custom_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[5.194s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs
+[5.194s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg
+[5.194s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.195s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg/detail
+[5.195s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg/detail/wheel_vel__rosidl_typesupport_introspection_c.h
+[5.195s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg/detail/wheel_vel__type_support.c
+[5.196s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/lib/libmy_custom_msgs__rosidl_typesupport_introspection_c.so
+[5.196s] -- Set runtime path of "/home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/lib/libmy_custom_msgs__rosidl_typesupport_introspection_c.so" to ""
+[5.197s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/lib/libmy_custom_msgs__rosidl_typesupport_c.so
+[5.197s] -- Set runtime path of "/home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/lib/libmy_custom_msgs__rosidl_typesupport_c.so" to ""
+[5.197s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs
+[5.198s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg
+[5.198s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg/wheel_vel.hpp
+[5.198s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg/detail
+[5.198s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg/detail/wheel_vel__struct.hpp
+[5.198s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg/detail/wheel_vel__traits.hpp
+[5.198s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg/detail/wheel_vel__builder.hpp
+[5.198s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs
+[5.199s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg
+[5.199s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.199s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg/detail
+[5.199s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg/detail/dds_fastrtps
+[5.199s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg/detail/wheel_vel__rosidl_typesupport_fastrtps_cpp.hpp
+[5.200s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/lib/libmy_custom_msgs__rosidl_typesupport_fastrtps_cpp.so
+[5.200s] -- Set runtime path of "/home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/lib/libmy_custom_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[5.201s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs
+[5.201s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg
+[5.201s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg/detail
+[5.201s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg/detail/wheel_vel__rosidl_typesupport_introspection_cpp.hpp
+[5.201s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/include/my_custom_msgs/my_custom_msgs/msg/detail/wheel_vel__type_support.cpp
+[5.202s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/lib/libmy_custom_msgs__rosidl_typesupport_introspection_cpp.so
+[5.202s] -- Set runtime path of "/home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/lib/libmy_custom_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[5.203s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/lib/libmy_custom_msgs__rosidl_typesupport_cpp.so
+[5.204s] -- Set runtime path of "/home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/lib/libmy_custom_msgs__rosidl_typesupport_cpp.so" to ""
+[5.204s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/environment/pythonpath.sh
+[5.204s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/environment/pythonpath.dsv
+[5.204s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/local/lib/python3.10/dist-packages/my_custom_msgs-0.0.0-py3.10.egg-info
+[5.204s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/local/lib/python3.10/dist-packages/my_custom_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[5.205s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/local/lib/python3.10/dist-packages/my_custom_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[5.205s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/local/lib/python3.10/dist-packages/my_custom_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[5.205s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/local/lib/python3.10/dist-packages/my_custom_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[5.205s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/local/lib/python3.10/dist-packages/my_custom_msgs
+[5.205s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/local/lib/python3.10/dist-packages/my_custom_msgs/my_custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[5.205s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/local/lib/python3.10/dist-packages/my_custom_msgs/my_custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[5.206s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/local/lib/python3.10/dist-packages/my_custom_msgs/_my_custom_msgs_s.ep.rosidl_typesupport_c.c
+[5.206s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/local/lib/python3.10/dist-packages/my_custom_msgs/my_custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[5.206s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/local/lib/python3.10/dist-packages/my_custom_msgs/_my_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[5.206s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/local/lib/python3.10/dist-packages/my_custom_msgs/libmy_custom_msgs__rosidl_generator_py.so
+[5.207s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/local/lib/python3.10/dist-packages/my_custom_msgs/__init__.py
+[5.207s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/local/lib/python3.10/dist-packages/my_custom_msgs/_my_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[5.207s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/local/lib/python3.10/dist-packages/my_custom_msgs/msg
+[5.207s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/local/lib/python3.10/dist-packages/my_custom_msgs/msg/_wheel_vel_s.c
+[5.207s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/local/lib/python3.10/dist-packages/my_custom_msgs/msg/_wheel_vel.py
+[5.207s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/local/lib/python3.10/dist-packages/my_custom_msgs/msg/__init__.py
+[5.246s] Listing '/home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/local/lib/python3.10/dist-packages/my_custom_msgs'...
+[5.246s] Compiling '/home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/local/lib/python3.10/dist-packages/my_custom_msgs/__init__.py'...
+[5.246s] Listing '/home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/local/lib/python3.10/dist-packages/my_custom_msgs/msg'...
+[5.246s] Compiling '/home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/local/lib/python3.10/dist-packages/my_custom_msgs/msg/__init__.py'...
+[5.246s] Compiling '/home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/local/lib/python3.10/dist-packages/my_custom_msgs/msg/_wheel_vel.py'...
+[5.251s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/local/lib/python3.10/dist-packages/my_custom_msgs/my_custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[5.251s] -- Set runtime path of "/home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/local/lib/python3.10/dist-packages/my_custom_msgs/my_custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.251s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/local/lib/python3.10/dist-packages/my_custom_msgs/my_custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[5.252s] -- Set runtime path of "/home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/local/lib/python3.10/dist-packages/my_custom_msgs/my_custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.252s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/local/lib/python3.10/dist-packages/my_custom_msgs/my_custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[5.253s] -- Set runtime path of "/home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/local/lib/python3.10/dist-packages/my_custom_msgs/my_custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.254s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/lib/libmy_custom_msgs__rosidl_generator_py.so
+[5.254s] -- Set runtime path of "/home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/lib/libmy_custom_msgs__rosidl_generator_py.so" to ""
+[5.254s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/msg/WheelVel.idl
+[5.255s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/msg/WheelVel.msg
+[5.255s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/ament_index/resource_index/package_run_dependencies/my_custom_msgs
+[5.255s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/ament_index/resource_index/parent_prefix_path/my_custom_msgs
+[5.255s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/environment/ament_prefix_path.sh
+[5.255s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/environment/ament_prefix_path.dsv
+[5.256s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/environment/path.sh
+[5.256s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/environment/path.dsv
+[5.256s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/local_setup.bash
+[5.256s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/local_setup.sh
+[5.257s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/local_setup.zsh
+[5.257s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/local_setup.dsv
+[5.257s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/package.dsv
+[5.257s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/ament_index/resource_index/packages/my_custom_msgs
+[5.258s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/cmake/export_my_custom_msgs__rosidl_generator_cExport.cmake
+[5.258s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/cmake/export_my_custom_msgs__rosidl_generator_cExport-noconfig.cmake
+[5.259s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/cmake/export_my_custom_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[5.259s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/cmake/export_my_custom_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[5.259s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/cmake/my_custom_msgs__rosidl_typesupport_introspection_cExport.cmake
+[5.260s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/cmake/my_custom_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.260s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/cmake/my_custom_msgs__rosidl_typesupport_cExport.cmake
+[5.260s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/cmake/my_custom_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[5.261s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/cmake/export_my_custom_msgs__rosidl_generator_cppExport.cmake
+[5.262s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/cmake/export_my_custom_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[5.262s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/cmake/export_my_custom_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[5.262s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/cmake/my_custom_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[5.263s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/cmake/my_custom_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[5.263s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/cmake/my_custom_msgs__rosidl_typesupport_cppExport.cmake
+[5.264s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/cmake/my_custom_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[5.264s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/cmake/export_my_custom_msgs__rosidl_generator_pyExport.cmake
+[5.264s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/cmake/export_my_custom_msgs__rosidl_generator_pyExport-noconfig.cmake
+[5.265s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/cmake/rosidl_cmake-extras.cmake
+[5.265s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.265s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[5.265s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[5.266s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.266s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.266s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.266s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/cmake/my_custom_msgsConfig.cmake
+[5.267s] -- Installing: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/cmake/my_custom_msgsConfig-version.cmake
+[5.267s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task_4/install/my_custom_msgs/share/my_custom_msgs/package.xml
+[5.270s] Invoked command in '/home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_task_6:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6:/opt/ros/humble /usr/bin/cmake --install /home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs

@@ -1,10 +1,18 @@
+# ```
+# * Team Id : HB#1282
+# * Author List : AKSHAR DASH, ROHAN MOHAPATRA
+# * Filename: interpolation3
+# * Theme: HologlyphBots
+
+# * Global Variables: rpmValues_right,pwmValues_right,rpmValues_left,pwmValues_left,rpmValues_rear,pwmValues_rear
+###########################
+
+
+
+
 import rclpy
 from rclpy.node import Node
-from geometry_msgs.msg import Pose2D
-from geometry_msgs.msg import Wrench
-from nav_msgs.msg import Odometry
-import time
-import math
+
 import numpy as np
 from std_msgs.msg import Bool
 # from tf_transformations import euler_from_quaternion
@@ -14,6 +22,8 @@ from std_msgs.msg import Float64MultiArray
 import numpy as np
 import matplotlib.pyplot as plt
 
+
+##data points for individual motors
 rpmValues_right = [-47.32, -47.32, -42.55, -38.61, -31.75, -26.786, -22.156, -15.61, -9.19, 0.0, 0.0, 0.0, 0.0, 0.0, 9.85, 13.02, 19.74, 25.707, 30.4, 37.27, 42.135, 47.1, 49.59, 50]
 pwmValues_right = [180, 170, 160, 150, 140, 130, 120, 110, 97, 96, 92, 90, 89, 88, 87, 80, 70, 60, 50, 40, 30, 20, 10, 0]
 
@@ -50,6 +60,9 @@ sorted_pwm_rear = np.array(pwmValues_rear)[unique_indices_rear][sorted_indices_r
 
 
 
+##interpolation node subscribes to the mapping node which gives the interpolation node the relative rpms of each motor and 
+##interpolator node interpolates the data points in order to give the correct pwm value to reach the desired rpm
+## the interpolation used is linear
 
 
 class interp(Node):
@@ -59,6 +72,9 @@ class interp(Node):
         self.mapper = self.create_subscription(Float64MultiArray,'/interp3', self.mapCallBack1, 10)
         self.pub_1 = self.create_publisher(Twist, '/cmd_vel/bot3', 10)
         self.timer = self.create_timer(0.05, self.timer_callback)
+
+        ##pwms are stored in Twist datatype and that twist is sent o /cmd_vel/botx topic
+        ##initialisation of the pwm values
         self.pwms=Twist()
         self.pwms.linear.x=90.0
         self.pwms.linear.y=90.0
@@ -76,7 +92,7 @@ class interp(Node):
 
         
         self.rate = self.create_rate(100)
-    
+     ##callback function to take data from mapper nodes and interpolate
     def mapCallBack1(self, msg1):
         global sorted_pwm_right,sorted_rpm_right,sorted_rpm_left,sorted_pwm_left,sorted_rpm_rear,sorted_pwm_rear
         self.w1=msg1.data[0]
@@ -87,7 +103,7 @@ class interp(Node):
         self.pwm_left=np.interp(self.w2, sorted_rpm_left, sorted_pwm_left)
         self.pwm_rear=np.interp(self.w3, sorted_rpm_rear, sorted_pwm_rear)
 
-
+    ##timer_callback publishes the data to the bots every 0.05 seconds
     def timer_callback(self):
         self.pwms.linear.x=self.pwm_right
         self.pwms.linear.y=self.pwm_left
@@ -107,15 +123,12 @@ def main(args=None):
 
     rclpy.init(args=args)
     
-    # Create an instance of the HBController class
+    # Create an instance of the interp class
     hb_controller = interp()
 
     # Main loop
     while rclpy.ok():
-        # Check if the service call is done
         
-                ####################################################
-        # hb_controller.get_logger().info("GOAL: no ")
         # Spin once to process callbacks
         rclpy.spin_once(hb_controller)
     

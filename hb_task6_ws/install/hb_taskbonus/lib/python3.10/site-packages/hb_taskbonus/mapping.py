@@ -1,19 +1,20 @@
+# ```
+# * Team Id : HB#1282
+# * Author List : AKSHAR DASH, ROHAN MOHAPATRA
+# * Filename: mapping
+# * Theme: HologlyphBots
+# * Global Variables: max_rpm
+###########################
+
+
+##import required modules
 import rclpy
 from rclpy.node import Node
-from geometry_msgs.msg import Pose2D
-from geometry_msgs.msg import Wrench
-from nav_msgs.msg import Odometry
-import time
-import math
-import numpy as np
-from std_msgs.msg import Bool
-# from tf_transformations import euler_from_quaternion
-from geometry_msgs.msg import Twist
 from my_robot_interfaces.msg import Goal             
 from std_msgs.msg import Float64MultiArray
 
 # max_rpm=36
-max_rpm=37
+max_rpm=40## variable to store the max rpm that can be asiigned to a individual motor
 
 
 class mapper(Node):
@@ -27,7 +28,8 @@ class mapper(Node):
         
 
         self.rate = self.create_rate(100)
-    
+    ##callback function to subscribe to data from the controller
+    ##the max value of wheel velocity gets assigned to the max_rpm and other wheel velocities are scaled accodrding to that value    
     def mapCallBack1(self, msg1):
         global max_rpm
         self.w1=msg1.data[0]
@@ -64,15 +66,12 @@ def main(args=None):
 
     rclpy.init(args=args)
     
-    # Create an instance of the HBController class
+    # Create an instance of the mapper class
     hb_controller = mapper()
 
     # Main loop
     while rclpy.ok():
-        # Check if the service call is done
         
-                ####################################################
-        # hb_controller.get_logger().info("GOAL: no ")
         # Spin once to process callbacks
         rclpy.spin_once(hb_controller)
     

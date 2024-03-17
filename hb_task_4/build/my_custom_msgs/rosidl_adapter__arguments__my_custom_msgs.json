@@ -1,6 +1,6 @@
 {
   "package_name": "my_custom_msgs",
   "non_idl_tuples": [
-    "/home/premsai/eyrc23_HB_1282/hb_task_4/src/my_custom_msgs:msg/WheelVel.msg"
+    "/home/akshar/eyrc_hb/hb_task_4/src/my_custom_msgs:msg/WheelVel.msg"
   ]
 }

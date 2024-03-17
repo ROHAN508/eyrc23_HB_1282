@@ -1,33 +1,38 @@
+
+# ```
+# * Team Id : HB#1282
+# * Author List : AKSHAR DASH, ROHAN MOHAPATRA
+# * Filename: startpointflag
+# * Theme: HologlyphBots
+# * Global Variables: dist_thres
+###########################
+
+##this code basically subscribes to the goals in function mode and the bot poses to determine the realtive location
+##to the starting point of the contour .. if they are close it set a flag to true which tells the controllers to start the drawing
+##doing this helps us save time in the evaluator
 import rclpy
 from rclpy.node import Node
-import math
-import numpy as np
+
 from std_msgs.msg import Bool
 from my_robot_interfaces.msg import Goal   
 from geometry_msgs.msg import Pose2D
 
-
-# start1=Bool()
-# start2=Bool()
-# start3=Bool()
-
-
-# start1.data=False
-# start2.data=True
-# start3.data=True
+##dist_threshold to check if bots have reached their first point or not
 dist_thres=7.0
 
 class ControlFlag(Node):
     def __init__(self):
         super().__init__('controlflag')
         self.buffer=10
+
+        ###initialisation of goal variables
         self.bot1_x_goal = []
         self.bot1_y_goal = []
         self.bot2_x_goal = []
         self.bot2_y_goal = []
         self.bot3_x_goal = []
         self.bot3_y_goal = []
-        # self.bot_3_theta_goal = 0.0
+        
 
         self.bot1_x = 0.0
         self.bot1_y = 0.0
@@ -36,7 +41,7 @@ class ControlFlag(Node):
         self.bot3_x = 0.0
         self.bot3_y = 0.0
         
-
+        ##create necessary subscribers and publishers
         self.startrunControl = self.create_publisher(Bool, "/startrun", self.buffer)
         self.bot1_pos = self.create_subscription(Pose2D, "/pen1_pose", self.Callback1, 10)
         self.bot2_pos = self.create_subscription(Pose2D, "/pen2_pose", self.Callback2, 10)
@@ -51,13 +56,11 @@ class ControlFlag(Node):
         self.startrun=Bool()
         self.startrun.data=False
 
-        # self.subscription_bot1 = self.create_subscription(Bool,'hb_bot_1/startpt', self.startCallBack1, self.buffer) 
-
-        # self.subscription_bot2 = self.create_subscription(Bool,'hb_bot_2/startpt', self.startCallBack2, self.buffer) 
-
-
-        # self.subscription_bot3 = self.create_subscription(Bool,'hb_bot_3/startpt', self.startCallBack3, self.buffer) 
+    
         self.rate = self.create_rate(100)
+
+
+    ##callbacks for getting the poses of the bots    
     def Callback1(self, msg):
         self.bot1_x = msg.x
         self.bot1_y = msg.y
@@ -69,6 +72,7 @@ class ControlFlag(Node):
     def Callback3(self, msg):
         self.bot3_x = msg.x
         self.bot3_y = msg.y
+    ##callbacks for getting the goal poses of the bots    
 
     def goalCallBack1(self, msg1):
         self.bot1_x_goal = msg1.x
@@ -83,24 +87,10 @@ class ControlFlag(Node):
         self.bot3_y_goal = msg1.y
         # self.bot_theta_goal = msg1.theta
 
+    ##gives the distance of the bot from its starting coordinate
     def distance_from_1st(self, x1, y1, x2, y2):
-        return ((x1 - x2)**2 + (y1 - y2)**2)**0.5    # def startCallBack1(self,msg):
-        # global start1
-        # start1.data=msg.data
-        # if start1==True:
-            # self.get_logger().info(f'bot1 true')
-    # def startCallBack2(self,msg):
-    #     global start2
-    #     start2.data=msg.data
-    #     # start2.data=True
-    # #     # if start2==True:
-    # #         # self.get_logger().info(f'bot2 true')
-    # def startCallBack3(self,msg):
-    #     global start3
-    #     start3.data=msg.data 
-    #     start3.data=True
-    #     # if start3==True:
-    #         # self.get_logger().info(f'bot3 true')       
+        return ((x1 - x2)**2 + (y1 - y2)**2)**0.5    
+             
 
 def main(args=None):
 
@@ -112,25 +102,16 @@ def main(args=None):
             pass
         else:
             dist1 = startControl.distance_from_1st(startControl.bot1_x_goal[0], startControl.bot1_y_goal[0], startControl.bot1_x, startControl.bot1_y)
-            # global start1,start2,start3
+            
             dist2 = startControl.distance_from_1st(startControl.bot2_x_goal[0], startControl.bot2_y_goal[0], startControl.bot2_x, startControl.bot2_y)
-            # global start1,start2,start3
+            
             dist3 = startControl.distance_from_1st(startControl.bot3_x_goal[0], startControl.bot3_y_goal[0], startControl.bot3_x, startControl.bot3_y)
-            # global start1,start2,start3
-            # if start1.data==True and start2.data==True and start3.data==True:
-            #     startControl.startrun.data=True
-            # startControl.get_logger().info(f'bot1 : {start1}')
-            # startControl.get_logger().info(f'bot2 : {start2}')
-            # startControl.get_logger().info(f'bot3 : {start3}')
-                
-            # if start1.data==False or start2.data==False or start3.data==False:
-            #     startControl.startrun.data=False   
-
-            # startControl.startrunControl.publish(startControl.startrun)
-            # startControl.get_logger().info(f'bot1:{dist1}  bot2:{dist2}  bot3:{dist3}')
+            
+            ##if the bot is near its goal points the startrun flag is set to true and bots pen down and start their run
+            
             if dist1<dist_thres+10 and dist2<dist_thres+10 and dist3<dist_thres+10:
                 startControl.startrun.data = True
-            # startControl.startrun.data = True    
+               
             startControl.startrunControl.publish(startControl.startrun)
 
 

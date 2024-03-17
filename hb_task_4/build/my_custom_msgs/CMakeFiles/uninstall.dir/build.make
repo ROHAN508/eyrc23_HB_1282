@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/premsai/eyrc23_HB_1282/hb_task_4/src/my_custom_msgs
+CMAKE_SOURCE_DIR = /home/akshar/eyrc_hb/hb_task_4/src/my_custom_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/premsai/eyrc23_HB_1282/hb_task_4/build/my_custom_msgs
+CMAKE_BINARY_DIR = /home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/premsai/eyrc23_HB_1282/hb_task_4/build/my_custom_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/premsai/eyrc23_HB_1282/hb_task_4/src/my_custom_msgs /home/premsai/eyrc23_HB_1282/hb_task_4/src/my_custom_msgs /home/premsai/eyrc23_HB_1282/hb_task_4/build/my_custom_msgs /home/premsai/eyrc23_HB_1282/hb_task_4/build/my_custom_msgs /home/premsai/eyrc23_HB_1282/hb_task_4/build/my_custom_msgs/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/akshar/eyrc_hb/hb_task_4/src/my_custom_msgs /home/akshar/eyrc_hb/hb_task_4/src/my_custom_msgs /home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs /home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs /home/akshar/eyrc_hb/hb_task_4/build/my_custom_msgs/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

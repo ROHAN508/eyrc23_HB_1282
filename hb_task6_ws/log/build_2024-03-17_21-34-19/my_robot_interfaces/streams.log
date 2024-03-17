@@ -1,0 +1,209 @@
+[0.801s] Invoking command in '/home/akshar/eyrc_hb/hb_task6_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_task_6:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6:/opt/ros/humble /usr/bin/cmake --build /home/akshar/eyrc_hb/hb_task6_ws/build/my_robot_interfaces -- -j16 -l16
+[0.854s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_generator_c[0m
+[0.867s] [  2%] Built target my_robot_interfaces__cpp
+[0.870s] [ 12%] Built target my_robot_interfaces__rosidl_generator_c
+[0.882s] [ 12%] Built target ament_cmake_python_copy_my_robot_interfaces
+[0.882s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_typesupport_cpp[0m
+[0.882s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_typesupport_introspection_cpp[0m
+[0.882s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_typesupport_c[0m
+[0.883s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_typesupport_introspection_c[0m
+[0.885s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[0.885s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_typesupport_fastrtps_c[0m
+[0.899s] [ 34%] Built target my_robot_interfaces__rosidl_typesupport_introspection_c
+[0.900s] [ 34%] Built target my_robot_interfaces__rosidl_typesupport_c
+[0.901s] [ 44%] Built target my_robot_interfaces__rosidl_typesupport_cpp
+[0.903s] [ 55%] Built target my_robot_interfaces__rosidl_typesupport_introspection_cpp
+[0.909s] [ 65%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_c
+[0.911s] [ 76%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.937s] [ 76%] Built target my_robot_interfaces
+[0.965s] [ 78%] Built target my_robot_interfaces__py
+[0.980s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_generator_py[0m
+[1.002s] [ 87%] Built target my_robot_interfaces__rosidl_generator_py
+[1.016s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_typesupport_c__pyext[0m
+[1.017s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[1.017s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[1.035s] [100%] Built target my_robot_interfaces__rosidl_typesupport_c__pyext
+[1.035s] [100%] Built target my_robot_interfaces__rosidl_typesupport_introspection_c__pyext
+[1.035s] [100%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[1.168s] running egg_info
+[1.168s] writing my_robot_interfaces.egg-info/PKG-INFO
+[1.169s] writing dependency_links to my_robot_interfaces.egg-info/dependency_links.txt
+[1.169s] writing top-level names to my_robot_interfaces.egg-info/top_level.txt
+[1.172s] reading manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'
+[1.173s] writing manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'
+[1.204s] [100%] Built target ament_cmake_python_build_my_robot_interfaces_egg
+[1.221s] Invoked command in '/home/akshar/eyrc_hb/hb_task6_ws/build/my_robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_task_6:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6:/opt/ros/humble /usr/bin/cmake --build /home/akshar/eyrc_hb/hb_task6_ws/build/my_robot_interfaces -- -j16 -l16
+[1.381s] Invoking command in '/home/akshar/eyrc_hb/hb_task6_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_task_6:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6:/opt/ros/humble /usr/bin/cmake --install /home/akshar/eyrc_hb/hb_task6_ws/build/my_robot_interfaces
+[1.390s] -- Install configuration: ""
+[1.391s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/ament_index/resource_index/rosidl_interfaces/my_robot_interfaces
+[1.391s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces
+[1.391s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv
+[1.391s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/next_goal.h
+[1.391s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail
+[1.391s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__struct.h
+[1.391s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__functions.c
+[1.391s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__functions.h
+[1.392s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__type_support.h
+[1.392s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg
+[1.392s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/goal.h
+[1.392s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/shape.h
+[1.392s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/rosidl_generator_c__visibility_control.h
+[1.392s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail
+[1.392s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__functions.h
+[1.392s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__struct.h
+[1.392s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__type_support.h
+[1.392s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__type_support.h
+[1.392s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__functions.c
+[1.393s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__functions.c
+[1.393s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__functions.h
+[1.393s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__struct.h
+[1.393s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/library_path.sh
+[1.393s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/library_path.dsv
+[1.393s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_generator_c.so
+[1.393s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces
+[1.393s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv
+[1.393s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail
+[1.393s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__rosidl_typesupport_fastrtps_c.h
+[1.393s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg
+[1.394s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.394s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail
+[1.394s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__rosidl_typesupport_fastrtps_c.h
+[1.394s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__rosidl_typesupport_fastrtps_c.h
+[1.394s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_fastrtps_c.so
+[1.394s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces
+[1.394s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv
+[1.394s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail
+[1.394s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__type_support.c
+[1.395s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__rosidl_typesupport_introspection_c.h
+[1.395s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg
+[1.395s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.395s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail
+[1.395s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__type_support.c
+[1.395s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__rosidl_typesupport_introspection_c.h
+[1.395s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__rosidl_typesupport_introspection_c.h
+[1.395s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__type_support.c
+[1.395s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_introspection_c.so
+[1.395s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_c.so
+[1.395s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces
+[1.396s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv
+[1.396s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/next_goal.hpp
+[1.396s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail
+[1.396s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__struct.hpp
+[1.396s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__builder.hpp
+[1.396s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__traits.hpp
+[1.396s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg
+[1.396s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/shape.hpp
+[1.396s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/goal.hpp
+[1.396s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail
+[1.396s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__struct.hpp
+[1.396s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__traits.hpp
+[1.397s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__traits.hpp
+[1.397s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__builder.hpp
+[1.397s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__builder.hpp
+[1.397s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__struct.hpp
+[1.397s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces
+[1.397s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv
+[1.397s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail
+[1.397s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/dds_fastrtps
+[1.397s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__rosidl_typesupport_fastrtps_cpp.hpp
+[1.397s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg
+[1.397s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.397s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail
+[1.398s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__rosidl_typesupport_fastrtps_cpp.hpp
+[1.398s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__rosidl_typesupport_fastrtps_cpp.hpp
+[1.398s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/dds_fastrtps
+[1.398s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[1.398s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces
+[1.398s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv
+[1.398s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail
+[1.398s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__rosidl_typesupport_introspection_cpp.hpp
+[1.398s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/next_goal__type_support.cpp
+[1.398s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg
+[1.399s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail
+[1.399s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__type_support.cpp
+[1.399s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/shape__rosidl_typesupport_introspection_cpp.hpp
+[1.399s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__type_support.cpp
+[1.399s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/goal__rosidl_typesupport_introspection_cpp.hpp
+[1.399s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_introspection_cpp.so
+[1.399s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_cpp.so
+[1.399s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/pythonpath.sh
+[1.399s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/pythonpath.dsv
+[1.399s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces-0.0.0-py3.10.egg-info
+[1.399s] -- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[1.399s] -- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[1.399s] -- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[1.400s] -- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[1.400s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces
+[1.400s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.400s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.400s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[1.400s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_c.c
+[1.400s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.400s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/libmy_robot_interfaces__rosidl_generator_py.so
+[1.400s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.400s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/__init__.py
+[1.400s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv
+[1.400s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv/_next_goal.py
+[1.400s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv/_next_goal_s.c
+[1.400s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv/__init__.py
+[1.401s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg
+[1.401s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/_shape_s.c
+[1.401s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/_shape.py
+[1.401s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/_goal_s.c
+[1.401s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/__init__.py
+[1.401s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/_goal.py
+[1.435s] Listing '/home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces'...
+[1.435s] Listing '/home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg'...
+[1.435s] Listing '/home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv'...
+[1.440s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.441s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.441s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.441s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_generator_py.so
+[1.442s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/srv/NextGoal.idl
+[1.442s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/msg/Goal.idl
+[1.442s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/msg/Shape.idl
+[1.442s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/srv/NextGoal.srv
+[1.442s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/srv/NextGoal_Request.msg
+[1.443s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/srv/NextGoal_Response.msg
+[1.443s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/msg/Goal.msg
+[1.443s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/msg/Shape.msg
+[1.443s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/ament_index/resource_index/package_run_dependencies/my_robot_interfaces
+[1.443s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/ament_index/resource_index/parent_prefix_path/my_robot_interfaces
+[1.443s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/ament_prefix_path.sh
+[1.443s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/ament_prefix_path.dsv
+[1.443s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/path.sh
+[1.443s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/path.dsv
+[1.443s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/local_setup.bash
+[1.444s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/local_setup.sh
+[1.444s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/local_setup.zsh
+[1.444s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/local_setup.dsv
+[1.444s] -- Installing: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.dsv
+[1.444s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/ament_index/resource_index/packages/my_robot_interfaces
+[1.444s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_cExport.cmake
+[1.444s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_cExport-noconfig.cmake
+[1.444s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[1.444s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.444s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[1.445s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.445s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_cExport.cmake
+[1.445s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[1.445s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_cppExport.cmake
+[1.445s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.445s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.445s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[1.445s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.446s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_cppExport.cmake
+[1.446s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[1.446s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_pyExport.cmake
+[1.446s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[1.446s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/rosidl_cmake-extras.cmake
+[1.446s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.446s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[1.446s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[1.446s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.446s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.446s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.447s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfacesConfig.cmake
+[1.447s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfacesConfig-version.cmake
+[1.447s] -- Up-to-date: /home/akshar/eyrc_hb/hb_task6_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.xml
+[1.449s] Invoked command in '/home/akshar/eyrc_hb/hb_task6_ws/build/my_robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_task_6:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6:/opt/ros/humble /usr/bin/cmake --install /home/akshar/eyrc_hb/hb_task6_ws/build/my_robot_interfaces
