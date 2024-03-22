@@ -24,9 +24,9 @@ spacing=5.0
 
 
 msg_bot_2 = Goal()
-##goal drawing order
-fullimage2=[returncontour(6),returncontour(12),returncontour(23),returncontour(21),returncontour(19),returncontour(14)]
-
+# ##goal drawing order
+# fullimage2=[returncontour(15),returncontour(11),returncontour(10),returncontour(5)]
+fullimage2=[returncontour(6),returncontour(4),returncontour(7),returncontour(8)]
 pen_status_2=Bool()
 
 ##check status of pen 

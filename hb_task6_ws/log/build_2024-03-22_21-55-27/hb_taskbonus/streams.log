@@ -1,0 +1,51 @@
+[0.862s] Invoking command in '/home/akshar/eyrc_hb/hb_task6_ws/src/hb_taskbonus': PYTHONPATH=/home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/prefix_override:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hb_taskbonus build --build-base /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build install --record /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/install.log --single-version-externally-managed
+[1.057s] running egg_info
+[1.057s] writing ../../build/hb_taskbonus/hb_taskbonus.egg-info/PKG-INFO
+[1.058s] writing dependency_links to ../../build/hb_taskbonus/hb_taskbonus.egg-info/dependency_links.txt
+[1.058s] writing entry points to ../../build/hb_taskbonus/hb_taskbonus.egg-info/entry_points.txt
+[1.058s] writing requirements to ../../build/hb_taskbonus/hb_taskbonus.egg-info/requires.txt
+[1.058s] writing top-level names to ../../build/hb_taskbonus/hb_taskbonus.egg-info/top_level.txt
+[1.059s] reading manifest file '../../build/hb_taskbonus/hb_taskbonus.egg-info/SOURCES.txt'
+[1.060s] writing manifest file '../../build/hb_taskbonus/hb_taskbonus.egg-info/SOURCES.txt'
+[1.060s] running build
+[1.061s] running build_py
+[1.061s] copying hb_taskbonus/nextGoal_image2.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus
+[1.061s] copying hb_taskbonus/image_utlis.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus
+[1.061s] copying hb_taskbonus/nextGoal_image1.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus
+[1.062s] copying hb_taskbonus/nextGoal_image3.py -> /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus
+[1.062s] running install
+[1.062s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.063s]   warnings.warn(
+[1.063s] running install_lib
+[1.063s] copying /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus/nextGoal_image2.py -> /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus
+[1.064s] copying /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus/image_utlis.py -> /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus
+[1.064s] copying /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus/nextGoal_image1.py -> /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus
+[1.064s] copying /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build/lib/hb_taskbonus/nextGoal_image3.py -> /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus
+[1.065s] byte-compiling /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus/nextGoal_image2.py to nextGoal_image2.cpython-310.pyc
+[1.066s] byte-compiling /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus/image_utlis.py to image_utlis.cpython-310.pyc
+[1.075s] byte-compiling /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus/nextGoal_image1.py to nextGoal_image1.cpython-310.pyc
+[1.076s] byte-compiling /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus/nextGoal_image3.py to nextGoal_image3.cpython-310.pyc
+[1.076s] running install_data
+[1.077s] running install_egg_info
+[1.078s] removing '/home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus-0.0.0-py3.10.egg-info' (and everything under it)
+[1.078s] Copying ../../build/hb_taskbonus/hb_taskbonus.egg-info to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages/hb_taskbonus-0.0.0-py3.10.egg-info
+[1.079s] running install_scripts
+[1.097s] Installing StopFlag script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[1.097s] Installing controller1 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[1.098s] Installing controller2 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[1.098s] Installing controller3 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[1.098s] Installing feedback script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[1.098s] Installing imgutl script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[1.098s] Installing interp1 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[1.099s] Installing interp2 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[1.099s] Installing interp3 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[1.099s] Installing map1 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[1.099s] Installing map2 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[1.099s] Installing map3 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[1.099s] Installing nextGoal1 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[1.100s] Installing nextGoal2 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[1.100s] Installing nextGoal3 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[1.100s] Installing nextGoalfunc script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[1.100s] Installing startpoint script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/hb_taskbonus
+[1.100s] writing list of installed files to '/home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/install.log'
+[1.133s] Invoked command in '/home/akshar/eyrc_hb/hb_task6_ws/src/hb_taskbonus' returned '0': PYTHONPATH=/home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/prefix_override:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_taskbonus/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hb_taskbonus build --build-base /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/build install --record /home/akshar/eyrc_hb/hb_task6_ws/build/hb_taskbonus/install.log --single-version-externally-managed
