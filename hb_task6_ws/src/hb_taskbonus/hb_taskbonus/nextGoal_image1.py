@@ -23,7 +23,7 @@ from .image_utlis import * ##import functions from image_utlis
 msg_bot_2 = Goal()
 ##goal drawing order
 
-fullimage2=[returncontour(11),returncontour(10),returncontour(5)]
+fullimage2=[returncontour(21),returncontour(23),returncontour(14),returncontour(11),returncontour(10),returncontour(9),returncontour(12)]
 # fullimage2=[returncontour(17),returncontour(18),returncontour(16),returncontour(14),returncontour(2),returncontour(3)]
 ##check status of pen 
 pen_status_2=Bool()
