@@ -25,16 +25,16 @@ setup(
     entry_points={
         'console_scripts': [
             'feedback = hb_taskbonus.feedback:main',
-            'controller1=hb_taskbonus.controller1a:main',##changed
+            'controller1=hb_taskbonus.controller1:main',##changed
             'map1=hb_taskbonus.mapping:main',
             'interp1=hb_taskbonus.interpolation:main',
             'nextGoal1=hb_taskbonus.nextGoal_image1:main',
             'nextGoalfunc=hb_taskbonus.nextGoal_function:main',
             'imgutl=hb_taskbonus.image_utlis:main',
-            'controller2=hb_taskbonus.controller2a:main',##changed
+            'controller2=hb_taskbonus.controller2:main',##changed
             'map2=hb_taskbonus.mapping2:main',
             'interp2=hb_taskbonus.interpolation2:main',
-            'controller3=hb_taskbonus.controller3a:main',##changed
+            'controller3=hb_taskbonus.controller3:main',##changed
             'map3=hb_taskbonus.mapping3:main',
             'interp3=hb_taskbonus.interpolation3:main',
             'nextGoal2=hb_taskbonus.nextGoal_image2:main',

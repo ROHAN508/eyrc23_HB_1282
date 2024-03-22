@@ -1,8 +1,8 @@
 [console_scripts]
 StopFlag = hb_taskbonus.StopFlagServer:main
-controller1 = hb_taskbonus.controller1a:main
-controller2 = hb_taskbonus.controller2a:main
-controller3 = hb_taskbonus.controller3a:main
+controller1 = hb_taskbonus.controller1:main
+controller2 = hb_taskbonus.controller2:main
+controller3 = hb_taskbonus.controller3:main
 feedback = hb_taskbonus.feedback:main
 imgutl = hb_taskbonus.image_utlis:main
 interp1 = hb_taskbonus.interpolation:main

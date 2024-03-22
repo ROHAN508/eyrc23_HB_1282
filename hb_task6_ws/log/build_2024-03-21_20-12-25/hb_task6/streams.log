@@ -1,0 +1,38 @@
+[1.708s] Invoking command in '/home/akshar/eyrc_hb/hb_task6_ws/src/hb_task6': PYTHONPATH=/home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/prefix_override:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hb_task6 build --build-base /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build install --record /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/install.log --single-version-externally-managed
+[2.085s] running egg_info
+[2.085s] writing ../../build/hb_task6/hb_task6.egg-info/PKG-INFO
+[2.086s] writing dependency_links to ../../build/hb_task6/hb_task6.egg-info/dependency_links.txt
+[2.086s] writing entry points to ../../build/hb_task6/hb_task6.egg-info/entry_points.txt
+[2.087s] writing requirements to ../../build/hb_task6/hb_task6.egg-info/requires.txt
+[2.087s] writing top-level names to ../../build/hb_task6/hb_task6.egg-info/top_level.txt
+[2.090s] reading manifest file '../../build/hb_task6/hb_task6.egg-info/SOURCES.txt'
+[2.091s] writing manifest file '../../build/hb_task6/hb_task6.egg-info/SOURCES.txt'
+[2.091s] running build
+[2.091s] running build_py
+[2.093s] running install
+[2.093s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.093s]   warnings.warn(
+[2.094s] running install_lib
+[2.096s] running install_data
+[2.098s] running install_egg_info
+[2.100s] removing '/home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/python3.10/site-packages/hb_task6-0.0.0-py3.10.egg-info' (and everything under it)
+[2.100s] Copying ../../build/hb_task6/hb_task6.egg-info to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/python3.10/site-packages/hb_task6-0.0.0-py3.10.egg-info
+[2.102s] running install_scripts
+[2.134s] Installing StopFlag script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[2.134s] Installing controller script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[2.135s] Installing controllerik script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[2.136s] Installing controllerik2 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[2.136s] Installing controllerik3 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[2.136s] Installing feedback script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[2.137s] Installing img script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[2.137s] Installing interp script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[2.137s] Installing interp2 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[2.138s] Installing interp3 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[2.138s] Installing map script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[2.138s] Installing map2 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[2.138s] Installing map3 script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[2.139s] Installing nextgoal script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[2.139s] Installing server script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[2.139s] Installing startFlag script to /home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/hb_task6
+[2.139s] writing list of installed files to '/home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/install.log'
+[2.261s] Invoked command in '/home/akshar/eyrc_hb/hb_task6_ws/src/hb_task6' returned '0': PYTHONPATH=/home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/prefix_override:/home/akshar/eyrc_hb/hb_task6_ws/install/hb_task6/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hb_task6 build --build-base /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/build install --record /home/akshar/eyrc_hb/hb_task6_ws/build/hb_task6/install.log --single-version-externally-managed
