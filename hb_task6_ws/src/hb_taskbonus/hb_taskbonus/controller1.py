@@ -86,7 +86,7 @@ class HBControl(Node):
     ##callback for getting current bot pose
     def Callback1(self, msg):
         self.bot_x = msg.x
-        self.bot_y = msg.y
+        self.bot_y = (msg.y-500)*-1
         self.bot_theta = msg.theta
     ##callback function for receiving Goals    
     def goalCallBack1(self, msg1):
@@ -170,7 +170,7 @@ class HBControlimg(Node):
     ##callback for current position of the bot
     def Callback1(self, msg):
         self.bot_x = msg.x
-        self.bot_y = msg.y
+        self.bot_y = (msg.y-500)*-1
         self.bot_theta = msg.theta
 
     ##callback for receiving the goals    

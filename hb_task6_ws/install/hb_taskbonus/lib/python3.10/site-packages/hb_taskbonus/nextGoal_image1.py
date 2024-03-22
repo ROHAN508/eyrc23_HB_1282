@@ -22,7 +22,7 @@ from .image_utlis import * ##import functions from image_utlis
 
 msg_bot_2 = Goal()
 ##goal drawing order
-fullimage2=[returncontour(13),returncontour(20),returncontour(18),returncontour(22),returncontour(5),returncontour(11)]
+fullimage2=[returncontour(15)]
 ##check status of pen 
 pen_status_2=Bool()
 pen_status_2.data=False
@@ -87,7 +87,7 @@ def main(args=None):
                 for coordinate in contour:
                     
                     msg_bot_2.x.append(coordinate[0])
-                    msg_bot_2.y.append(coordinate[1]) 
+                    msg_bot_2.y.append((coordinate[1]-500)*-1) 
                     
 
                     

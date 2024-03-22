@@ -22,7 +22,7 @@ from my_robot_interfaces.msg import Goal
 from std_msgs.msg import Float64MultiArray   
 
 pen_down=False ##initialisation of pen status
-distance_threshold=5.5## distance to achieve before moving to next goal
+distance_threshold=5.5# distance to achieve before moving to next goal
 
 angle_threshold=0.1# angular threshold
 
@@ -86,7 +86,7 @@ class HBControl(Node):
     ##callback for getting current bot pose
     def Callback1(self, msg):
         self.bot_x = msg.x
-        self.bot_y = msg.y
+        self.bot_y = (msg.y-500)*-1
         self.bot_theta = msg.theta
     ##callback function for receiving Goals    
     def goalCallBack1(self, msg1):
@@ -170,7 +170,7 @@ class HBControlimg(Node):
     ##callback for current position of the bot
     def Callback1(self, msg):
         self.bot_x = msg.x
-        self.bot_y = msg.y
+        self.bot_y = (msg.y-500)*-1
         self.bot_theta = msg.theta
 
     ##callback for receiving the goals    

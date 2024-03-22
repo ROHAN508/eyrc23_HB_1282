@@ -88,7 +88,7 @@ def main(args=None):
                 for coordinate in contour:
                     
                     msg_bot_2.x.append(coordinate[0])
-                    msg_bot_2.y.append(coordinate[1]) 
+                    msg_bot_2.y.append((coordinate[1]-500)*-1)
 
                             
                 msg_bot_2.theta = 0.0

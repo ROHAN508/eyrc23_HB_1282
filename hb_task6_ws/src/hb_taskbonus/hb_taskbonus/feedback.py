@@ -21,6 +21,7 @@ from cv_bridge import CvBridge
 import numpy as np
 import math
 corner_ids=[8,10,12,4]##stores the corner aruco ids of the arena
+# corner_ids=[4,12,10,8]
 bot_ids=[1,2,3] ##stores the ids of the bots
 arena_corlist=[] ## variable initialisation to store the corners of aruco ids at the arena
 i=0##index for corner list
@@ -145,7 +146,8 @@ class ArUcoDetector(Node):
                                 
                                 self.pen1_pos.x=(float(centroid_x))
                                 
-                                self.pen1_pos.y=((float(centroid_y)-500)*-1)
+                                # self.pen1_pos.y=((float(centroid_y)-500)*-1)
+                                self.pen1_pos.y=((float(centroid_y)))
                                 self.pen1_pos.theta=float(yaw)
                                 self.get_logger().info(f'{self.pen1_pos}')
                                 self.pen1.publish(self.pen1_pos)
@@ -153,13 +155,15 @@ class ArUcoDetector(Node):
 
                             if aruco_id1[0]==2:
                                 self.pen2_pos.x=float(centroid_x)
-                                self.pen2_pos.y=(float(centroid_y)-500)*-1
+                                # self.pen2_pos.y=(float(centroid_y)-500)*-1
+                                self.pen2_pos.y=((float(centroid_y)))
                                 self.pen2_pos.theta=float(yaw)
                                 self.pen2.publish(self.pen2_pos)
 
                             if aruco_id1[0]==3:
                                 self.pen3_pos.x=float(centroid_x)
-                                self.pen3_pos.y=(float(centroid_y)-500)*-1
+                                # self.pen3_pos.y=(float(centroid_y)-500)*-1
+                                self.pen3_pos.y=((float(centroid_y)))
                                 self.pen3_pos.theta=float(yaw)
                                 self.pen3.publish(self.pen3_pos)
                             ##visualisation of trajectory of the bots

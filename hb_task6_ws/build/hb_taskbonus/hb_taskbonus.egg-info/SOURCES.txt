@@ -18,6 +18,7 @@ hb_taskbonus/controller3.py
 hb_taskbonus/controller3a.py
 hb_taskbonus/feedback.py
 hb_taskbonus/image_utlis.py
+hb_taskbonus/image_utlis12.py
 hb_taskbonus/interpolation.py
 hb_taskbonus/interpolation2.py
 hb_taskbonus/interpolation3.py
@@ -28,6 +29,7 @@ hb_taskbonus/nextGoal_function.py
 hb_taskbonus/nextGoal_image1.py
 hb_taskbonus/nextGoal_image2.py
 hb_taskbonus/nextGoal_image3.py
+hb_taskbonus/rpugh.py
 hb_taskbonus/startpointflag.py
 launch/goals.launch.py
 launch/utils.launch.py
